@@ -1,0 +1,141 @@
+\section{The probe and its averaging scales}\label{gex:source-section}
+
+\subsection{Field, characters and calibration}
+
+Let $F=\Q(\sqrt{-3})$, $\omega=e^{2\pi i/3}$ and
+$\lambda=1+2\omega$. Its ring of integers is $\OO=\mathbb Z[\omega]$.
+For an element or ideal write $q_a=\N(a)$; for a nonzero element put
+$\alpha(a)=a/|a|$. Good ideals are represented by their unique
+primary generators, congruent to one modulo $3$.
+
+Fix a primitive finite-order target character $\eta$. The fixed ray
+group $\mathcal T$ presents the supplementary and reciprocity phases
+$G$ and $\mathcal R$ of \cite[Section 4]{OAI26}; it is independent
+of the target. Choose the finite excluded set $S$ to contain the
+primes over $6$, the full defining-modulus supports of $\eta$ and
+$\widehat{\mathcal T}$, and every prime below a fixed cutoff $P_0$.
+The defining modulus includes redundant primes at which an induced
+presentation is extended by zero. This entire datum is fixed before
+the scale $Z$ and moving prime labels are chosen.
+
+Let $I_\eta(X,Y,Z)$ be exactly the calibrated probe of
+\cite[(6.1), Section 6.1]{OAI26}, with nonnegative nonzero annular
+tests $W_0,W_1$ and Gaussian Mellin weight $e^{t^2}$.
+We retain its auxiliary factors $b_*,\xi,\tau,\Xi,G,\mathcal R$
+and normalized cubic Gauss sum $\gamma_2$.
+Here $b_*$ generates the squarefree product of $S$;
+$\xi\bmod b_*$ is primitive, of order dividing six and nonprincipal
+at every prime factor, $|\tau|=1$, and
+$\Xi(a)=\xi(a)\chi_a(b_*)$.
+The sextic symbol $\chi_a(v)=(v/a)_6$ has its original zero on
+nonunits. Thus a sixth power of the symbol is a coprimality
+indicator. Inverses of $\Xi$ are taken only on units, and no
+character is replaced by its primitive presentation.
+
+The completed indices are $cn^3$, with $c$ squarefree and $n$
+unrestricted; they may share primes. All ideal variables avoid $S$.
+For a squarefree product $D$ of slot primes, define $I_{\eta;D}$
+by inserting $\one_{D\mid cn^3}$ in this same completed row.
+The auxiliary phases and the weights $q_c^{-1/2}q_n^{-1}$
+remain unchanged. This convention fixes the source in both the
+direct estimate and its Poisson representation.
+
+\subsection{Compensation and geometry}
+
+Take an even fixed slot count $K$, positive lengths $\ell_i$ with
+$\sum_i\ell_i=\ell$, and nonnegative nonzero annular weights $W_i$.
+Put $P_i=Z^{\ell_i}$. The underlying prime windows are disjoint
+before ray or excluded-set restrictions. Set
+\[
+ \mathcal P_i(Z)=\{p\notin S:\ p\text{ prime},\ p\in1_{\mathcal T},
+                 \ q_p/P_i\in\operatorname{supp}W_i\}.
+\]
+For a tuple $\boldsymbol p$ and subset
+$J\subseteq\{1,\ldots,K\}$, put $p_J=\prod_{i\in J}p_i$.
+Use the same finite operation as \cite[(12.5)]{OAI26}:
+\begin{equation}\label{gex:compensated-source}
+\begin{split}
+ \mathcal I_{\eta,\mathrm{mod}}(Z)=
+ \sum_{\boldsymbol p\in\prod_i\mathcal P_i(Z)}
+ \prod_iW_i(q_{p_i}/P_i)
+ \sum_J(-1)^{|J|}q_{p_J}^{-3/2}\overline{\eta(p_{J^c})}\,
+ I_{\eta;p_{J^c}}\!\left(\frac{X}{q_{p_J}},\frac{Y}{q_{p_J}},
+                           Zq_{p_{J^c}}\right).
+\end{split}
+\end{equation}
+Every window remains at its original $P_i$. Membership in
+$1_{\mathcal T}$ does not imply $\eta(p)=1$; the conjugate target
+factor in \eqref{gex:compensated-source} is retained.
+
+We choose
+\begin{equation}\label{gex:geometry}
+\begin{gathered}
+ p=\frac1{6000},\qquad b=\frac18,\qquad
+ \ell=\frac16+p,\qquad h=\frac{13}{16}+\frac{3p}{2},\\
+ l_x=\frac{17}{48}-\frac p2,\qquad
+ l_y=\frac{23}{48}-\frac p2,\qquad M=\frac56-p,\\
+ X=Z^{l_x},\quad Y=Z^{l_y},\quad
+ M+\ell=1,\quad l_y-l_x=b,\quad h=1-l_x+\ell,\\
+ \theta=\frac78-\frac p4=\frac{20999}{24000}.
+\end{gathered}
+\end{equation}
+The letter $p$ in this display is the scalar perturbation; the indexed
+$p_i$ denote prime ideals. The fine slot system is chosen later from
+the moment mesh. It remains fixed as $Z$ tends to infinity.
+
+For a rescaled subset put $d=\sum_{i\in J}\ell_i$. Write
+$q_{p_J}=Z^d r_J$, with $r_J$ in one fixed positive compact
+interval, uniformly over the tuples. Then the actual low scales are
+\[
+ X'=Z^{l_x-d}/r_J,\quad Y'=Z^{l_y-d}/r_J,\quad
+ Q=q_{b_*}X'Y'\asymp Z^{M'},\qquad
+ M'=1-\ell-2d,\quad \ell'=\ell-d.
+\]
+In particular $l_x-\ell,l_y-\ell$ and $M-2\ell$ are positive.
+All rescaled row and lattice scales eventually exceed one, uniformly
+in the fixed annular ratios.
+
+\subsection{The shared Mellin representation}
+
+Let $\widetilde W_0(|z|^2)$ be the planar Fourier transform for the
+self-dual measure $(2/\sqrt3)\,dx\,dy$, and put
+\[
+ M(z)=\int_0^\infty\widetilde W_0(r)r^{z-1}\,dr,
+ \qquad \widehat W_1(w)=\int_0^\infty W_1(r)r^{w-1}\,dr.
+\]
+Both transforms have rapid vertical decay in the relevant fixed
+strips; $M$ is holomorphic for $\Rea z>0$ and $M(1/6)>0$
+by \cite[Section 7.1]{OAI26}.
+
+The exact Poisson identity of \cite[Section 16.1]{OAI26} gives
+\begin{equation}\label{gex:high-identity}
+\begin{split}
+ \mathcal I_{\eta,\mathrm{mod}}(Z)
+ =\frac1{(2\pi i)^3}\int_{(3)}\int_{(3)}\int_{(2)}
+ &X^{1/2-z}Z^{s+z-1}Y^{w-1}
+   e^{(s+z-1)^2}M(z)\widehat W_1(w)\\
+ &\times\sum_u^{(6)}q_u^{-z}\overline{\xi(u)}
+ \frac{\zeta_F^S(6z)L_F^S(w,\chi_\bullet(u))}{
+       L_F^S(s,\eta\overline{\chi_\bullet(u)})}
+ \mathfrak H_{\eta,u,Z}(s,w,z)\,dz\,dw\,ds.
+\end{split}
+\end{equation}
+The sum includes all nonzero sixth-power-free element rows prime
+to $S$, with unit factors. Superscript $S$ denotes deleted Euler
+factors. The correction $\mathfrak H$ is the full quotient-free
+selected tuple correction of \cite[(16.3)]{OAI26}. At a selected
+prime it uses the holomorphic factor $G_p$; all unselected primes
+retain $H_p$. This definition is valid also at zeros of individual
+raw local quotients. Identity~\eqref{gex:high-identity} concerns
+exactly the finite physical expression~\eqref{gex:compensated-source}.
+
+At the principal double residue $u=1,w=1,z=1/6$, the outside
+power is $X^{1/3}Z^{s-5/6}$ and the slot factor supplies
+$Z^{\ell/6}$. Thus the new principal exponent is
+\begin{equation}\label{gex:principal-exponent}
+ C(s)=s-\frac56+\frac{l_x}{3}+\frac\ell6
+     =\frac{l_x}{2}+s-1+\frac h6=s-\frac{11}{16}.
+\end{equation}
+Increasing $\ell$ therefore leaves $C(s)$ unchanged. The low
+estimate, by contrast, decreases with $l_x$; this is the source
+of the improvement.

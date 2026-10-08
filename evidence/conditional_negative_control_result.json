@@ -1,0 +1,7 @@
+{
+  "exit_code": 1,
+  "expected_rejection": true,
+  "target": "OpenAINextStripAttempt.StrongerResult.zeta_nonzero",
+  "theta": "20999/24000",
+  "reason": "Extra old-half-plane premise rejected by exact statement comparison"
+}

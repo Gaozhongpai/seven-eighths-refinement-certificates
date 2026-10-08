@@ -1,0 +1,105 @@
+\section{Recovery of the physical low estimate}
+\label{gex:low-recovery}
+
+The additive polynomial \(A_{m,\sigma,\nu}(Y')\) is the one in the
+exact separation \cite[(6.2)]{OAI26}.  Its fixed ray coefficient is
+\(\mathbf1_{s\in\sigma}\chi_s(b_*)/(\tau\xi(s))\), extended by zero
+off the original primary support before evaluating the inverse.
+For \(Q,Y'\ge1\), in fixed polynomial ranges, and
+\begin{equation}
+ P_a=Y'^2/Q\ge1,
+\label{gex:additive-gram-parameter}
+\end{equation}
+\cite[Proposition~15.2]{OAI26} gives
+\begin{equation}
+ \sum_{q_m\ll Q}|A_{m,\sigma,\nu}(Y')|^2
+ \ll_{\varepsilon,\mathrm{fixed}}
+ (1+|\nu|)^{J_A}\frac Q{Y'}
+ \left(1+P_a^{1/6}+\frac{P_a^2}{Y'}\right)Z^\varepsilon.
+\label{gex:additive-gram-input}
+\end{equation}
+The order \(J_A\) is independent of the moving scales and height.
+The same input covers fixed finite combinations of these ray coefficients.
+
+At \eqref{gex:rescaled-low-scales},
+\begin{equation}
+ P_a=q_{b_*}^{-1}Z^b,\qquad b=1/8.
+\label{gex:gram-rescaling-invariant}
+\end{equation}
+For \(\varpi=1/6000\), every \(0\le d\le\ell\) satisfies
+\begin{equation}
+\begin{aligned}
+ M'&\ge\tfrac12-3\varpi>0,\\
+ l_x-d&\ge\tfrac3{16}-\tfrac32\varpi>0,\\
+ l_y-d-11b/6&\ge\tfrac1{12}-\tfrac32\varpi>0.
+\end{aligned}
+\label{gex:uniform-low-scale-margins}
+\end{equation}
+The bounded tuple ratios therefore give \(Q,Y',P_a\ge1\) eventually,
+uniformly in \(J\), and \(Y'\gg P_a^{11/6}\).  Both the constant
+term and \(P_a^2/Y'\) in \eqref{gex:additive-gram-input} are then
+\(O(P_a^{1/6})\).  Hence
+\begin{equation}
+ \sum_{q_m\ll Q}|A_{m,\sigma,\nu}(Y')|^2
+ \ll (1+|\nu|)^{J_A}(Q/Y')P_a^{1/6}Z^\varepsilon.
+\label{gex:additive-gram-at-new-scales}
+\end{equation}
+
+\begin{proposition}
+\label{gex:physical-low}
+For the geometry \eqref{gex:geometry} and every \(\varepsilon>0\),
+the complete compensated probe satisfies
+\begin{equation}
+ |\mathcal I_{\eta,\mathrm{mod}}(Z)|
+ \ll_{\varepsilon,\mathrm{fixed}}
+ Z^{l_x/2+b/12+\varepsilon}
+ =Z^{3/16-1/24000+\varepsilon}.
+\label{gex:physical-low-bound}
+\end{equation}
+The datum, windows and slot count are fixed before \(Z\);
+all subsets and tuples in \eqref{gex:compensated-source} are included.
+\end{proposition}
+
+\begin{proof}
+For a fixed rescaled tuple, apply Cauchy in the shared physical rows
+of \cite[(6.2)]{OAI26}, whose normalization is \(Q^{-1/2}\).
+Lemma~\ref{gex:completed-low} and
+\eqref{gex:additive-gram-at-new-scales} give
+\begin{equation}
+ Q^{-1/2}
+ \left(\frac Q{Y'}P_a^{1/6}\right)^{1/2}
+ Z^{M'/2+(5\ell-1+d)_+/8+\varepsilon}
+ \ll (X')^{1/2}P_a^{1/12}
+       Z^{(5\ell-1+d)_+/8+\varepsilon}.
+\label{gex:fixed-tuple-low}
+\end{equation}
+We used \(Z^{M'}/(X'Y')=r_J^2\), a bounded factor.
+The polynomial height costs from the two inputs are integrable
+against the common, rapidly decreasing Mellin density.  Choosing
+its finite derivative order after the tail orders absorbs those
+costs uniformly in the tuple.
+
+Ideal counting gives \(O(Z^{d+\varepsilon})\) tuples on \(J\).
+Their coefficient is \(q_{p_J}^{-3/2}\asymp Z^{-3d/2}\), and
+\((X')^{1/2}\asymp X^{1/2}Z^{-d/2}\).  Their total additional
+exponent in \eqref{gex:fixed-tuple-low} is
+\begin{equation}
+ d-3d/2-d/2+(5\ell-1+d)_+/8
+ \le-7d/8\le0,
+\label{gex:full-tuple-payment}
+\end{equation}
+because \(\ell<1/5\).  The surviving \(J^c\) weights, including
+\(\overline{\eta(p_{J^c})}\), were already summed inside
+\(B_{m,\sigma}^J\).
+
+Sum the finitely many subsets and fixed ray sectors, allocating
+their small-power losses inside \(\varepsilon\).
+The Gaussian and Mellin integrations have the finite weighted
+norms used above.  Finally,
+\(P_a^{1/12}\asymp Z^{b/12}\) and
+\(l_x/2+b/12=3/16-\varpi/4\), proving the proposition.
+\end{proof}
+
+Since \(C(s)=s-11/16\) in \eqref{gex:principal-exponent},
+\(C(20999/24000)=3/16-1/24000\).
+Thus the full low estimate matches the boundary of the principal signal.

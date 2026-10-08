@@ -1,0 +1,739 @@
+{
+  "kind": "frozen_new_proof_dependency_closure",
+  "upstream_source_pin": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+  "target": "OpenAINextStripAttempt.StrongerResult.zeta_nonzero",
+  "theta": "20999/24000",
+  "previous_theta": "349999/400000",
+  "files": [
+    {
+      "path": "EulerGeometryExtension.lean",
+      "module": "EulerGeometryExtension",
+      "sha256": "546514cc7035da932639d5653c23bfbd34ea58df8be21b563451c2660a03f5a3"
+    },
+    {
+      "path": "GeometryLowExponent.lean",
+      "module": "GeometryLowExponent",
+      "sha256": "d75438230664ffd994cd23e5266a5f447270ff8309904a2cd0c9756ba2cd69f9"
+    },
+    {
+      "path": "GeometryNext/ContinuationActual.lean",
+      "module": "GeometryNext.ContinuationActual",
+      "sha256": "269a2ab04a967624c213f582d106e104d4e016ffed2e15a43545f0df3ba26d6e"
+    },
+    {
+      "path": "GeometryNext/DetectorCentralTuple.lean",
+      "module": "GeometryNext.DetectorCentralTuple",
+      "sha256": "92ef776d28d9eeb8d1308320ab919b4a91f179d158934689cd1f95be469762cd"
+    },
+    {
+      "path": "GeometryNext/DetectorCharge.lean",
+      "module": "GeometryNext.DetectorCharge",
+      "sha256": "648679e98ca95dee13f1183176ffc463d017959b0fec3146b0280afd7b4ffe6f"
+    },
+    {
+      "path": "GeometryNext/DetectorCommonBound.lean",
+      "module": "GeometryNext.DetectorCommonBound",
+      "sha256": "10732fcd595e3d613d906cc86b6cc442acffc54c38b65464d051ff6db9b6538b"
+    },
+    {
+      "path": "GeometryNext/DetectorFinalSource.lean",
+      "module": "GeometryNext.DetectorFinalSource",
+      "sha256": "050f371dafec7136412c4e7c0257b90036e4e862007d235420b4f710e02e5b98"
+    },
+    {
+      "path": "GeometryNext/DetectorGaussianCentral.lean",
+      "module": "GeometryNext.DetectorGaussianCentral",
+      "sha256": "b70080f2d9db5e8adce64532c9f7991e01f80e08206631e38e562198d7bdb2c6"
+    },
+    {
+      "path": "GeometryNext/DetectorGaussianDyad.lean",
+      "module": "GeometryNext.DetectorGaussianDyad",
+      "sha256": "7f761e36e0f7ea28c14b6929d1eb3e63b8101351c63cfba57ce0214e48824cd1"
+    },
+    {
+      "path": "GeometryNext/DetectorGaussianRemote.lean",
+      "module": "GeometryNext.DetectorGaussianRemote",
+      "sha256": "43d15771d63ab169d867778b0f46106735658f15acdccae9b0edc8c616f52080"
+    },
+    {
+      "path": "GeometryNext/DetectorGaussianSum.lean",
+      "module": "GeometryNext.DetectorGaussianSum",
+      "sha256": "a7f1fc930cc0cecfbc629fdcd8050428b4a5cb9e1d11918ada7bcca213b702c9"
+    },
+    {
+      "path": "GeometryNext/DetectorGeometry.lean",
+      "module": "GeometryNext.DetectorGeometry",
+      "sha256": "bd51b8d6a474de3a4bc25b8a39576d03494695228ee8fa24e7df28bb34383eca"
+    },
+    {
+      "path": "GeometryNext/DetectorNominal.lean",
+      "module": "GeometryNext.DetectorNominal",
+      "sha256": "2502fb84ec2c9edac6dd654bde1a58c063289300882395d6ba28374ee6e2e132"
+    },
+    {
+      "path": "GeometryNext/DetectorNormalized.lean",
+      "module": "GeometryNext.DetectorNormalized",
+      "sha256": "0cce8d311e270f5827cd09dca593353581340c3ca4bb656dd3331412d917be0d"
+    },
+    {
+      "path": "GeometryNext/DetectorPhysicalInverse.lean",
+      "module": "GeometryNext.DetectorPhysicalInverse",
+      "sha256": "24f21969788dcc68510637a30e31be232929427218aef428493fbfd381ed2543"
+    },
+    {
+      "path": "GeometryNext/DetectorRemoteMass.lean",
+      "module": "GeometryNext.DetectorRemoteMass",
+      "sha256": "b68a6576bcb70749ef60145591ef27679880c2139f47bd37a3aa74c6e8c7ef6d"
+    },
+    {
+      "path": "GeometryNext/DetectorSelected.lean",
+      "module": "GeometryNext.DetectorSelected",
+      "sha256": "b48cee07e83d6e66a1d8a7ddb654a7aea077408133b3bdd09cecd7090dc5c60a"
+    },
+    {
+      "path": "GeometryNext/DetectorSlotScales.lean",
+      "module": "GeometryNext.DetectorSlotScales",
+      "sha256": "a7bc4cd2347b0ece25574d9dc5ea70809ca65cbd242cc4beb9113d0faf2af328"
+    },
+    {
+      "path": "GeometryNext/DetectorSourceScales.lean",
+      "module": "GeometryNext.DetectorSourceScales",
+      "sha256": "15d6c025490327d3756d817f6a218db031fdc64a87b70f34c17bc35efa46ec2a"
+    },
+    {
+      "path": "GeometryNext/DetectorUnselectedMass.lean",
+      "module": "GeometryNext.DetectorUnselectedMass",
+      "sha256": "36ec9e941cf93e7ea6b4f2adc6b64c776e27dde621124c2bf8a863deb7ae7bc3"
+    },
+    {
+      "path": "GeometryNext/DetectorWindowBound.lean",
+      "module": "GeometryNext.DetectorWindowBound",
+      "sha256": "c04d1d1e04b8de7826e3af4c2d1701eb832d57282c2925dd21ab904822b1c648"
+    },
+    {
+      "path": "GeometryNext/EndpointGeometry.lean",
+      "module": "GeometryNext.EndpointGeometry",
+      "sha256": "b9d3c0aaa179198ce993a9363de5bac94e0ec1d8263699becb2cefe3f5a93ef9"
+    },
+    {
+      "path": "GeometryNext/GeometryData.lean",
+      "module": "GeometryNext.GeometryData",
+      "sha256": "99c85e1bbfe95d4818f42c2d9049146449d05f5147e7b307736cdcde3e90e83e"
+    },
+    {
+      "path": "GeometryNext/HighActualBeta.lean",
+      "module": "GeometryNext.HighActualBeta",
+      "sha256": "802ee69064a1af178e9c0f2087726a3255feea40f9e26e37e617b090c188f0e4"
+    },
+    {
+      "path": "GeometryNext/HighCanonicalCubeChoice.lean",
+      "module": "GeometryNext.HighCanonicalCubeChoice",
+      "sha256": "7ce3437324360f148a8edfa051a0267a1478409d6b0f7bf0e4d728bb83bc4862"
+    },
+    {
+      "path": "GeometryNext/HighCanonicalCubeReduction.lean",
+      "module": "GeometryNext.HighCanonicalCubeReduction",
+      "sha256": "bfec3971fb644df4662454987cd46967c7a502802c27c808d307411e21425474"
+    },
+    {
+      "path": "GeometryNext/HighCanonicalRayCube.lean",
+      "module": "GeometryNext.HighCanonicalRayCube",
+      "sha256": "d7ba73e71739dd6a760f8948ea73c741183e590b17bae0702a3cf20bbe63bdde"
+    },
+    {
+      "path": "GeometryNext/HighCanonicalReduction.lean",
+      "module": "GeometryNext.HighCanonicalReduction",
+      "sha256": "165c096421c3b123d6cf6b345151b1f2b2d5aa2158970ad3383f6b5f25329720"
+    },
+    {
+      "path": "GeometryNext/HighCanonicalTails.lean",
+      "module": "GeometryNext.HighCanonicalTails",
+      "sha256": "472486f310006e2d7452159fdd6f0a99f974b3e89d23650a02eb4e77d8a48293"
+    },
+    {
+      "path": "GeometryNext/HighCentralClassArithmetic.lean",
+      "module": "GeometryNext.HighCentralClassArithmetic",
+      "sha256": "d3dd28b3910079baa7a1035ebf7d260b863e6f4afe1b601dc2363f0852dc9dfc"
+    },
+    {
+      "path": "GeometryNext/HighCentralErrorScale.lean",
+      "module": "GeometryNext.HighCentralErrorScale",
+      "sha256": "df7c3f7ae6cdcf6ad14707e2436a5ca211e85450357299087deee11f6333a09f"
+    },
+    {
+      "path": "GeometryNext/HighCountedArithmetic.lean",
+      "module": "GeometryNext.HighCountedArithmetic",
+      "sha256": "b83c1a5bb00baf1fccbdfdb3c28580fa2acdffe78eeff3dc4c5b878b2ae6c928"
+    },
+    {
+      "path": "GeometryNext/HighCountedClass.lean",
+      "module": "GeometryNext.HighCountedClass",
+      "sha256": "5a1c6137e12de34fe21a90231dc7c734c7823c106a5fd33a72eb77816d21bd5a"
+    },
+    {
+      "path": "GeometryNext/HighCountedCollected.lean",
+      "module": "GeometryNext.HighCountedCollected",
+      "sha256": "e33a1dad392c911215b82fe62f3c0c60bc4177f0ad205f59c14e3e3039c4a570"
+    },
+    {
+      "path": "GeometryNext/HighCountedIntegral.lean",
+      "module": "GeometryNext.HighCountedIntegral",
+      "sha256": "cbba56d0d70e3e09244bf9ca1c2e6d56971cc7b4a2b04dc584164879893dc4ea"
+    },
+    {
+      "path": "GeometryNext/HighCountedNormalized.lean",
+      "module": "GeometryNext.HighCountedNormalized",
+      "sha256": "ba4086db439130ff157d711628c1bb99760a26bc2fa81eef662f317d03ace0a9"
+    },
+    {
+      "path": "GeometryNext/HighCubeErrorSaving.lean",
+      "module": "GeometryNext.HighCubeErrorSaving",
+      "sha256": "4e365a8d8340201a120fc0271a11a486fb0745ef6ed0fb1e8568e8db5055f08a"
+    },
+    {
+      "path": "GeometryNext/HighCubeFiniteError.lean",
+      "module": "GeometryNext.HighCubeFiniteError",
+      "sha256": "07ccd813e27ea5499a409161b17dfd025092cae09f3c9cdc26ab1bdf69b55cde"
+    },
+    {
+      "path": "GeometryNext/HighExponent.lean",
+      "module": "GeometryNext.HighExponent",
+      "sha256": "2826d6b30600f46923ed90979b5b96b2b5c3341011535a9dd7c65b7ab26cdd2d"
+    },
+    {
+      "path": "GeometryNext/HighFixedFromRaw.lean",
+      "module": "GeometryNext.HighFixedFromRaw",
+      "sha256": "c70e6c67c06103ed43a7747b97f2fefa91ec3f1cdcaf5d6b2a29801cc0baecf8"
+    },
+    {
+      "path": "GeometryNext/HighFloorArithmetic.lean",
+      "module": "GeometryNext.HighFloorArithmetic",
+      "sha256": "c2e227b3fdb81e5e43d83bc4184bd8624fa151c597205944f16916be2e16fb3d"
+    },
+    {
+      "path": "GeometryNext/HighFloorCollected.lean",
+      "module": "GeometryNext.HighFloorCollected",
+      "sha256": "d28dd753456b77ddbfc67481a1694dd88cde4e2456473899946b2480a8fcb085"
+    },
+    {
+      "path": "GeometryNext/HighFloorGlobal.lean",
+      "module": "GeometryNext.HighFloorGlobal",
+      "sha256": "112bf60f9a49d042251c1c53dbf26d96a6672ccb8ebecea726350c3d4ee57e60"
+    },
+    {
+      "path": "GeometryNext/HighFloorIntegral.lean",
+      "module": "GeometryNext.HighFloorIntegral",
+      "sha256": "1fb56e10f6f86204504f90f2da4f370e0faf416f8a2c25f4752429a2dbaf10e1"
+    },
+    {
+      "path": "GeometryNext/HighFloorNormalized.lean",
+      "module": "GeometryNext.HighFloorNormalized",
+      "sha256": "9db47d68ced5361f735f5089be7a3db353f7785313dd2d098bf82e5926f1a1b0"
+    },
+    {
+      "path": "GeometryNext/HighFloorSaving.lean",
+      "module": "GeometryNext.HighFloorSaving",
+      "sha256": "623829db177a10508d1b4788883003fe6e5419df828a6fdcdb40c96a52aa6d43"
+    },
+    {
+      "path": "GeometryNext/HighFullFromRaw.lean",
+      "module": "GeometryNext.HighFullFromRaw",
+      "sha256": "bdf6b3a444e2e7bdeff13b2ae897cd4940a7fcfd66809389aef7deea05e118b0"
+    },
+    {
+      "path": "GeometryNext/HighNonfloorTransport.lean",
+      "module": "GeometryNext.HighNonfloorTransport",
+      "sha256": "3871c65959ec6f49f62a0a516677f02e261537ea62289538b78024d227de3e79"
+    },
+    {
+      "path": "GeometryNext/HighNormalizedTransport.lean",
+      "module": "GeometryNext.HighNormalizedTransport",
+      "sha256": "4a41645560567e24c451b7505f586320d1211314715bfaab7316eb1b29204ab6"
+    },
+    {
+      "path": "GeometryNext/HighNormalizedTransportSaving.lean",
+      "module": "GeometryNext.HighNormalizedTransportSaving",
+      "sha256": "647da8be0c014409ad1e6e5722d8fd392f8f44fa3c68974ec9861811c1b71f26"
+    },
+    {
+      "path": "GeometryNext/HighRawBridge.lean",
+      "module": "GeometryNext.HighRawBridge",
+      "sha256": "873f83cb086aeab32821f860916ee117afc6d8597df8ad3adf4ee730ea5d73cd"
+    },
+    {
+      "path": "GeometryNext/HighSlotExponent.lean",
+      "module": "GeometryNext.HighSlotExponent",
+      "sha256": "0d73a73d7cf8b7ddb6adfc9ce24b07ad4330376fd17e7e60246ff99b08898db5"
+    },
+    {
+      "path": "GeometryNext/HighSourceAmplitudeClasses.lean",
+      "module": "GeometryNext.HighSourceAmplitudeClasses",
+      "sha256": "cd5214625b45d6e4d8dc421f432876964d2dcf44bb55e381887491a932611337"
+    },
+    {
+      "path": "GeometryNext/HighSourceBatch.lean",
+      "module": "GeometryNext.HighSourceBatch",
+      "sha256": "fa38f9d26c5aa78bf9c2d11f2d329160517674bca85f7a02eef532d711c4e01e"
+    },
+    {
+      "path": "GeometryNext/HighWidths.lean",
+      "module": "GeometryNext.HighWidths",
+      "sha256": "03735a37f20cd9632f3e75e82f042f22a6acd9fa68f5faf24720cfef62385660"
+    },
+    {
+      "path": "GeometryNext/LowBranchSum.lean",
+      "module": "GeometryNext.LowBranchSum",
+      "sha256": "61bba7e8b0f08ba0989c48d6ad0daa1d6ff266a87a59f3be4cbc81ae59216456"
+    },
+    {
+      "path": "GeometryNext/LowCaps.lean",
+      "module": "GeometryNext.LowCaps",
+      "sha256": "6d297a16b631aac1d66c1498344ab80daf8e7e8291f7336e7f6c24d788722ac0"
+    },
+    {
+      "path": "GeometryNext/LowChoiceEnergy.lean",
+      "module": "GeometryNext.LowChoiceEnergy",
+      "sha256": "ef3fe1e1cfa7d83fc32824c73c014958cd4fdb5068c6e5d8918aa515cdc8109c"
+    },
+    {
+      "path": "GeometryNext/LowCompletedFiber.lean",
+      "module": "GeometryNext.LowCompletedFiber",
+      "sha256": "0bd1f2a51619d23d06c9d8a7d509ca2306aa6cb2e337135bbdd6b1fbaf643256"
+    },
+    {
+      "path": "GeometryNext/LowCompletedRows.lean",
+      "module": "GeometryNext.LowCompletedRows",
+      "sha256": "edb6b488d856db7f718899d829fdb82a64e4d68504ed11a469c7a7588a85e8ed"
+    },
+    {
+      "path": "GeometryNext/LowDyads.lean",
+      "module": "GeometryNext.LowDyads",
+      "sha256": "d0d7f9a1e4131c9214d99d74661381de9c01d8488887aef67540633edb42d21e"
+    },
+    {
+      "path": "GeometryNext/LowFixedMember.lean",
+      "module": "GeometryNext.LowFixedMember",
+      "sha256": "7b647094dc3c21639a9aca7300b1783b427ab956bc420f45fc49457a8ff9cea7"
+    },
+    {
+      "path": "GeometryNext/LowFrozenEnergy.lean",
+      "module": "GeometryNext.LowFrozenEnergy",
+      "sha256": "89b7c8fdac79100444cfa2411a0a60529ac0c4f30820449637007179e3ac6a44"
+    },
+    {
+      "path": "GeometryNext/LowFull.lean",
+      "module": "GeometryNext.LowFull",
+      "sha256": "eea1f2c117851b9561a14bc2ef8af5eec517d79633f2f59066d2b1d7c68c1abd"
+    },
+    {
+      "path": "GeometryNext/LowFullBudget.lean",
+      "module": "GeometryNext.LowFullBudget",
+      "sha256": "764db7117487259bbaa349e3b62372e6409b6a227c4b129f749166b04f47b557"
+    },
+    {
+      "path": "GeometryNext/LowGlobalBudget.lean",
+      "module": "GeometryNext.LowGlobalBudget",
+      "sha256": "b7c72390f5458750944ed274e207c2bc27c41eca70d1740009ea86c95e1d0968"
+    },
+    {
+      "path": "GeometryNext/LowInactiveEnergy.lean",
+      "module": "GeometryNext.LowInactiveEnergy",
+      "sha256": "ce0ea570abb703c67752f205572df2bda18be0d0c7b2bbc6c736d2b58a186f88"
+    },
+    {
+      "path": "GeometryNext/LowMemberBudget.lean",
+      "module": "GeometryNext.LowMemberBudget",
+      "sha256": "b824e6e0707eefe83eab819667ffa0550dc2e8c6d6d45e42b06d5dc651fa0820"
+    },
+    {
+      "path": "GeometryNext/LowMemberGeometry.lean",
+      "module": "GeometryNext.LowMemberGeometry",
+      "sha256": "65507023f7f058d84def36a6a12f9b008cede06c5c0ba67700fc15ad7aa11085"
+    },
+    {
+      "path": "GeometryNext/LowOriginalEnergy.lean",
+      "module": "GeometryNext.LowOriginalEnergy",
+      "sha256": "5fb3273222da9b9bc676dda65b6fd6f20fa911820e298905dcbeaa3bd37de8bf"
+    },
+    {
+      "path": "GeometryNext/LowRetained.lean",
+      "module": "GeometryNext.LowRetained",
+      "sha256": "014d7039b64aa986ae16dcba5940816b685ac768653cc03fffc68c5ce8b9b240"
+    },
+    {
+      "path": "GeometryNext/LowRetainedBudget.lean",
+      "module": "GeometryNext.LowRetainedBudget",
+      "sha256": "5191fa92af85b929f26113f3588f56bd842c3f8e21ab16617f875339bb426022"
+    },
+    {
+      "path": "GeometryNext/LowSector.lean",
+      "module": "GeometryNext.LowSector",
+      "sha256": "d4464f94fbe3bc187fef10558f5544690b40ba8895b6c75dbb05a5881148227a"
+    },
+    {
+      "path": "GeometryNext/MainStrongStrip.lean",
+      "module": "GeometryNext.MainStrongStrip",
+      "sha256": "7a2932928eed849817572778c53aebbccc3d8bcf05b8567cdfae15e15e7d1342"
+    },
+    {
+      "path": "GeometryNext/PrincipalActualSource.lean",
+      "module": "GeometryNext.PrincipalActualSource",
+      "sha256": "0f5751e78d024db667c1fad89b7c45bc11b35812d1f7cc9310bdb1876a46bddb"
+    },
+    {
+      "path": "GeometryNext/PrincipalContours.lean",
+      "module": "GeometryNext.PrincipalContours",
+      "sha256": "9ccaa6de762a337f28289b16aea779d8388c9e7376a69104848acefba62d9eee"
+    },
+    {
+      "path": "GeometryNext/PrincipalCorrection.lean",
+      "module": "GeometryNext.PrincipalCorrection",
+      "sha256": "2546aa89831e42bdcdbc214f42dcb20db78d9f8185ad85f2fd6228ca3909d029"
+    },
+    {
+      "path": "GeometryNext/PrincipalEulerPaths.lean",
+      "module": "GeometryNext.PrincipalEulerPaths",
+      "sha256": "87d756a459702f23f6265d3b47ef35bfde8a081a684da02bd9e6b663443bb920"
+    },
+    {
+      "path": "GeometryNext/PrincipalFiniteProductBounds.lean",
+      "module": "GeometryNext.PrincipalFiniteProductBounds",
+      "sha256": "7d1d23f4dba9bf9170758b36f97c5fd1ec27ebc6fdbdcb58f9cfa32a43cf9e5a"
+    },
+    {
+      "path": "GeometryNext/PrincipalFiniteProductX.lean",
+      "module": "GeometryNext.PrincipalFiniteProductX",
+      "sha256": "7d763ca1f4a1c9424ee3032473693dece163e6c89c3f452b77374e5c328ceb11"
+    },
+    {
+      "path": "GeometryNext/PrincipalNormalized.lean",
+      "module": "GeometryNext.PrincipalNormalized",
+      "sha256": "801e5b49aedd1ba0a3951d9b97e33f474ecb87f96049ce604bd129035c84a2d3"
+    },
+    {
+      "path": "GeometryNext/PrincipalPhysical.lean",
+      "module": "GeometryNext.PrincipalPhysical",
+      "sha256": "ae6f9ca3f65f5ee18f4a496052201100a81a39d95f2689d44990717cc8bd9433"
+    },
+    {
+      "path": "GeometryNext/PrincipalPhysicalRemainder.lean",
+      "module": "GeometryNext.PrincipalPhysicalRemainder",
+      "sha256": "d28b898d326da49500b615061b37c6f2f504fdbb86822d27b16982153d50ce6d"
+    },
+    {
+      "path": "GeometryNext/PrincipalRayNormalizer.lean",
+      "module": "GeometryNext.PrincipalRayNormalizer",
+      "sha256": "6598659e3117217b604a1320a9edd14b69afac106fc59be8899ae0ce97f18934"
+    },
+    {
+      "path": "GeometryNext/PrincipalRayThresholds.lean",
+      "module": "GeometryNext.PrincipalRayThresholds",
+      "sha256": "68f934e7e0f9ea840fe9c51c05c3c963f39a2570b40261e7ac1c9005fcf609f7"
+    },
+    {
+      "path": "GeometryNext/PrincipalRegionSlots.lean",
+      "module": "GeometryNext.PrincipalRegionSlots",
+      "sha256": "3de4f223c5d84ab94b92f1e0773285ec48896f7728877f159779b03a99a00d8a"
+    },
+    {
+      "path": "GeometryNext/PrincipalRemainderBounds.lean",
+      "module": "GeometryNext.PrincipalRemainderBounds",
+      "sha256": "027e8339b8338dc6f734950ba4e3d270cb49f5cd0a67d0812f9c121dd3deaa99"
+    },
+    {
+      "path": "GeometryNext/PrincipalResidue.lean",
+      "module": "GeometryNext.PrincipalResidue",
+      "sha256": "1db841812f69134f4ded82916a3f07aa675502ded71289e660f55c33bddc268a"
+    },
+    {
+      "path": "GeometryNext/PrincipalResidueActual.lean",
+      "module": "GeometryNext.PrincipalResidueActual",
+      "sha256": "3b760334b47ad5a832662f9caba76937c03670a69d656de9eb9994eebb3010cb"
+    },
+    {
+      "path": "GeometryNext/PrincipalSignalBounds.lean",
+      "module": "GeometryNext.PrincipalSignalBounds",
+      "sha256": "49cff92b04287266a2e2c65430f17f9db283f8bb0f8b8dd3b527d19470777bc9"
+    },
+    {
+      "path": "GeometryNext/PrincipalSignalShift.lean",
+      "module": "GeometryNext.PrincipalSignalShift",
+      "sha256": "b1ce1410ea85e08de436a40ee8dc74200bb49dbfe8e0221d4c22e6022682ee3f"
+    },
+    {
+      "path": "GeometryNext/PrincipalSlots.lean",
+      "module": "GeometryNext.PrincipalSlots",
+      "sha256": "e1652081a6a6936f9c7ed4a7053719153b3c77e2412ff048a36b04fd503f2801"
+    },
+    {
+      "path": "GeometryNext/PrincipalTransport.lean",
+      "module": "GeometryNext.PrincipalTransport",
+      "sha256": "a4ec81434a21e556a14b0492d6e57a58aa1ac9a3ca6d4093335585e079e0a2a2"
+    },
+    {
+      "path": "GeometryNext/RawCertifiedInputs.lean",
+      "module": "GeometryNext.RawCertifiedInputs",
+      "sha256": "af852beb4595d49562bed5d9cada44157794d1b461631fde5d53f04e03185398"
+    },
+    {
+      "path": "GeometryNext/RawInverseFields.lean",
+      "module": "GeometryNext.RawInverseFields",
+      "sha256": "af4de29c1239d102ee0a7c040e25229a8601a10ad7b28bc022de7c7144f44dc2"
+    },
+    {
+      "path": "GeometryNext/RawInverseMarkedField.lean",
+      "module": "GeometryNext.RawInverseMarkedField",
+      "sha256": "362b49557389ba43fc6ee3be8df433f27bb90754442cf047d5bce1877f1e8222"
+    },
+    {
+      "path": "GeometryNext/RawMomentParameters.lean",
+      "module": "GeometryNext.RawMomentParameters",
+      "sha256": "445f8eac8b5c8ef3e734b9e91a31e1806e6273ad5ac4f956ca8f5b1c7e8b282a"
+    },
+    {
+      "path": "GeometryNext/RawPlainExceptional.lean",
+      "module": "GeometryNext.RawPlainExceptional",
+      "sha256": "9dc78949f600db34c003dfd80baf264a7df243c04ec597b473eb7bbaac8a5d63"
+    },
+    {
+      "path": "GeometryNext/RawPlainMarkedFineField.lean",
+      "module": "GeometryNext.RawPlainMarkedFineField",
+      "sha256": "339e910d89f1fcf926c2bd6b84a6daa2a3d1e3ac6d93a0f38a38de2dde08e0ee"
+    },
+    {
+      "path": "GeometryNext/RawPlainMarkedState.lean",
+      "module": "GeometryNext.RawPlainMarkedState",
+      "sha256": "5a5105ba3ee47b5b9efef444555a6291ff35cf3af25ed4f97053e7afab5490f0"
+    },
+    {
+      "path": "GeometryNext/RawPlainUnmarkedField.lean",
+      "module": "GeometryNext.RawPlainUnmarkedField",
+      "sha256": "91acbd866624946958b334fe7c42ba63ba264575f0462c88f3832b48ea438b09"
+    },
+    {
+      "path": "GeometryNext/RawPlainUnmarkedRestrictedField.lean",
+      "module": "GeometryNext.RawPlainUnmarkedRestrictedField",
+      "sha256": "7d5b9b3883578d5a2b6b27b379e923004bd8fe0aaeb12b367dc4896cb56562aa"
+    },
+    {
+      "path": "GeometryNext/RawPrimeGeometry.lean",
+      "module": "GeometryNext.RawPrimeGeometry",
+      "sha256": "21de0a012f38eae5c968ff707b968e14d72eb0764c47576ded880be678febb89"
+    },
+    {
+      "path": "GeometryNext/RawSourceClosed.lean",
+      "module": "GeometryNext.RawSourceClosed",
+      "sha256": "e89ef8acbb09795912a1e339318e53248a035955370473693e9f28480e09ce8c"
+    },
+    {
+      "path": "GeometryNext/RawSourceFields.lean",
+      "module": "GeometryNext.RawSourceFields",
+      "sha256": "15140e007f44952ffaab014e9054a8c55ba19838c2631583eaa65b4f64bffcc6"
+    },
+    {
+      "path": "GeometryNext/SharedGeometry.lean",
+      "module": "GeometryNext.SharedGeometry",
+      "sha256": "45febe08b5cc9292fd638f94952d71e7ff3bc64a7c0721a51c9b0fddde576890"
+    },
+    {
+      "path": "GeometryNext/StrongContinuationAssembly.lean",
+      "module": "GeometryNext.StrongContinuationAssembly",
+      "sha256": "ecf85d810000322c5b8c82afa436ae70081471085ad411553acf289cc3e5f71e"
+    },
+    {
+      "path": "GeometryNext/TailGeometricTail.lean",
+      "module": "GeometryNext.TailGeometricTail",
+      "sha256": "2d9f15a151805fa7206a811cc33045f00e2b4d97758eb7b379046a7350ea4426"
+    },
+    {
+      "path": "GeometryNext/TailLargeDyad.lean",
+      "module": "GeometryNext.TailLargeDyad",
+      "sha256": "1594585eacee2efc07d33610bb80135ce98f0965c64041022af85e94ff8b927c"
+    },
+    {
+      "path": "GeometryNext/TailLargeSaving.lean",
+      "module": "GeometryNext.TailLargeSaving",
+      "sha256": "df0ac1e533da79bae08a2228f37530867d64d2e288698031f7f5f75c5dac2d1b"
+    },
+    {
+      "path": "GeometryNext/TailLargeTail.lean",
+      "module": "GeometryNext.TailLargeTail",
+      "sha256": "eeba3168cc6d4f5d99c01b4240d26d06a93700e6a4d7726e048ab88f5e67b7b5"
+    },
+    {
+      "path": "GeometryNext/TailPhysicalLargeTail.lean",
+      "module": "GeometryNext.TailPhysicalLargeTail",
+      "sha256": "8711d2985597363320bc3b8f3cc354c626cf134861d37464bcf18c2778cce8a7"
+    },
+    {
+      "path": "GeometryNext/TailPhysicalSmallTail.lean",
+      "module": "GeometryNext.TailPhysicalSmallTail",
+      "sha256": "3ed8ede4d05e2e331dd05bf2600830d4367616b86c21a1e42a95a9299022a6a8"
+    },
+    {
+      "path": "GeometryNext/TailSmallTail.lean",
+      "module": "GeometryNext.TailSmallTail",
+      "sha256": "64b3845b5d7a634714a4a0996c4aacd5b7dcd086533013e4be627e22372dd716"
+    },
+    {
+      "path": "GeometryNext/TailTailScales.lean",
+      "module": "GeometryNext.TailTailScales",
+      "sha256": "6cd90702c55dfb316c6278d33ccf1220a105311a54a686cb6b572014525f1133"
+    },
+    {
+      "path": "MarkerMassReflection.lean",
+      "module": "MarkerMassReflection",
+      "sha256": "590d987e4b230627b28e60e8f18fb69eaba725d06a32985e234dd097d8e7f91c"
+    },
+    {
+      "path": "VerifiedEnergyAdmission.lean",
+      "module": "VerifiedEnergyAdmission",
+      "sha256": "9a161fd330dd727c32e29a0fe5983110bc07d8c89747ca1357f9ab07526f9078"
+    }
+  ],
+  "direct_external_imports": [
+    "OAI.NumberTheory.DirichletL.Detector.Basic",
+    "OAI.NumberTheory.DirichletL.Detector.CanonicalPhysicalRows",
+    "OAI.NumberTheory.DirichletL.Detector.CentralCubeNorm",
+    "OAI.NumberTheory.DirichletL.Detector.CentralDyadicWeight",
+    "OAI.NumberTheory.DirichletL.Detector.CentralExponent",
+    "OAI.NumberTheory.DirichletL.Detector.DetectorBatch",
+    "OAI.NumberTheory.DirichletL.Detector.DetectorInverseRawField",
+    "OAI.NumberTheory.DirichletL.Detector.DetectorMomentFiberGates",
+    "OAI.NumberTheory.DirichletL.Detector.DetectorPlainUnmarkedField",
+    "OAI.NumberTheory.DirichletL.Detector.FinalAssemblyCertifiedBands",
+    "OAI.NumberTheory.DirichletL.Detector.FinalAssemblyCollected",
+    "OAI.NumberTheory.DirichletL.Detector.FinalAssemblyData",
+    "OAI.NumberTheory.DirichletL.Detector.FinalAssemblyMomentInput",
+    "OAI.NumberTheory.DirichletL.Detector.FinalAssemblyMomentMono",
+    "OAI.NumberTheory.DirichletL.Detector.FinalAssemblySourceCount",
+    "OAI.NumberTheory.DirichletL.Detector.FinalAssemblyUnconditional",
+    "OAI.NumberTheory.DirichletL.Detector.FiniteProductBounds",
+    "OAI.NumberTheory.DirichletL.Detector.FiniteProductX",
+    "OAI.NumberTheory.DirichletL.Detector.GaussianCommon",
+    "OAI.NumberTheory.DirichletL.Detector.GaussianPhysicalMass",
+    "OAI.NumberTheory.DirichletL.Detector.GlobalCorrection",
+    "OAI.NumberTheory.DirichletL.Detector.GramIdealSummation",
+    "OAI.NumberTheory.DirichletL.Detector.LowActualIdealLists",
+    "OAI.NumberTheory.DirichletL.Detector.LowActualReflectedEnergy",
+    "OAI.NumberTheory.DirichletL.Detector.LowCentralGeometry",
+    "OAI.NumberTheory.DirichletL.Detector.LowCentralTuple",
+    "OAI.NumberTheory.DirichletL.Detector.LowGramScale",
+    "OAI.NumberTheory.DirichletL.Detector.LowInverseNormalize",
+    "OAI.NumberTheory.DirichletL.Detector.LowNominalEnergy",
+    "OAI.NumberTheory.DirichletL.Detector.LowNominalGeometry",
+    "OAI.NumberTheory.DirichletL.Detector.LowReflectedExponent",
+    "OAI.NumberTheory.DirichletL.Detector.LowReflectedLength",
+    "OAI.NumberTheory.DirichletL.Detector.LowSelectedBound",
+    "OAI.NumberTheory.DirichletL.Detector.LowTupleGram",
+    "OAI.NumberTheory.DirichletL.Detector.PhysicalCrudeMass",
+    "OAI.NumberTheory.DirichletL.Detector.PrincipalContours",
+    "OAI.NumberTheory.DirichletL.Detector.PrincipalInput",
+    "OAI.NumberTheory.DirichletL.Detector.PrincipalNormalizer",
+    "OAI.NumberTheory.DirichletL.Detector.PrincipalRemainderBounds",
+    "OAI.NumberTheory.DirichletL.Detector.PrincipalResidueActual",
+    "OAI.NumberTheory.DirichletL.Detector.PrincipalTransport",
+    "OAI.NumberTheory.DirichletL.Detector.RayCharacterFamily",
+    "OAI.NumberTheory.DirichletL.Detector.RayPoolDisjoint",
+    "OAI.NumberTheory.DirichletL.Detector.RayPoolGood",
+    "OAI.NumberTheory.DirichletL.Detector.RayPoolThresholds",
+    "OAI.NumberTheory.DirichletL.Dictionary.InverseMarkedReferenceFiberEnergy",
+    "OAI.NumberTheory.DirichletL.Dictionary.InverseMarkedUniform",
+    "OAI.NumberTheory.DirichletL.Endpoint",
+    "OAI.NumberTheory.DirichletL.Energy.Bands",
+    "OAI.NumberTheory.DirichletL.Hecke.CommonProbe",
+    "OAI.NumberTheory.DirichletL.Hecke.DetectorAmplitudeFirst",
+    "OAI.NumberTheory.DirichletL.Hecke.DetectorDyadicGeometry",
+    "OAI.NumberTheory.DirichletL.Hecke.DetectorPhysicalSelection",
+    "OAI.NumberTheory.DirichletL.Hecke.DetectorRawBranches",
+    "OAI.NumberTheory.DirichletL.Hecke.Dirichlet",
+    "OAI.NumberTheory.DirichletL.Hecke.ModulusRefinement",
+    "OAI.NumberTheory.DirichletL.Hecke.PrimitiveSupremum",
+    "OAI.NumberTheory.DirichletL.Hecke.SignalBounds",
+    "OAI.NumberTheory.DirichletL.Hecke.SignalIdentity",
+    "OAI.NumberTheory.DirichletL.Hecke.SignalShift",
+    "OAI.NumberTheory.DirichletL.Hecke.ZeroSupremum",
+    "OAI.NumberTheory.DirichletL.Inversion.InitialPhysicalSlots",
+    "OAI.NumberTheory.DirichletL.Moments.DetectorEnergyInitialState",
+    "OAI.NumberTheory.DirichletL.Moments.DetectorPlainCapacity",
+    "OAI.NumberTheory.DirichletL.Moments.DetectorPlainExceptional",
+    "OAI.NumberTheory.DirichletL.Moments.DetectorPlainFiberSource",
+    "OAI.NumberTheory.DirichletL.Moments.DetectorPlainMarkedState",
+    "OAI.NumberTheory.DirichletL.Moments.DetectorPlainMomentParameters",
+    "OAI.NumberTheory.DirichletL.Moments.DetectorPlainProfileControl",
+    "OAI.NumberTheory.DirichletL.Moments.DetectorPlainRelativeClass",
+    "OAI.NumberTheory.DirichletL.Moments.DetectorPlainStateDictionary",
+    "OAI.NumberTheory.DirichletL.Moments.DetectorPlainUnmarkedState",
+    "OAI.NumberTheory.DirichletL.Moments.NaturalFixedRaySourceFreeExceptional",
+    "OAI.NumberTheory.DirichletL.Nonvanishing",
+    "OAI.NumberTheory.DirichletL.ParametersHighDataFine",
+    "OAI.NumberTheory.DirichletL.PrimeRows.CanonicalCubeBins",
+    "OAI.NumberTheory.DirichletL.PrimeRows.CentralCube",
+    "OAI.NumberTheory.DirichletL.PrimeRows.CentralErrorSaving",
+    "OAI.NumberTheory.DirichletL.PrimeRows.CentralSupportedSplit",
+    "OAI.NumberTheory.DirichletL.PrimeRows.CubeBinPartition",
+    "OAI.NumberTheory.DirichletL.PrimeRows.CubeFiniteError",
+    "OAI.NumberTheory.DirichletL.PrimeRows.CubeFixedPrimes",
+    "OAI.NumberTheory.DirichletL.PrimeRows.CubeFloorDyadic",
+    "OAI.NumberTheory.DirichletL.PrimeRows.CubeNormalizer",
+    "OAI.NumberTheory.DirichletL.PrimeRows.CubeSupportedWitness",
+    "OAI.NumberTheory.DirichletL.PrimeRows.DyadIntegral",
+    "OAI.NumberTheory.DirichletL.PrimeRows.NonfloorArithmetic",
+    "OAI.NumberTheory.DirichletL.PrimeRows.NonfloorClass",
+    "OAI.NumberTheory.DirichletL.PrimeRows.NonfloorCollected",
+    "OAI.NumberTheory.DirichletL.PrimeRows.NonfloorExponent",
+    "OAI.NumberTheory.DirichletL.PrimeRows.NonfloorIntegral",
+    "OAI.NumberTheory.DirichletL.PrimeRows.NonfloorNormalized",
+    "OAI.NumberTheory.DirichletL.PrimeRows.PhysicalDyad",
+    "OAI.NumberTheory.DirichletL.PrimeRows.PhysicalPartition",
+    "OAI.NumberTheory.DirichletL.PrimeRows.SmallDyad",
+    "OAI.NumberTheory.DirichletL.PrimeRows.SmallSum",
+    "OAI.NumberTheory.DirichletL.PrincipalSignalComparison",
+    "OAI.NumberTheory.DirichletL.PrincipalSlotEstimate",
+    "OAI.NumberTheory.DirichletL.Reflection.ActualSizeCaps",
+    "OAI.NumberTheory.DirichletL.Reflection.BranchCount",
+    "OAI.NumberTheory.DirichletL.Reflection.CanonicalCellArithmetic",
+    "OAI.NumberTheory.DirichletL.Reflection.CompletedAggregation",
+    "OAI.NumberTheory.DirichletL.Reflection.CompletedCanonicalEnergy",
+    "OAI.NumberTheory.DirichletL.Reflection.CompletedFiberSource",
+    "OAI.NumberTheory.DirichletL.Reflection.CountBudget",
+    "OAI.NumberTheory.DirichletL.Reflection.DyadBudget",
+    "OAI.NumberTheory.DirichletL.Reflection.DyadCompletionEnergy",
+    "OAI.NumberTheory.DirichletL.Reflection.FullEnergyBasic",
+    "OAI.NumberTheory.DirichletL.Reflection.GlobalEnergy",
+    "OAI.NumberTheory.DirichletL.Reflection.InactiveEnergy",
+    "OAI.NumberTheory.DirichletL.Reflection.InactiveSource",
+    "OAI.NumberTheory.DirichletL.Reflection.LiteralNormalized",
+    "OAI.NumberTheory.DirichletL.Reflection.LowBranchSum",
+    "OAI.NumberTheory.DirichletL.Reflection.LowCaps",
+    "OAI.NumberTheory.DirichletL.Reflection.LowChoiceEnergy",
+    "OAI.NumberTheory.DirichletL.Reflection.LowCompletedFiber",
+    "OAI.NumberTheory.DirichletL.Reflection.LowCompletedRows",
+    "OAI.NumberTheory.DirichletL.Reflection.LowDyads",
+    "OAI.NumberTheory.DirichletL.Reflection.LowExponent",
+    "OAI.NumberTheory.DirichletL.Reflection.LowFixedMember",
+    "OAI.NumberTheory.DirichletL.Reflection.LowFrozenEnergy",
+    "OAI.NumberTheory.DirichletL.Reflection.LowFull",
+    "OAI.NumberTheory.DirichletL.Reflection.LowFullBudget",
+    "OAI.NumberTheory.DirichletL.Reflection.LowGlobalBudget",
+    "OAI.NumberTheory.DirichletL.Reflection.LowInactiveEnergy",
+    "OAI.NumberTheory.DirichletL.Reflection.LowMemberBudget",
+    "OAI.NumberTheory.DirichletL.Reflection.LowMemberGeometry",
+    "OAI.NumberTheory.DirichletL.Reflection.LowOriginalEnergy",
+    "OAI.NumberTheory.DirichletL.Reflection.LowPunctureLists",
+    "OAI.NumberTheory.DirichletL.Reflection.LowRetained",
+    "OAI.NumberTheory.DirichletL.Reflection.LowRetainedBudget",
+    "OAI.NumberTheory.DirichletL.Reflection.LowSector",
+    "OAI.NumberTheory.DirichletL.Reflection.LowWidth",
+    "OAI.NumberTheory.DirichletL.Reflection.MemberChoiceTransport",
+    "OAI.NumberTheory.DirichletL.Reflection.OriginalCellBounds",
+    "OAI.NumberTheory.DirichletL.Reflection.PunctureAbsorption",
+    "OAI.NumberTheory.DirichletL.Reflection.RetainedCaps",
+    "OAI.NumberTheory.DirichletL.Reflection.SourceBudget",
+    "OAI.NumberTheory.DirichletL.Reflection.SourcePhysical",
+    "OAI.NumberTheory.DirichletL.Reflection.SourceScaleCaps",
+    "OAI.NumberTheory.DirichletL.Reflection.SurvivingGate",
+    "OAI.NumberTheory.DirichletL.Reflection.TupleMembers"
+  ],
+  "final_comparator_result_not_inferred_from_this_manifest": true
+}

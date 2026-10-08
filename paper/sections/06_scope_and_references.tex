@@ -1,0 +1,49 @@
+\section{The limit of the parameter refinement}
+
+The perturbation is close to the limit of this particular balanced
+witness estimate. At $y=0$ the zero-margin quadratic is
+\[
+ Q_p(\delta)=(2448+6048p)\delta^2+
+              (-1896+11520p)\delta+370-22200p.
+\]
+Its discriminant test gives
+\[
+ 4AC-B^2=-576(1162800p^2+286020p-49).
+\]
+The vertex remains inside $0\le\delta\le5/6$ near the present
+perturbation. Therefore this estimate cannot support a larger
+perturbation past
+\[
+ p_*=-\frac{1589}{12920}+\frac{7\sqrt{465053}}{38760}
+       =0.0001711975385\ldots,
+\]
+whose loss-free crossing is approximately $0.8749572006$.
+This is a limitation of the retained endpoint inequality, not a
+lower bound for the true physical source or other arithmetic methods.
+
+\subsection*{Supplementary verification}
+
+The \href{https://github.com/Gaozhongpai/RH/tree/main/framework/programs/fixed_strip/verification/geometry_endpoint_verification_2026-10-07}{supplementary archive}
+contains exact arithmetic checks and a formal proof using the pinned
+OpenAI inputs. The Hecke, Dirichlet and standard-zeta declarations
+compiled; separate target comparison and kernel replay were recorded
+for standard zeta. These existing records accompany the conventional
+proof above.
+
+\subsection*{Attribution and preparation}
+
+The cubic-theta construction and unchanged arithmetic inputs are due
+to OpenAI \cite{OAI26}. The contribution here is the modified-scale
+low estimate, endpoint certificate and recovery at the new boundary.
+AI tools assisted with the derivations, algebraic checks and drafting.
+
+\begin{thebibliography}{9}
+\bibitem{OAI26}
+\raggedright
+OpenAI,
+\emph{The Quasi-Riemann Hypothesis: A Zero-Free Half-Plane
+$\Rea s>7/8$}, released preprint, 30 September 2026.
+Version used: \texttt{adc7f1241b42e322a6451854ab7e4b4c146bf78a}.
+\url{https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/paper.pdf}.
+\end{thebibliography}
+\end{document}

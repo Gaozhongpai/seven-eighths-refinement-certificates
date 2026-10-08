@@ -1,0 +1,11 @@
+theorem OpenAINextStripAttempt.StrongerResult.zeta_nonzero : ∀ {s : ℂ}, 20999 / 24000 < s.re → riemannZeta s ≠ 0 :=
+fun {s} hs =>
+  if h1 : s = 1 then Eq.mpr (id (congrFun' (congrArg Ne (congrArg riemannZeta h1)) 0)) riemannZeta_one_ne_zero
+  else
+    have hh :=
+      OpenAINextStripAttempt.StrongerResult.dirichlet_nonzero 1 (of_decide_eq_true (id (Eq.refl true))) 1 s hs
+        (of_eq_true
+          (Eq.trans (congrArg Not (Eq.trans (congr (congrArg And (eq_self 1)) (eq_false h1)) (and_false True)))
+            not_false_eq_true));
+    Eq.mp (congrFun' (congrArg Ne (congrFun DirichletCharacter.LFunction_modOne_eq s)) 0) hh
+'OpenAINextStripAttempt.StrongerResult.zeta_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,181 @@
+\section{The high estimate and its endpoint}\label{gex:high-section}
+
+Let \(\beta_*\) be the supremum of \(1/2\) and the real parts of
+nontrivial zeros of primitive finite-order Hecke \(L\)-functions over
+\(F\). By \cite{OAI26}, \(\beta_*\le7/8\).
+Suppose \(\beta_*>\theta\), and put
+\(\Gamma=\beta_*-\theta>0\), \(\alpha=5/6\).
+
+\subsection{Balancing the witness counts}
+
+For rows \(q_u\asymp U=Z^d\), let \(R\) be the counting exponent:
+\(\#\mathcal B\ll U^{R+\varepsilon}(1+T_1)^A\), with a fixed
+height order \(A\). Use the detector bins of \cite[Section 8]{OAI26},
+with real parameter \(a\) and freely chosen cutoff \(t\in[1,3/2]\).
+In a nonfloor bin write \(\delta=2a-1\) and let
+\(q\in[0,\delta/2]\) be the length-weighted prime amplitude; error
+slots receive amplitude zero. The ceiling \(a\le\beta_*\) puts
+actual bins in \(\delta\le3/4\); we retain the larger closed
+rectangle for the endpoint certificate. We repeat the selection proof of
+\cite[Proposition 19.2]{OAI26} with \(\widehat\kappa=3/4\).
+Its printed hypothesis \(\beta_*>7/8\) is unnecessary for this
+proof: the plain moment requires only
+\(\beta_*\le(1+\widehat\kappa)/2\), already available here.
+
+The coefficient convention matters. Put
+\(\Theta=\langle\eta,\widehat{\mathcal T}\rangle\).
+Conjugating entire witness and slot products when needed, the
+prime coefficients are fixed combinations
+\[
+ \nu(p)\mathbf1_{p\in1_{\mathcal T}}
+  =|\mathcal T|^{-1}
+    \sum_{\vartheta\in\widehat{\mathcal T}}(\nu\vartheta)(p),
+ \qquad \nu\in\Theta .
+\]
+Profiles and zero extensions are conjugated with their factors.
+Large retained rows induce outside \(\Theta\), since they ramify
+at a good prime; bounded unit rows are handled separately.
+
+For witness lengths \(r<1\), \(m<1/2\), the inverse and doubled
+plain capacities are \((1-r)/2\) and \(2(1-2m)/9\).
+The witnesses satisfy
+\[
+ r+m\ge t-O(\varepsilon),\qquad
+ r\le t+O(1/\log U)
+\]
+by \cite[Proposition 8.3]{OAI26}. Selecting whole slots in decreasing
+amplitude gives the two count exponents
+\[
+ A_I(r)=1-\delta\{x+(1-x)r\},\qquad
+ S_t(r)=1-\delta\{4x/9+(2-8x/9)(t-r)\},\quad x=q/\delta .
+\]
+The first decreases and the second increases with \(r\).
+Their intersection gives
+\[
+ R_{\rm short}(t)=1-\delta+
+       \frac{\delta P_x}{D_x}(3/2-t).
+\]
+For \(r\ge1\), inverse amplification and the upper bound for \(r\)
+give \(L(t)=1-\delta+(\alpha-\delta)(t-1)\).
+The unweighted plain bound handles \(m\ge1/2\).
+Zero-capacity neighborhoods use these unweighted estimates,
+not a marked estimate with vanishing decrement.
+Thus the count is bounded by
+\(\max\{R_{\rm short}(t),L(t)\}\), with the requested small losses.
+The inequality \(r\le t+O(1/\log U)\) is essential here:
+it bounds the increasing long-inverse exponent, rather than merely
+asserting that one of the witnesses is large.
+
+For \(1/50<\delta<\alpha\), balance these bounds by setting
+\begin{equation}\label{gex:balanced-count}
+\begin{gathered}
+ y=1/2-x,\quad D_x=(37+34y)/18,\quad P_x=(7+18y+8y^2)/9,\\
+ \mathcal J=(\alpha-\delta)D_x+\delta P_x
+ =\{185+170y+(-138+12y+96y^2)\delta\}/108,\\
+ t_*=1+\frac{\delta P_x}{2\mathcal J},\qquad
+ R_*=1-\delta+\frac{(\alpha-\delta)\delta P_x}{2\mathcal J}.
+\end{gathered}
+\end{equation}
+Indeed \(D_x(R_{\rm short}-L)=
+\delta P_x/2-\mathcal J(t-1)\).
+Since \(35/54\le\mathcal J\le5/2\), this yields uniformly
+\begin{equation}\label{gex:row-count-with-loss}
+ R\le R_*+c_{\rm row},
+\end{equation}
+with arbitrarily small prescribed witness, capacity and rounding
+loss \(c_{\rm row}\). At \(\delta=\alpha\) use
+\(R\le1-\delta+c_{\rm row}\); the floor \(a=51/100\) uses \(R=1\).
+
+The new scales supply these moments: if
+\(1/2\le d\le h+\zeta\) and \(0<\zeta<257/12000=5\ell-h\),
+then \(\ell/d>1/5>7/37\).
+Choose the moment mesh first, then sufficiently many even, disjoint
+physical slots. The plain moment's auxiliary prime pool remains
+separate. Their strict exponent gaps absorb annular
+\(O(1/\log U)\) errors without changing any source mask.
+
+\subsection{An exact endpoint inequality}
+
+For sufficiently small \(e>0\), repeat the fixed-bin contour proof
+of \cite[Lemma 20.1]{OAI26} on
+\[
+ (\Rea s,\Rea w,\Rea z)=(a+16e,1-a-6e,17/50).
+\]
+The global line \(\beta_*+20e\) and buffered rectangles remain
+valid; \(a\ge51/100\) and \(\Rea(s+w)\ge1+10e\) admit the
+unchanged first Euler region. Form amplitude and witness sets
+only on the retained contour. Joint conductor allocation bounds
+the numerator and all error slots together.
+
+The actual Mellin and slot powers give, relative to \(C(\theta)\),
+\begin{equation}\label{gex:high-central-exponent}
+ E_\theta(d)=a-\theta+h(17/50-1/6)-a l_y-\ell/2+q\ell
+             +d(R+\delta/2-17/50).
+\end{equation}
+In particular \(q\ell\) is already measured at base \(Z\).
+
+\begin{lemma}\label{gex:endpoint}
+For \(0\le\delta\le5/6\), \(0\le x\le1/2\), and \(p=1/6000\),
+substitution of \(q=\delta x\), \(R=R_*\) gives
+\(E_\theta(h)\le-1/200000\).
+\end{lemma}
+\begin{proof}
+Write \(E_0=-1/48+(2/3)\delta+\delta x/6-(13/16)(1-R_*)\).
+The new geometry gives exactly
+\[
+ E_\theta(h)=E_0+p\{-1/4+\delta(1+x)+(3/2)R_*\}.
+\]
+For \(m=1/200000\), multiplication gives
+\(10368\mathcal J(-E_\theta(h)-m)=A\delta^2+B\delta+C\), where
+\begin{align*}
+ A&=6(32032y^3+94028y^2+131008y+51021)/125,\\
+ B&=-(650644y^2+9423268y+5918793)/3125,\\
+ C&=6186(34y+37)/625,
+\end{align*}
+and
+\[
+ 4AC-B^2=\frac{\begin{aligned}
+ &19787957489264y^4+69061294318816y^3\\[-2pt]
+ &+50726295758792y^2+10600196228952y+1254989151
+ \end{aligned}}{9765625}>0 .
+\]
+Since \(A,\mathcal J>0\), completing the square proves the claim:
+\(4A(A\delta^2+B\delta+C)=(2A\delta+B)^2+4AC-B^2>0\).
+\end{proof}
+
+\subsection{All moderate ranges}
+
+The count envelopes have \(1-\delta\le R\le3/2\); their frequency
+slope \(R+\delta/2-17/50\) lies between \(4/25\) and \(2\).
+Thus \(d=h\) controls \(1/2\le d\le h\); extending to \(h+\zeta\)
+costs \(2\zeta\). The other branches give
+\[
+\begin{array}{ll}
+ \text{floor:}&E_\theta(h)\le-7/1200+15p/8,\\
+ \delta=5/6,\ R=1-\delta:
+   &E_\theta(h)\le-1/48-\delta/16+15p/8,\\
+ 1/100\le d\le1/2:
+   &E_\theta(d)\le-49/14400+139p/150 .
+\end{array}
+\]
+The last uses \(R=76/75-2\delta/3\), whose slope is positive
+and whose geometry derivative is \(a/2+1/100+q\le139/150\).
+All three margins exceed \(m\).
+
+If nominal row and frequency exponents \(d,v\) differ, with
+\(v\le h+\zeta\), \(d-v\le\mu\), their extra cost is at most
+\(2\zeta+(3/2)\mu\). Including contour shifts, amplitude width
+\(\vartheta\), central power allowance \(\varepsilon_0\), and
+the remaining finite loss \(\lambda_{\rm loss}\), the total is bounded by
+\begin{equation}\label{gex:central-loss-budget}
+ \Lambda=h c_{\rm row}+2\zeta+(3/2)\mu+
+          26e+(K+8)\varepsilon_0+\vartheta/5+\lambda_{\rm loss} .
+\end{equation}
+Here \(26\) bounds \(16-6l_y+12v\), and \(\ell<1/5\).
+The compact parameter ranges and positive denominator bounds make
+every loss uniform. Choose their budgets before the target,
+the mesh before \(K\), and \(\varepsilon_0\) after \(K\), so that
+\(\Lambda<m/4\). Reserving another \(m/4\) for the normalizer
+and finite dyadic multiplicities leaves a positive saving.
+Comparison with \(C(\beta_*)\) subtracts the further positive gap
+\(\Gamma\). This accounts for every moderate nonprincipal row.

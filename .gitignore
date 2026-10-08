@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+build/
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.pdf
+.DS_Store
+X_POST.md

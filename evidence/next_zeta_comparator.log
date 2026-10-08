@@ -1,0 +1,277 @@
+Building NextStripChallenges.ZetaTheta
+⚠ [8924/8924] Built NextStripChallenges.ZetaTheta (8.5s)
+warning: NextStripChallenges/ZetaTheta.lean:4:8: declaration uses `sorry`
+Build completed successfully (8924 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, OpenAINextStripAttempt.StrongerResult.zeta_nonzero, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from NextStripChallenges.ZetaTheta
+Building GeometryNext.MainStrongStrip
+ℹ [4595/4952] Replayed MarkerMassReflection
+info: MarkerMassReflection.lean:77:0: 'OpenAINextStripAttempt.marker_reflected_exponent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MarkerMassReflection.lean:78:0: 'OpenAINextStripAttempt.marker_correction_nonpositive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MarkerMassReflection.lean:154:0: 'OpenAINextStripAttempt.marker_reflected_exponent_with_length' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: MarkerMassReflection.lean:155:0: 'OpenAINextStripAttempt.marker_correction_seven_eighths' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MarkerMassReflection.lean:156:0: 'OpenAINextStripAttempt.perturbed_normalization' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [4799/5228] Replayed GeometryLowExponent
+info: GeometryLowExponent.lean:99:0: 'OpenAINextStripAttempt.ActualLowExtension.original_surviving_low_exponent_marker' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [5157/5228] Replayed GeometryNext.DetectorSourceScales
+warning: GeometryNext/DetectorSourceScales.lean:15:51: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: GeometryNext/DetectorSourceScales.lean:20:51: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: GeometryNext/DetectorSourceScales.lean:64:59: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: GeometryNext/DetectorSourceScales.lean:64:55: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: GeometryNext/DetectorSourceScales.lean:77:10: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: GeometryNext/DetectorSourceScales.lean:105:63: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [5171/5228] Replayed GeometryNext.DetectorPhysicalInverse
+info: GeometryNext/DetectorPhysicalInverse.lean:94:40: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: GeometryNext/DetectorPhysicalInverse.lean:94:24: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: GeometryNext/DetectorPhysicalInverse.lean:94:36: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [5176/5228] Replayed GeometryNext.DetectorCentralTuple
+warning: GeometryNext/DetectorCentralTuple.lean:120:24: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: GeometryNext/DetectorCentralTuple.lean:120:42: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [5182/5228] Replayed GeometryNext.DetectorRemoteMass
+warning: GeometryNext/DetectorRemoteMass.lean:27:41: Variable name `hMarker0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hMarker0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: GeometryNext/DetectorRemoteMass.lean:27:63: Variable name `hMarker1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hMarker1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [5185/5228] Replayed GeometryNext.DetectorGaussianRemote
+warning: GeometryNext/DetectorGaussianRemote.lean:18:51: Variable name `hMarker0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hMarker0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+ℹ [5192/5228] Replayed EulerGeometryExtension
+info: EulerGeometryExtension.lean:157:0: 'OAI.SevenEighths.StrongerEuler.unramifiedClosed_open_region_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: EulerGeometryExtension.lean:158:0: 'OAI.SevenEighths.StrongerEuler.globalClosedCorrection_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: EulerGeometryExtension.lean:159:0: 'OAI.SevenEighths.StrongerEuler.globalClosedCorrection_analytic_x' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [5193/5228] Replayed GeometryNext.PrincipalCorrection
+info: GeometryNext/PrincipalCorrection.lean:29:0: 'OpenAINextStripAttempt.PrincipalExtension.actual_sourceCorrection_analytic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GeometryNext/PrincipalCorrection.lean:30:0: 'OpenAINextStripAttempt.PrincipalExtension.actual_sourceCorrection_contract' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [5342/5565] Replayed GeometryNext.PrincipalRayNormalizer
+info: GeometryNext/PrincipalRayNormalizer.lean:55:0: 'OpenAINextStripAttempt.PrincipalExtension.RayNormalizer.actual_ray_normalizer_inverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [5348/5565] Replayed GeometryNext.DetectorFinalSource
+info: GeometryNext/DetectorFinalSource.lean:60:0: 'OpenAINextStripAttempt.ActualLowExtension.normalizedProbe_low' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [6737/6785] Replayed GeometryNext.GeometryData
+warning: GeometryNext/GeometryData.lean:79:6: Unused tactic linter: `change ell j ≤ t / 400` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: GeometryNext/GeometryData.lean:84:6: Unused tactic linter: `change ell j ≤ detectorMesh Δ t / 400` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: GeometryNext/GeometryData.lean:216:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+info: GeometryNext/GeometryData.lean:228:0: 'OpenAINextStripAttempt.StrongerData.selected_source_low' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GeometryNext/GeometryData.lean:230:0: 'OpenAINextStripAttempt.StrongerData.exists_selected_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GeometryNext/GeometryData.lean:231:0: 'OpenAINextStripAttempt.StrongerData.selected_final_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GeometryNext/GeometryData.lean:232:0: 'OpenAINextStripAttempt.StrongerData.selected_central_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [7104/7177] Replayed GeometryNext.TailSmallTail
+warning: GeometryNext/TailSmallTail.lean:15:38: Variable name `hβ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hβ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [7111/7177] Replayed GeometryNext.HighCanonicalTails
+warning: GeometryNext/HighCanonicalTails.lean:32:55: This simp argument is unused:
+  ← Geometry.h_literal
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [← Geometry.lx_literal, ← Geometry.ly_literal] at hmain
+
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ℹ [7119/7177] Replayed GeometryNext.PrincipalSlots
+info: GeometryNext/PrincipalSlots.lean:242:0: 'OpenAINextStripAttempt.PrincipalExtension.actual_principal_slot_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GeometryNext/PrincipalSlots.lean:243:0: 'OpenAINextStripAttempt.PrincipalExtension.weighted_principal_product_error_linear' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [7120/7177] Replayed GeometryNext.PrincipalRegionSlots
+info: GeometryNext/PrincipalRegionSlots.lean:290:0: 'OpenAINextStripAttempt.PrincipalExtension.actual_region_slot_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [7121/7177] Replayed GeometryNext.PrincipalEulerPaths
+info: GeometryNext/PrincipalEulerPaths.lean:61:0: 'OpenAINextStripAttempt.PrincipalExtension.EulerPaths.globalClosedCorrection_analytic_w' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GeometryNext/PrincipalEulerPaths.lean:62:0: 'OpenAINextStripAttempt.PrincipalExtension.EulerPaths.globalClosedCorrection_analytic_z' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [7129/7177] Replayed GeometryNext.PrincipalSignalShift
+info: GeometryNext/PrincipalSignalShift.lean:112:0: 'OpenAINextStripAttempt.PrincipalExtension.SignalShift.contour_shift_left' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [7130/7177] Replayed GeometryNext.PrincipalSignalBounds
+info: GeometryNext/PrincipalSignalBounds.lean:32:0: 'OpenAINextStripAttempt.PrincipalExtension.SignalBounds.contour_shift_left' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [7131/7177] Replayed GeometryNext.PrincipalResidue
+info: GeometryNext/PrincipalResidue.lean:239:0: 'OpenAINextStripAttempt.PrincipalExtension.Residue.exists_slotResidue_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [7132/7177] Replayed GeometryNext.PrincipalActualSource
+info: GeometryNext/PrincipalActualSource.lean:188:0: 'OpenAINextStripAttempt.PrincipalExtension.Source.exists_normalized_actual_source_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [7138/7177] Replayed GeometryNext.EndpointGeometry
+info: GeometryNext/EndpointGeometry.lean:61:0: 'OpenAINextStripAttempt.MovingEndpoint.margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [7139/7177] Replayed GeometryNext.HighExponent
+warning: GeometryNext/HighExponent.lean:68:46: Variable name `hd` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hd
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: GeometryNext/HighExponent.lean:118:41: Variable name `hehi` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hehi
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: GeometryNext/HighExponent.lean:119:37: Variable name `hmeshhi` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hmeshhi
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+ℹ [7157/7177] Replayed GeometryNext.HighActualBeta
+info: GeometryNext/HighActualBeta.lean:113:0: 'OpenAINextStripAttempt.CountedHighExtension.actual_nonfloor_rows_saving_actual_beta' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [7158/7177] Replayed GeometryNext.HighFullFromRaw
+info: GeometryNext/HighFullFromRaw.lean:159:0: 'OpenAINextStripAttempt.CountedHighExtension.actual_high_probe_from_raw_moments' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [7168/7177] Replayed GeometryNext.RawSourceFields
+info: GeometryNext/RawSourceFields.lean:137:0: 'OpenAINextStripAttempt.RawExtension.SourceFields.source_moments' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [7170/7177] Replayed VerifiedEnergyAdmission
+info: VerifiedEnergyAdmission.lean:20:0: 'OpenAINextStripAttempt.verified_energy_kappa_admission' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [7171/7177] Replayed GeometryNext.RawCertifiedInputs
+info: GeometryNext/RawCertifiedInputs.lean:99:0: 'OpenAINextStripAttempt.RawExtension.geometry_certified_bands' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GeometryNext/RawCertifiedInputs.lean:100:0: 'OpenAINextStripAttempt.RawExtension.geometry_plain_inputs' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [7172/7177] Replayed GeometryNext.RawSourceClosed
+info: GeometryNext/RawSourceClosed.lean:42:0: 'OpenAINextStripAttempt.RawExtension.SourceFields.geometry_source_moments' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GeometryNext/RawSourceClosed.lean:43:0: 'OpenAINextStripAttempt.RawExtension.SourceFields.geometry_chosen_moment_height' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [7173/7177] Replayed GeometryNext.HighRawBridge
+warning: GeometryNext/HighRawBridge.lean:46:2: Try this: intro k hk i hi j hj hne t htheight
+info: GeometryNext/HighRawBridge.lean:84:0: 'OpenAINextStripAttempt.CountedHighExtension.actual_dyad_moments_eventually' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [7174/7177] Replayed GeometryNext.HighFixedFromRaw
+warning: GeometryNext/HighFixedFromRaw.lean:109:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+info: GeometryNext/HighFixedFromRaw.lean:125:0: 'OpenAINextStripAttempt.CountedHighExtension.geometry_fixed_high_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: GeometryNext/HighFixedFromRaw.lean:126:0: 'OpenAINextStripAttempt.CountedHighExtension.geometry_high_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [7175/7177] Replayed GeometryNext.ContinuationActual
+info: GeometryNext/ContinuationActual.lean:81:0: 'OpenAINextStripAttempt.PrincipalExtension.ContinuationBridge.actual_nonzero_of_physical_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [7176/7177] Replayed GeometryNext.StrongContinuationAssembly
+info: GeometryNext/StrongContinuationAssembly.lean:53:0: 'OpenAINextStripAttempt.StrongerResult.beta_le_theta_of_physical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [7177/7177] Replayed GeometryNext.MainStrongStrip
+warning: GeometryNext/MainStrongStrip.lean:32:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: GeometryNext/MainStrongStrip.lean:53:25: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: GeometryNext/MainStrongStrip.lean:66:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+info: GeometryNext/MainStrongStrip.lean:84:0: 'OpenAINextStripAttempt.StrongerResult.beta_le_theta' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GeometryNext/MainStrongStrip.lean:85:0: 'OpenAINextStripAttempt.StrongerResult.hecke_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GeometryNext/MainStrongStrip.lean:86:0: 'OpenAINextStripAttempt.StrongerResult.dirichlet_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: GeometryNext/MainStrongStrip.lean:87:0: 'OpenAINextStripAttempt.StrongerResult.zeta_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (7177 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, OpenAINextStripAttempt.StrongerResult.zeta_nonzero, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from GeometryNext.MainStrongStrip
+Running Lean default kernel on solution.
+Lean default kernel accepts the solution
+Your solution is okay!

@@ -1,0 +1,23 @@
+{
+  "status": "PASS_NEXT_STANDARD_ZETA",
+  "target": "OpenAINextStripAttempt.StrongerResult.zeta_nonzero",
+  "theta": "20999/24000",
+  "old_theta": "7/8",
+  "source_pin": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+  "default_Lean_kernel_replay": true,
+  "independent_Nanoda": false,
+  "upstream_sources_unchanged": 3271,
+  "extra_target_premises_allowed": false,
+  "started_epoch": 1791393836.7434776,
+  "target_build_exit_code": 0,
+  "target_build_log": "/tmp/openai-next-strip-attempt/next_target_build.log",
+  "comparator_exit_code": 0,
+  "comparator_log": "/tmp/openai-next-strip-attempt/next_zeta_comparator.log",
+  "axiom_print_exit_code": 0,
+  "axiom_print_log": "/tmp/openai-next-strip-attempt/next_target_axioms.log",
+  "statement_and_definition_comparison": "PASS",
+  "permitted_axiom_check": "PASS",
+  "new_sources_unchanged": true,
+  "finished_epoch": 1791394443.0870852,
+  "verified_scope": "Unconditional standard Mathlib riemannZeta nonzero for Re(s)>20999/24000. This does not prove RH; no new Dirichlet/Hecke target replay is inferred."
+}

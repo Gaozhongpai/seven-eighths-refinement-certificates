@@ -1,0 +1,115 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,mathrsfs}
+\usepackage{booktabs,array,enumitem}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue!40!black,citecolor=blue!40!black,
+  urlcolor=blue!50!black,
+  pdftitle={A quantitative refinement of the seven-eighths zero-free half-plane},
+  pdfauthor={Zhongpai Gao}}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\C}{\mathbb C}
+\newcommand{\OO}{\mathcal O_F}
+\newcommand{\N}{\mathrm N}
+\newcommand{\Rea}{\operatorname{Re}}
+\newcommand{\Imma}{\operatorname{Im}}
+\newcommand{\one}{\mathbf1}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+
+\title{A quantitative refinement of the seven-eighths\\zero-free half-plane}
+\author{Zhongpai Gao\\\small gaozhongpai@gmail.com}
+\date{7 October 2026}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We refine OpenAI's zero-free half-plane for all Dirichlet $L$-functions
+and all finite-order Hecke $L$-functions over $\Q(\sqrt{-3})$.
+The new boundary is $20999/24000=7/8-1/24000$, with principal poles
+allowed. We change the averaging scales in its cubic-theta probe,
+prove the corresponding low-energy estimate, and use an exact
+two-variable endpoint calculation to bound the remaining rows.
+An explicit quadratic certificate gives the required margin. The moment
+estimates remain unchanged; the proof includes the residue, tail and
+normalization costs at the new scales.
+\end{abstract}
+
+\noindent\textbf{2020 Mathematics Subject Classification.}
+11M26 (primary); 11M06, 11L05 (secondary).
+
+\noindent\textbf{Keywords.}
+Dirichlet $L$-function, Hecke $L$-function, zero-free half-plane,
+cubic theta function, marked prime factors.
+
+\section{Introduction}\label{gex:introduction}
+
+Throughout, $F=\Q(\sqrt{-3})$. OpenAI \cite{OAI26} proves that every
+Dirichlet $L$-function and every finite-order Hecke $L$-function over
+$F$ is zero-free in $\Rea s>7/8$. Its proof compares a cubic-theta
+character sum with a Mellin signal containing $1/L$. We retain this
+construction and its moment estimates, and improve the comparison
+after changing the averaging scales.
+
+\begin{theorem}\label{gex:main}
+Put $\theta=20999/24000$. Every finite-order Hecke $L$-function over
+$F$ and every Dirichlet $L$-function, including imprimitive
+presentations, is zero-free in $\Rea s>\theta$, with principal poles
+at $s=1$ excepted. In particular this holds for the Riemann zeta
+function. Every zero $\rho$ with $0<\Rea\rho<1$ of one of these
+$L$-functions satisfies
+\[
+ \frac{3001}{24000}\le\Rea\rho\le\frac{20999}{24000}.
+\]
+\end{theorem}
+
+The boundary is independent of the conductor and height. Constants
+and thresholds in the character-sum estimates may depend on the
+fixed target.
+
+The extra prime length lowers the direct estimate by $1/24000$
+while leaving the principal exponent $s-11/16$ unchanged. It also
+changes the estimate for the remaining rows. Retaining the two
+parameters in that estimate gives a quadratic that is positive
+throughout the parameter rectangle. The
+resulting margin pays the change of scales and the recovery errors.
+
+Sections~\ref{gex:source-section}--\ref{gex:low-recovery}
+establish the low estimate. Section~\ref{gex:high-section} proves
+the endpoint bound, and Section~\ref{gex:recovery-section} completes
+the recovery and continuation. The last section explains the limit
+of this parameter refinement.
+
+The unchanged inputs are listed below. The new arguments are the
+modified-scale low estimate, the endpoint certificate and the
+admission of the principal Euler correction below $7/8$.
+
+\begin{center}
+\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.44\linewidth}
+ >{\raggedright\arraybackslash}p{0.47\linewidth}}
+\toprule
+Input in \cite{OAI26} & Use here\\
+\midrule
+Calibrated probe and Poisson identity; Sections 4--7, 16
+ & Same character sum and principal signal\\
+Reflection and additive Gram; Lemma 14.3, Proposition 15.2
+ & Low estimate at the new lengths\\
+Inverse and plain moments; Sections 17--19
+ & Witness counts at $\kappa=3/4$\\
+Contour and continuation arguments; Sections 2, 10, 20
+ & Complete recovery and zero exclusion\\
+\bottomrule
+\end{tabular}
+\end{center}

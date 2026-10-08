@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: >-
+  Please cite the accompanying draft and identify the repository commit used.
+title: Seven-Eighths Refinement Certificates
+abstract: >-
+  Exact rational-arithmetic certificates and historical verification records
+  accompanying A quantitative refinement of the seven-eighths zero-free
+  half-plane. The manuscript is a draft pending independent mathematical review.
+authors:
+  - family-names: Gao
+    given-names: Zhongpai
+    orcid: https://orcid.org/0000-0003-4344-4501
+type: software
+license: MIT
+date-released: 2026-10-07
+preferred-citation:
+  type: report
+  title: A quantitative refinement of the seven-eighths zero-free half-plane
+  authors:
+    - family-names: Gao
+      given-names: Zhongpai
+  year: 2026
+  notes: Working draft, 7 October 2026; independent review pending.

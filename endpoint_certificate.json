@@ -1,0 +1,240 @@
+{
+  "adverse_unchanged_bound_examples": [
+    {
+      "R_star": "2363/3546",
+      "a": "25/36",
+      "delta": "7/18",
+      "high_endpoint": "36187/7092000",
+      "p": "1/250",
+      "q_amplitude": "7/36",
+      "row_exponent_reduction_needed_to_reach_zero": "36187/5804802",
+      "theta": "437/500",
+      "y": "0"
+    },
+    {
+      "R_star": "2363/3546",
+      "a": "25/36",
+      "delta": "7/18",
+      "high_endpoint": "37487/1418400",
+      "p": "1/50",
+      "q_amplitude": "7/36",
+      "row_exponent_reduction_needed_to_reach_zero": "37487/1195002",
+      "theta": "87/100",
+      "y": "0"
+    }
+  ],
+  "arithmetic": "Python standard-library fractions.Fraction; no floating point",
+  "count_denominator_bounds": {
+    "D_x_bounds": [
+      "37/18",
+      "3"
+    ],
+    "J_bounds": [
+      "35/54",
+      "5/2"
+    ],
+    "P_x_bounds": [
+      "7/9",
+      "2"
+    ],
+    "balanced_cutoff_bounds": [
+      "1",
+      "3/2"
+    ],
+    "parameter_rectangle": {
+      "delta": [
+        "0",
+        "5/6"
+      ],
+      "y": [
+        "0",
+        "1/2"
+      ]
+    },
+    "proof": "J=(5/6-delta)D_x+delta P_x; both weights are nonnegative.",
+    "upper_bound_factorizations": [
+      "3-D_x=17(1-2y)/18",
+      "2-P_x=(1-2y)(11+4y)/9"
+    ]
+  },
+  "endpoint": {
+    "A": [
+      {
+        "coefficient": "306126/125",
+        "delta_power": 0,
+        "y_power": 0
+      },
+      {
+        "coefficient": "786048/125",
+        "delta_power": 0,
+        "y_power": 1
+      },
+      {
+        "coefficient": "564168/125",
+        "delta_power": 0,
+        "y_power": 2
+      },
+      {
+        "coefficient": "192192/125",
+        "delta_power": 0,
+        "y_power": 3
+      }
+    ],
+    "B": [
+      {
+        "coefficient": "-5918793/3125",
+        "delta_power": 0,
+        "y_power": 0
+      },
+      {
+        "coefficient": "-9423268/3125",
+        "delta_power": 0,
+        "y_power": 1
+      },
+      {
+        "coefficient": "-650644/3125",
+        "delta_power": 0,
+        "y_power": 2
+      }
+    ],
+    "C": [
+      {
+        "coefficient": "228882/625",
+        "delta_power": 0,
+        "y_power": 0
+      },
+      {
+        "coefficient": "210324/625",
+        "delta_power": 0,
+        "y_power": 1
+      }
+    ],
+    "Q": [
+      {
+        "coefficient": "228882/625",
+        "delta_power": 0,
+        "y_power": 0
+      },
+      {
+        "coefficient": "210324/625",
+        "delta_power": 0,
+        "y_power": 1
+      },
+      {
+        "coefficient": "-5918793/3125",
+        "delta_power": 1,
+        "y_power": 0
+      },
+      {
+        "coefficient": "-9423268/3125",
+        "delta_power": 1,
+        "y_power": 1
+      },
+      {
+        "coefficient": "-650644/3125",
+        "delta_power": 1,
+        "y_power": 2
+      },
+      {
+        "coefficient": "306126/125",
+        "delta_power": 2,
+        "y_power": 0
+      },
+      {
+        "coefficient": "786048/125",
+        "delta_power": 2,
+        "y_power": 1
+      },
+      {
+        "coefficient": "564168/125",
+        "delta_power": 2,
+        "y_power": 2
+      },
+      {
+        "coefficient": "192192/125",
+        "delta_power": 2,
+        "y_power": 3
+      }
+    ],
+    "conclusion_from_supplied_row_formula": "E_theta(h)<-1/200000 on 0<=delta<=5/6, 0<=y<=1/2.",
+    "definition": "Q=10368J(-E_theta(h)-margin)",
+    "formula_identity_checked": true,
+    "four_AC_minus_B_squared": [
+      {
+        "coefficient": "1254989151/9765625",
+        "delta_power": 0,
+        "y_power": 0
+      },
+      {
+        "coefficient": "10600196228952/9765625",
+        "delta_power": 0,
+        "y_power": 1
+      },
+      {
+        "coefficient": "50726295758792/9765625",
+        "delta_power": 0,
+        "y_power": 2
+      },
+      {
+        "coefficient": "69061294318816/9765625",
+        "delta_power": 0,
+        "y_power": 3
+      },
+      {
+        "coefficient": "19787957489264/9765625",
+        "delta_power": 0,
+        "y_power": 4
+      }
+    ],
+    "identity": "4AQ=(2A delta+B)^2+(4AC-B^2)",
+    "independent_formula": "-1/48+2delta/3+delta*x/6-(13/16)(1-R_*)+p(-1/4+delta(1+x)+3R_*/2)",
+    "literal_high_formula": "a-theta+h(17/50-1/6)-a*l_y-ell/2+delta*x*ell+h(R_*+delta/2-17/50)",
+    "margin": "1/200000",
+    "positive_coefficient_proof": "A and 4AC-B^2 have positive coefficients and positive constants for y>=0."
+  },
+  "fixed_skew_ceiling": {
+    "Q_at_y_zero": "(2448+6048p)delta^2+(-1896+11520p)delta+370-22200p",
+    "corresponding_theta_bracket": [
+      "699965760492299/800000000000000",
+      "437478600307687/500000000000000"
+    ],
+    "four_AC_minus_B_squared": "576(49-286020p-1162800p^2)",
+    "positive_root_p_bracket": [
+      "21399692313/125000000000000",
+      "34239507701/200000000000000"
+    ],
+    "scope": "Obstruction to strict negativity using this fixed-skew row bound; not a bound on zeros or other methods.",
+    "specialization": "y=0; margin=0; fixed b=1/8 and unchanged R_*"
+  },
+  "geometry": {
+    "LOW_equals_C_theta": true,
+    "LOW_exponent": "4499/24000",
+    "M": "4999/6000",
+    "b": "1/8",
+    "ell": "1001/6000",
+    "h": "3251/4000",
+    "improvement_over_seven_eighths": "1/24000",
+    "l_x": "4249/12000",
+    "l_y": "5749/12000",
+    "p": "1/6000",
+    "positive_scale_margins": {
+      "compensated_subset_cost": "199/1200",
+      "delta_alpha_endpoint": "697/9600",
+      "floor_endpoint": "53/9600",
+      "intermediate_endpoint": "1949/600000",
+      "moment_length": "257/12000",
+      "principal_w_residue": "5749/240000",
+      "principal_z_residue": "3251/2400000",
+      "rescaled_X": "749/4000",
+      "rescaled_Y": "1249/4000",
+      "rescaled_mass": "999/2000",
+      "small_rows_beyond_one_sixteenth": "4837/300000",
+      "third_additive_Gram_term": "997/12000"
+    },
+    "principal_exponent": "C(s)=s-11/16",
+    "theta": "20999/24000"
+  },
+  "schema_version": 1,
+  "scope": "Exact exponent identities, interval bounds, and polynomial positivity only. The certificate does not establish analytic row estimates, an L-function nonvanishing theorem, theorem-family transfer, or proof-kernel verification.",
+  "status": "PASS_exact_endpoint_arithmetic"
+}

@@ -1,0 +1,166 @@
+{
+  "author": "Zhongpai Gao",
+  "boundary": "20999/24000",
+  "certificate_derivation": {
+    "adaptation": "Standalone exact Fraction checker; derives the polynomial from the literal high exponent and compares the independent expression. No RH paths or proof execution.",
+    "packaged_program": "endpoint_certificate.py",
+    "scope": "Exact identities, parameter bounds, positivity and adverse examples; not analytic estimates or theorem-family verification.",
+    "source_path": "RH/tools/geometry_endpoint_strengthening_audit.py",
+    "source_sha256": "b97523f36ba7d5ac5ce146716ffaf50b6c84521d8d0a84e01ade9a07f2ac6e77"
+  },
+  "gain_over_seven_eighths": "1/24000",
+  "historical_verification": {
+    "Nanoda_run": false,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "compiled_family_declarations": [
+      "beta_le_theta",
+      "hecke_nonzero",
+      "dirichlet_nonzero",
+      "zeta_nonzero"
+    ],
+    "evidence_note": "Package checks hashes and record consistency; successful logs describe an earlier run, not a new kernel proof.",
+    "proof_module_count": 117,
+    "proof_sources_bundled": false,
+    "replayed_by_this_release": false,
+    "separate_target_comparison_and_default_kernel_replay": "standard zeta only",
+    "target": "OpenAINextStripAttempt.StrongerResult.zeta_nonzero"
+  },
+  "license_scope": {
+    "author_certificate_code_and_repository_documentation": "MIT",
+    "historical_records": "Copied as provenance; no blanket relicensing of third-party material",
+    "manuscript": "Copyright 2026 Zhongpai Gao; manuscript rights retained by the author"
+  },
+  "mathematical_scope": "All Dirichlet L-functions and all finite-order Hecke L-functions over Q(sqrt(-3)), including imprimitive presentations; principal poles at s=1 allowed. The boundary is independent of conductor and height; intermediate constants may depend on the target.",
+  "paper_pages": 12,
+  "paper_status": "DRAFT; unsubmitted; independent mathematical and priority review pending",
+  "paper_title": "A quantitative refinement of the seven-eighths zero-free half-plane",
+  "reference_environment": {
+    "certificate_dependencies": "Python standard library only; Python >=3.10",
+    "historical_Lean": "4.34.1",
+    "python": "3.13.2"
+  },
+  "repository_url": "https://github.com/Gaozhongpai/seven-eighths-refinement-certificates",
+  "schema_version": 1,
+  "snapshot_date": "2026-10-07",
+  "source_mappings": {
+    "evidence/conditional_negative_control_comparator.log": {
+      "packaged_sha256": "05d0e703d573c0a6e7a8687e737ba9e3e5ef2d964dfb9c853e589fd6fda0b8a4",
+      "source_path": "RH/framework/programs/fixed_strip/verification/geometry_endpoint_verification_2026-10-07/conditional_negative_control_comparator.log",
+      "source_sha256": "05d0e703d573c0a6e7a8687e737ba9e3e5ef2d964dfb9c853e589fd6fda0b8a4",
+      "transformation": "byte-for-byte copy"
+    },
+    "evidence/conditional_negative_control_result.json": {
+      "packaged_sha256": "3b0977271af9cdcc52a68ea3c7d3fe5e65c7c9fd603532c5cfe42fbd753d63df",
+      "source_path": "RH/framework/programs/fixed_strip/verification/geometry_endpoint_verification_2026-10-07/conditional_negative_control_result.json",
+      "source_sha256": "3b0977271af9cdcc52a68ea3c7d3fe5e65c7c9fd603532c5cfe42fbd753d63df",
+      "transformation": "byte-for-byte copy"
+    },
+    "evidence/next_strip_verification_result.json": {
+      "packaged_sha256": "c866649392a712d16314fb8a91a371db7d4b931e6c70e62ed31db6a8be2674b0",
+      "source_path": "RH/framework/programs/fixed_strip/verification/geometry_endpoint_verification_2026-10-07/next_strip_verification_result.json",
+      "source_sha256": "c866649392a712d16314fb8a91a371db7d4b931e6c70e62ed31db6a8be2674b0",
+      "transformation": "byte-for-byte copy"
+    },
+    "evidence/next_strip_verification_source_manifest.json": {
+      "packaged_sha256": "da99f5c3798082c51b30a156b00ed3ebac7223baf2cb8e6280dacd7fc79efaf4",
+      "source_path": "RH/framework/programs/fixed_strip/verification/geometry_endpoint_verification_2026-10-07/next_strip_verification_source_manifest.json",
+      "source_sha256": "da99f5c3798082c51b30a156b00ed3ebac7223baf2cb8e6280dacd7fc79efaf4",
+      "transformation": "byte-for-byte copy"
+    },
+    "evidence/next_target_axioms.log": {
+      "packaged_sha256": "c62042e7d8bd3676467d3f693c53caa230c1675a4c7e0714be16101c0755a813",
+      "source_path": "RH/framework/programs/fixed_strip/verification/geometry_endpoint_verification_2026-10-07/next_target_axioms.log",
+      "source_sha256": "c62042e7d8bd3676467d3f693c53caa230c1675a4c7e0714be16101c0755a813",
+      "transformation": "byte-for-byte copy"
+    },
+    "evidence/next_target_build.log": {
+      "packaged_sha256": "fb6446607cb3abd73aa95f569154d08aa2e3ef0b4042afc2542bbb527592b000",
+      "source_path": "RH/framework/programs/fixed_strip/verification/geometry_endpoint_verification_2026-10-07/next_target_build.log",
+      "source_sha256": "fb6446607cb3abd73aa95f569154d08aa2e3ef0b4042afc2542bbb527592b000",
+      "transformation": "byte-for-byte copy"
+    },
+    "evidence/next_zeta_comparator.log": {
+      "packaged_sha256": "6a5b4063ea93dea7e38380c753c759e9382dce0d484362fa400de0f069f0d8da",
+      "source_path": "RH/framework/programs/fixed_strip/verification/geometry_endpoint_verification_2026-10-07/next_zeta_comparator.log",
+      "source_sha256": "6a5b4063ea93dea7e38380c753c759e9382dce0d484362fa400de0f069f0d8da",
+      "transformation": "byte-for-byte copy"
+    },
+    "evidence/proof_source_manifest.json": {
+      "packaged_sha256": "bb7fb354d7ddbb98319aaf6b89377fc367ac8c2697dfc48917363a5f0592d375",
+      "source_path": "RH/framework/programs/fixed_strip/verification/lean/geometry_endpoint/proof_source_manifest.json",
+      "source_sha256": "bb7fb354d7ddbb98319aaf6b89377fc367ac8c2697dfc48917363a5f0592d375",
+      "transformation": "byte-for-byte copy"
+    },
+    "paper/report.tex": {
+      "packaged_sha256": "28152b4981e91e8fba28f1db1f5f9fc919c8d9195f417dd10274412d96f77396",
+      "source_path": "RH/papers/contributions/seven_eighths_zero_free_refinement.tex",
+      "source_sha256": "f24e20bef0648640b3acfa4c9d912f31fdd8ad6bb97d37fe106c5e0d3570d92a",
+      "transformation": "Only input paths changed from tex/papers/seven_eighths_zero_free_refinement/ to sections/."
+    },
+    "paper/sections/00_frontmatter.tex": {
+      "packaged_sha256": "c6822bea7bb824aa55bb7567ce026c034c29888600cdf4c37b3b56e60ededee3",
+      "source_path": "RH/tex/papers/seven_eighths_zero_free_refinement/00_frontmatter.tex",
+      "source_sha256": "c6822bea7bb824aa55bb7567ce026c034c29888600cdf4c37b3b56e60ededee3",
+      "transformation": "byte-for-byte copy"
+    },
+    "paper/sections/01_source_and_geometry.tex": {
+      "packaged_sha256": "30ea55808dc716db0a24e236fe498aad0a823735b722bea638dff916d58edaca",
+      "source_path": "RH/tex/papers/seven_eighths_zero_free_refinement/01_source_and_geometry.tex",
+      "source_sha256": "30ea55808dc716db0a24e236fe498aad0a823735b722bea638dff916d58edaca",
+      "transformation": "byte-for-byte copy"
+    },
+    "paper/sections/02_low_energy.tex": {
+      "packaged_sha256": "22d5440ae41729c7b16770fc804136a9653caaa6828effbcf97ffdba917dd5f6",
+      "source_path": "RH/tex/papers/seven_eighths_zero_free_refinement/02_low_energy.tex",
+      "source_sha256": "22d5440ae41729c7b16770fc804136a9653caaa6828effbcf97ffdba917dd5f6",
+      "transformation": "byte-for-byte copy"
+    },
+    "paper/sections/03_physical_low.tex": {
+      "packaged_sha256": "da573f79e54de877056cfa7ea11136378f68755fb36a1233d71d6e5672b245c5",
+      "source_path": "RH/tex/papers/seven_eighths_zero_free_refinement/03_physical_low.tex",
+      "source_sha256": "da573f79e54de877056cfa7ea11136378f68755fb36a1233d71d6e5672b245c5",
+      "transformation": "byte-for-byte copy"
+    },
+    "paper/sections/04_high_endpoint.tex": {
+      "packaged_sha256": "fddf89a81d18c94f109c6eea719775206f948055e61d886f753a3b95cce7b5a6",
+      "source_path": "RH/tex/papers/seven_eighths_zero_free_refinement/04_high_endpoint.tex",
+      "source_sha256": "fddf89a81d18c94f109c6eea719775206f948055e61d886f753a3b95cce7b5a6",
+      "transformation": "byte-for-byte copy"
+    },
+    "paper/sections/05_recovery_continuation.tex": {
+      "packaged_sha256": "dc8589a377ae7867cf38a6b11042aeab5509dfb5e540fc2a8287f6bd5d51dc37",
+      "source_path": "RH/tex/papers/seven_eighths_zero_free_refinement/05_recovery_continuation.tex",
+      "source_sha256": "dc8589a377ae7867cf38a6b11042aeab5509dfb5e540fc2a8287f6bd5d51dc37",
+      "transformation": "byte-for-byte copy"
+    },
+    "paper/sections/06_scope_and_references.tex": {
+      "packaged_sha256": "49a53f0cef1ff6d9c9ea219fde153aadf06230f47a2b2bf5e5681b2501026ee9",
+      "source_path": "RH/tex/papers/seven_eighths_zero_free_refinement/06_scope_and_references.tex",
+      "source_sha256": "49a53f0cef1ff6d9c9ea219fde153aadf06230f47a2b2bf5e5681b2501026ee9",
+      "transformation": "byte-for-byte copy"
+    },
+    "report.pdf": {
+      "packaged_sha256": "35a903877099e80cd09e0de96d463c72f985ee63a97e79f75979a69262382aa6",
+      "source_path": "RH/papers/contributions/seven_eighths_zero_free_refinement.pdf",
+      "source_sha256": "35a903877099e80cd09e0de96d463c72f985ee63a97e79f75979a69262382aa6",
+      "transformation": "byte-for-byte copy"
+    }
+  },
+  "source_research_repository": {
+    "baseline_commit": "625bebc897848e27921ec2638d41aefee0632f2b",
+    "url": "https://github.com/Gaozhongpai/RH",
+    "version_note": "The file hashes below identify the packaged worktree snapshot; the baseline commit alone does not identify uncommitted manuscript edits.",
+    "worktree_dirty_at_packaging": true
+  },
+  "upstream": {
+    "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+    "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "preprint": "preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/paper.pdf",
+    "repository": "https://github.com/openai/math",
+    "sources_bundled": false
+  }
+}

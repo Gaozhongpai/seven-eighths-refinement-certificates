@@ -1,0 +1,4 @@
+* text=auto eol=lf
+*.pdf binary
+# Preserve historical transcripts, including their original whitespace.
+evidence/*.log whitespace=-blank-at-eol
