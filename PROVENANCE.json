@@ -44,6 +44,7 @@
     "python": "3.13.2"
   },
   "repository_url": "https://github.com/Gaozhongpai/seven-eighths-refinement-certificates",
+  "revision_note": "Dependency table entries shortened and kept on one line; manuscript remains 12 pages.",
   "schema_version": 1,
   "snapshot_date": "2026-10-07",
   "source_mappings": {
@@ -102,9 +103,9 @@
       "transformation": "Only input paths changed from tex/papers/seven_eighths_zero_free_refinement/ to sections/."
     },
     "paper/sections/00_frontmatter.tex": {
-      "packaged_sha256": "c6822bea7bb824aa55bb7567ce026c034c29888600cdf4c37b3b56e60ededee3",
+      "packaged_sha256": "05e6c238eb56e5c610be90c8b5170e7c8a271dac3f86cb465d8436a2cacef68e",
       "source_path": "RH/tex/papers/seven_eighths_zero_free_refinement/00_frontmatter.tex",
-      "source_sha256": "c6822bea7bb824aa55bb7567ce026c034c29888600cdf4c37b3b56e60ededee3",
+      "source_sha256": "05e6c238eb56e5c610be90c8b5170e7c8a271dac3f86cb465d8436a2cacef68e",
       "transformation": "byte-for-byte copy"
     },
     "paper/sections/01_source_and_geometry.tex": {
@@ -144,9 +145,9 @@
       "transformation": "byte-for-byte copy"
     },
     "report.pdf": {
-      "packaged_sha256": "35a903877099e80cd09e0de96d463c72f985ee63a97e79f75979a69262382aa6",
+      "packaged_sha256": "9cb3944185773746472e4458c6bdf7745cd79e041857d74c80664737756276fb",
       "source_path": "RH/papers/contributions/seven_eighths_zero_free_refinement.pdf",
-      "source_sha256": "35a903877099e80cd09e0de96d463c72f985ee63a97e79f75979a69262382aa6",
+      "source_sha256": "9cb3944185773746472e4458c6bdf7745cd79e041857d74c80664737756276fb",
       "transformation": "byte-for-byte copy"
     }
   },
