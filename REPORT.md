@@ -57,6 +57,12 @@ margin permits continuation of the same common signal. Finite Euler factors
 restore imprimitive Hecke presentations. The norm-lift product identity
 transfers Hecke nonvanishing to Dirichlet functions.
 
+The principal residue proof now uses the explicit local Euler factor also
+given in [Kintali's short proof](https://shivakintali.github.io/papers/QRH.pdf).
+Its correction product is holomorphic and nonzero for $\Re s>2/3$,
+without an additional principal cutoff. This simplifies recovery; it does
+not improve the zero-free boundary or extend the archived formal evidence.
+
 ## Evidence and limits
 
 Three kinds of evidence should be distinguished. The arithmetic script

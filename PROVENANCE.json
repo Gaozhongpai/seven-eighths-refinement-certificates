@@ -1,4 +1,14 @@
 {
+  "additional_references": [
+    {
+      "author": "Shiva Kintali",
+      "date": "2026-10-07",
+      "downloaded_pdf_sha256": "a057d6bb5b8294b7c0c8f49ddc42bee662fc1e635b860d3fd512317395c6a8b0",
+      "title": "A Short Proof of the Quasi-Riemann Hypothesis",
+      "url": "https://shivakintali.github.io/papers/QRH.pdf",
+      "used_interface": "Formula(12), principal Euler-factor identity. Selected interface reviewed; no full-proof validation or imported stronger boundary."
+    }
+  ],
   "author": "Zhongpai Gao",
   "boundary": "20999/24000",
   "certificate_derivation": {
@@ -44,7 +54,7 @@
     "python": "3.13.2"
   },
   "repository_url": "https://github.com/Gaozhongpai/seven-eighths-refinement-certificates",
-  "revision_note": "Dependency table entries shortened and kept on one line; manuscript remains 12 pages.",
+  "revision_note": "Principal residue proof simplified using the explicit Euler factor also displayed by Kintali(12). Residue correction nonvanishing holds on Re(s)>2/3 without an additional principal cutoff; theorem boundary and frozen formal evidence unchanged. Manuscript remains12pages.",
   "schema_version": 1,
   "snapshot_date": "2026-10-07",
   "source_mappings": {
@@ -133,21 +143,21 @@
       "transformation": "byte-for-byte copy"
     },
     "paper/sections/05_recovery_continuation.tex": {
-      "packaged_sha256": "dc8589a377ae7867cf38a6b11042aeab5509dfb5e540fc2a8287f6bd5d51dc37",
+      "packaged_sha256": "3a9577fecf8939229a6febcf6a07c3cd2aa4f51363a22b0bd213799aa35220db",
       "source_path": "RH/tex/papers/seven_eighths_zero_free_refinement/05_recovery_continuation.tex",
-      "source_sha256": "dc8589a377ae7867cf38a6b11042aeab5509dfb5e540fc2a8287f6bd5d51dc37",
+      "source_sha256": "3a9577fecf8939229a6febcf6a07c3cd2aa4f51363a22b0bd213799aa35220db",
       "transformation": "byte-for-byte copy"
     },
     "paper/sections/06_scope_and_references.tex": {
-      "packaged_sha256": "49a53f0cef1ff6d9c9ea219fde153aadf06230f47a2b2bf5e5681b2501026ee9",
+      "packaged_sha256": "2cde7e8c1d8a34789e0f8995572fc90cc7c7775609c88b7c75ab9689f8e988e5",
       "source_path": "RH/tex/papers/seven_eighths_zero_free_refinement/06_scope_and_references.tex",
-      "source_sha256": "49a53f0cef1ff6d9c9ea219fde153aadf06230f47a2b2bf5e5681b2501026ee9",
+      "source_sha256": "2cde7e8c1d8a34789e0f8995572fc90cc7c7775609c88b7c75ab9689f8e988e5",
       "transformation": "byte-for-byte copy"
     },
     "report.pdf": {
-      "packaged_sha256": "9cb3944185773746472e4458c6bdf7745cd79e041857d74c80664737756276fb",
+      "packaged_sha256": "9e80b86632818d019038aac2f8821686cea68be4ecb7e132450b1f6bfe254409",
       "source_path": "RH/papers/contributions/seven_eighths_zero_free_refinement.pdf",
-      "source_sha256": "9cb3944185773746472e4458c6bdf7745cd79e041857d74c80664737756276fb",
+      "source_sha256": "9e80b86632818d019038aac2f8821686cea68be4ecb7e132450b1f6bfe254409",
       "transformation": "byte-for-byte copy"
     }
   },

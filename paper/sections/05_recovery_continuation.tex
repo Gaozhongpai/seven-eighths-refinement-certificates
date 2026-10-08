@@ -29,13 +29,29 @@ For row primes the six-valuation table has least decay
 The constants are uniform in phases and heights. The first product
 converges normally, and the second costs \(q_u^\varepsilon\)
 by the divisor-product bound. Write \(\mathcal H_{\eta,u}=\prod_{p\notin S}H_p\)
-for the unselected Euler product. A fixed prime cutoff therefore gives
-\begin{equation}\label{gex:principal-contraction}
+for the unselected Euler product. At the principal residue, this table
+has the simpler form (see also \cite[(12)]{KIN26})
+\[
+ H_p(s)=\frac{1-q^{-2}}{1-R}
+       \left(1+\frac{q^{-1}(D-R)}{1-D}\right),\qquad
+ D=\eta(p)q^{-s},\quad
+ R=\overline{\alpha(p)}^{\,6}\eta(p)^6q^{3-6s},\quad q=q_p.
+\]
+For $\Rea s>2/3$, the denominators are nonzero. So is the numerator,
+since $q\ge7$ and
+\[
+ |(1-q^{-1})D+q^{-1}R|<q^{-2/3}+q^{-2}<1.
+\]
+Moreover, $|H_p-1|\ll q^{-2}+q^{-1-\Rea s}+q^{3-6\Rea s}$.
+The product therefore converges normally and gives
+\begin{equation}\label{gex:principal-nonvanishing}
  H_\eta(s)=\mathcal H_{\eta,1}(s,1,1/6)
- \text{ holomorphic on }\Rea s>\theta,\qquad
- \sup_{\Rea s>\theta}|H_\eta(s)-1|\le1/2.
+ \quad\text{holomorphic and nonzero on }\Rea s>2/3.
 \end{equation}
-Further fixed exclusions preserve this bound.
+On each closed sub-half-plane it is bounded above and away from zero:
+use the local bounds on a finite head and the summable defects on the tail.
+This principal assertion needs no additional prime cutoff; the general
+contour estimates retain their fixed cutoff.
 
 The exact cancellation identity \cite[(16.8)]{OAI26} bounds
 \(G_p+H_p\) by powers
@@ -168,7 +184,7 @@ Set \(\epsilon_*=\min\{\Gamma-\varepsilon_{\rm low},\sigma\}>0\).
 Then \(f_\eta(Z)=O_\eta(Z^{C(\beta_*)-\epsilon_*})\) at infinity.
 At zero it decays faster than every fixed power, by shifting its
 integral to any \(B>2\), using the bounded reciprocal Euler product,
-\eqref{gex:principal-contraction}, and the Gaussian.
+\eqref{gex:principal-nonvanishing}, and the Gaussian.
 Consequently
 \[
  F_\eta(s)=\int_0^\infty f_\eta(Z)Z^{-C(s)}\,\frac{dZ}{Z}
@@ -176,7 +192,7 @@ Consequently
 is holomorphic for \(\Rea s>\beta_*-\epsilon_*>\theta\).
 Fourier inversion with \(Z=e^u\) identifies it on \(\Rea s>1\)
 as \(e^{(s-5/6)^2}H_\eta(s)/L_F^S(s,\eta)\).
-Since \(|H_\eta|\ge1/2\), this continues the reciprocal
+Since \(H_\eta\) is holomorphic and nonzero, this continues the reciprocal
 holomorphically to the common half-plane
 \(\Rea s>\beta_*-\epsilon_*\).
 Deleted Euler factors are nonzero there, while the definition of
