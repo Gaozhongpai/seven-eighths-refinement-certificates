@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-09",
+  "tracker_repository": "https://github.com/GTimG/QuasiRiemannTracker",
+  "tracker_commit": "40844a7614b67840801e65b836b3da2e1f7ff029",
+  "reference": "https://github.com/GTimG/QuasiRiemannTracker/blob/40844a7614b67840801e65b836b3da2e1f7ff029/catalogue/results.json",
+  "our_boundary": "2187392879/2500000000",
+  "records": [
+    {
+      "id": "openai-baseline",
+      "theta": "7/8",
+      "reported_status": "framework-verified",
+      "our_boundary_minus_reference": "-107121/2500000000",
+      "reported_scope": "all Dirichlet L-functions; zeta; finite-order Hecke L-functions over Q(sqrt(-3))",
+      "verification_report": "https://github.com/GTimG/QuasiRiemannTracker/blob/40844a7614b67840801e65b836b3da2e1f7ff029/public/proofs/palomar-20261009/openai/result.json"
+    },
+    {
+      "id": "argonaut-20261008",
+      "theta": "3499999/4000000",
+      "reported_status": "verification-pending",
+      "our_boundary_minus_reference": "-416/9765625",
+      "reported_scope": "all Dirichlet L-functions; zeta; finite-order Hecke L-functions over Q(sqrt(-3))"
+    },
+    {
+      "id": "liu-20261008",
+      "theta": "874957069799168740018340006959/1000000000000000000000000000000",
+      "reported_status": "verification-pending",
+      "our_boundary_minus_reference": "81800831259981659993041/1000000000000000000000000000000",
+      "reported_scope": "all Dirichlet L-functions; zeta; finite-order Hecke L-functions over Q(sqrt(-3))"
+    },
+    {
+      "id": "proofcouncil-20261009",
+      "theta": "874957019421/1000000000000",
+      "reported_status": "framework-verified",
+      "our_boundary_minus_reference": "132179/1000000000000",
+      "reported_scope": "all Dirichlet L-functions; zeta; finite-order Hecke L-functions over Q(sqrt(-3))",
+      "verification_report": "https://github.com/GTimG/QuasiRiemannTracker/blob/40844a7614b67840801e65b836b3da2e1f7ff029/public/proofs/palomar-20261009/qrh/result.json"
+    },
+    {
+      "id": "nielstron-20261009-tightening",
+      "theta": "874957019420098946128604623/1000000000000000000000000000",
+      "reported_status": "framework-verified",
+      "our_boundary_minus_reference": "132179901053871395377/1000000000000000000000000000",
+      "reported_scope": "all Dirichlet L-functions; zeta; finite-order Hecke L-functions over Q(sqrt(-3))",
+      "verification_report": "https://github.com/GTimG/QuasiRiemannTracker/blob/40844a7614b67840801e65b836b3da2e1f7ff029/public/proofs/nielstron-20261009-kernels/result.json"
+    }
+  ],
+  "comparison_scope": "Exact rational comparison and reported external statuses; no external proof replay by this package.",
+  "additional_stacked_gain_proved": false,
+  "runs_Lean": false
+}

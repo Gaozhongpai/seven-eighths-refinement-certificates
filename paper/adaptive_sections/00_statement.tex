@@ -1,0 +1,126 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,array}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype}
+\usepackage{xcolor,hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue!40!black,citecolor=blue!40!black,
+  urlcolor=blue!50!black,
+  pdftitle={The adaptive plain-moment estimate: supplementary proof},
+  pdfauthor={Zhongpai Gao}}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\OO}{\mathcal O_F}
+\newcommand{\N}{\mathrm N}
+\newcommand{\Rea}{\operatorname{Re}}
+\newcommand{\one}{\mathbf1}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\title{The adaptive plain-moment estimate:\\supplementary proof}
+\author{Zhongpai Gao\\\small gaozhongpai@gmail.com}
+\date{9 October 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We extend the parameter range of the plain fourth-moment estimate in
+OpenAI's September 2026 preprint from $\kappa\ge3/4$ to
+$\kappa\ge13/18$, assuming the corresponding global zero bound for
+finite-order Hecke characters. We verify the comparison inequalities,
+the admission of every recursive child, and the order of the mesh,
+height and induction choices. We then give the resulting witness count.
+The unchanged arithmetic identities and analytic estimates are inputs
+from the cited, unrefereed preprint. This supplement does not assert
+an independent proof of those inputs or perform the subsequent
+zero-free-region continuation.
+\end{abstract}
+
+\section{The estimate and its hypotheses}\label{adp:statement}
+
+Put $F=\Q(\sqrt{-3})$. We use the primary generators, sextic residue
+symbols and fixed finite set of excluded primes $\mathcal S$ of
+\cite[Sections 4 and 14]{OAI26}. For an integral ideal or its primary
+generator $n$, write $q_n=\N n$; for an element $k$, write
+$q_k=|k|^2$. Sums over $n$ or $l$ use the primary representatives of
+ideals prime to $\mathcal S$. The character $\chi_n(k)$ is the
+zero-extended sextic residue symbol. In particular, a displayed sixth
+power is one on units and is zero on nonunits.
+
+Let $\beta_*$ be the supremum of $1/2$ and of the real parts of zeros
+in $1/2\le\Rea s\le1$ of primitive finite-order Hecke $L$-functions
+over $F$. Principal poles are excluded. This is the global family
+quantity in \cite[Section 2, (2.1)]{OAI26}.
+
+Fix a finite group $\Theta$ of finite-order ray characters supported
+on $\mathcal S$, containing the fixed twists, the characters used to
+separate reciprocity phases, and $n\mapsto\chi_n(-1)$. At scale
+$Z\ge2$, the rows and their characters are
+\[
+ 0<q_k\ll Z^m,\qquad \psi_k(n)=\tau(n)\chi_n(k),\qquad M=m+q .
+\]
+Here $\tau$ is fixed within the row sum. The union of the displayed
+moving prime supports in $\tau$ has norm at most $Z^q$. It is measured
+\emph{before} cancellation or reduction of exponents modulo six.
+Every factor retains its original zeros. An additional squarefree
+mask $\mathfrak R$, of norm at most $Z^{B_0}$ for fixed $B_0$, may
+depend on frozen parameters but is fixed within a row sum and is
+common to both plain sums and every prime factor.
+
+For smooth profiles supported on fixed annuli, put
+\begin{align}
+ S_\psi(n;W)&=Z^{-n/2}\sum_l\psi(l)\one_{(l,\mathfrak R)=1}
+                                      W(q_l/Z^n),\label{adp:plain-def}\\
+ Q_{\psi,i}&=Z^{-z_i/2}\sum_{p\ {\rm prime}}
+       \psi(p)\one_{(p,\mathfrak R)=1}\nu_i(p)W_i(q_p/Z^{z_i}),
+       \qquad
+ Q_\psi=\prod_iQ_{\psi,i},\quad z=\sum_i z_i.\label{adp:slot-def}
+\end{align}
+Each $\nu_i$ is a fixed finite linear combination of members of
+$\Theta$, independent of the row and all other prime choices.
+The underlying prime windows are disjoint before imposing any zeros
+or masks. A factor of length zero has bounded scale and is estimated
+by absolute counting.
+Let $\mathcal R_0$ contain the rows with nonprincipal primitive
+inducing character. If $z>0$, let $\mathcal R_z$ contain the rows
+whose primitive inducing character is not induced by a member of
+$\Theta$. Membership refers to the inducing character, without
+removing the presentation's zeros.
+
+\begin{theorem}[Extended plain moment]\label{adp:plain}
+Retain the arithmetic and profile hypotheses of
+\cite[Lemma 18.1]{OAI26}. Suppose
+\[
+ \frac{13}{18}\le\kappa\le\frac34,\qquad
+ \beta_*\le s_\kappa:=\frac{1+\kappa}{2}.
+\]
+For every $\varepsilon>0$ and prescribed bounded ranges of nonnegative
+lengths, there is a mesh $\eta>0$, chosen before the fixed number of
+prime factors, such that, whenever $z_i\le\eta$,
+\begin{equation}\label{adp:moment}
+ \sum_{k\in\mathcal R_z}
+ \left|S_{\psi_k}(n_1;W_1)S_{\psi_k}(n_2;W_2)Q_{\psi_k}\right|^2
+ \ll Z^{M+\varepsilon}.
+\end{equation}
+For $z=0$, the lengths $n_1,n_2$ are unrestricted in their prescribed
+bounded ranges, and no hypothesis on $\beta_*$ is required.
+For $z>0$, assume
+\begin{equation}\label{adp:admission}
+ n_1+n_2+6\kappa z\le M .
+\end{equation}
+The estimate retains the finite smooth-seminorm and polynomial
+height bounds of the original lemma. Their orders and constants
+may depend on the fixed data and number of prime factors, but are
+uniform in rows, moving labels, masks and the numerical heights.
+The mesh is uniform for $\kappa\in[13/18,3/4]$.
+\end{theorem}
+
+The global hypothesis is essential: the two Poisson transforms create
+new finite-order characters, which need not have the same rightmost
+zero as the original row. We prove the extension by checking every
+use of the lower bound on $\kappa$ in \cite[Section 18]{OAI26}.
+Its exact reflection, finite correlations, common-coefficient identity
+and masked lattice cancellation are imported with all their original
+hypotheses. The argument below changes their numerical admissions;
+it does not replace their coefficients by arbitrary bounded weights.

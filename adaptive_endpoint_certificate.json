@@ -1,0 +1,296 @@
+{
+  "analytic_moment_or_continuation_verified": false,
+  "archived_verified_boundary": "20999/24000",
+  "manuscript_boundary": "2187392879/2500000000",
+  "runs_Lean": false,
+  "scope": "Exact endpoint identities and rational coefficient positivity only. The extended moment, source recovery and all-height family continuation are proved in the manuscript and companion, conditional on their named external inputs. This is not a formal replay.",
+  "stages": [
+    {
+      "A": [
+        {
+          "coefficient": "24809851/52518164",
+          "delta_power": 0,
+          "y_power": 0
+        },
+        {
+          "coefficient": "191119115/157554492",
+          "delta_power": 0,
+          "y_power": 1
+        },
+        {
+          "coefficient": "22863693/26259082",
+          "delta_power": 0,
+          "y_power": 2
+        },
+        {
+          "coefficient": "11684000/39388623",
+          "delta_power": 0,
+          "y_power": 3
+        }
+      ],
+      "A_coefficient_lower_bound": "1/4",
+      "B": [
+        {
+          "coefficient": "-479684285197377/1312954100000000",
+          "delta_power": 0,
+          "y_power": 0
+        },
+        {
+          "coefficient": "-3436775025617869/5908293450000000",
+          "delta_power": 0,
+          "y_power": 1
+        },
+        {
+          "coefficient": "-59364416887/1477073362500",
+          "delta_power": 0,
+          "y_power": 2
+        }
+      ],
+      "C": [
+        {
+          "coefficient": "66775942614577/945326952000000",
+          "delta_power": 0,
+          "y_power": 0
+        },
+        {
+          "coefficient": "153415900595377/2363317380000000",
+          "delta_power": 0,
+          "y_power": 1
+        }
+      ],
+      "J_lower_bound": "25/39",
+      "Q": [
+        {
+          "coefficient": "66775942614577/945326952000000",
+          "delta_power": 0,
+          "y_power": 0
+        },
+        {
+          "coefficient": "153415900595377/2363317380000000",
+          "delta_power": 0,
+          "y_power": 1
+        },
+        {
+          "coefficient": "-479684285197377/1312954100000000",
+          "delta_power": 1,
+          "y_power": 0
+        },
+        {
+          "coefficient": "-3436775025617869/5908293450000000",
+          "delta_power": 1,
+          "y_power": 1
+        },
+        {
+          "coefficient": "-59364416887/1477073362500",
+          "delta_power": 1,
+          "y_power": 2
+        },
+        {
+          "coefficient": "24809851/52518164",
+          "delta_power": 2,
+          "y_power": 0
+        },
+        {
+          "coefficient": "191119115/157554492",
+          "delta_power": 2,
+          "y_power": 1
+        },
+        {
+          "coefficient": "22863693/26259082",
+          "delta_power": 2,
+          "y_power": 2
+        },
+        {
+          "coefficient": "11684000/39388623",
+          "delta_power": 2,
+          "y_power": 3
+        }
+      ],
+      "c": "4000/8999",
+      "discriminant_coefficient_lower_bounds": [
+        "1/100000000",
+        "1/25",
+        "19/100",
+        "13/50",
+        "3/40"
+      ],
+      "four_AC_minus_B_squared": [
+        {
+          "coefficient": "3362127390610015120878839/15514636218361290000000000000000",
+          "delta_power": 0,
+          "y_power": 0
+        },
+        {
+          "coefficient": "469808403341661421948433111161/11635977163770967500000000000000",
+          "delta_power": 0,
+          "y_power": 1
+        },
+        {
+          "coefficient": "6746640366311211913327443534839/34907931491312902500000000000000",
+          "delta_power": 0,
+          "y_power": 2
+        },
+        {
+          "coefficient": "1148229047614006893219602447/4363491436414112812500000000",
+          "delta_power": 0,
+          "y_power": 3
+        },
+        {
+          "coefficient": "164523808122327550604231/2181745718207056406250000",
+          "delta_power": 0,
+          "y_power": 4
+        }
+      ],
+      "input_boundary": "20999/24000",
+      "kappa": "8999/12000",
+      "margin": "1/100000000",
+      "output_boundary": "20425/23344",
+      "p": "1/5836",
+      "prime_contour_reference": "20999/24000"
+    },
+    {
+      "A": [
+        {
+          "coefficient": "15506094446549/32823750000000",
+          "delta_power": 0,
+          "y_power": 0
+        },
+        {
+          "coefficient": "7465566524867/6154453125000",
+          "delta_power": 0,
+          "y_power": 1
+        },
+        {
+          "coefficient": "21434688196549/24617812500000",
+          "delta_power": 0,
+          "y_power": 2
+        },
+        {
+          "coefficient": "456406368617/1538613281250",
+          "delta_power": 0,
+          "y_power": 3
+        }
+      ],
+      "A_coefficient_lower_bound": "1/4",
+      "B": [
+        {
+          "coefficient": "-28780933563553/78777000000000",
+          "delta_power": 0,
+          "y_power": 0
+        },
+        {
+          "coefficient": "-68735307276781/118165500000000",
+          "delta_power": 0,
+          "y_power": 1
+        },
+        {
+          "coefficient": "-1187313753847/29541375000000",
+          "delta_power": 0,
+          "y_power": 2
+        }
+      ],
+      "C": [
+        {
+          "coefficient": "6677554261721/94532400000000",
+          "delta_power": 0,
+          "y_power": 0
+        },
+        {
+          "coefficient": "3068306213413/47266200000000",
+          "delta_power": 0,
+          "y_power": 1
+        }
+      ],
+      "J_lower_bound": "25/39",
+      "Q": [
+        {
+          "coefficient": "6677554261721/94532400000000",
+          "delta_power": 0,
+          "y_power": 0
+        },
+        {
+          "coefficient": "3068306213413/47266200000000",
+          "delta_power": 0,
+          "y_power": 1
+        },
+        {
+          "coefficient": "-28780933563553/78777000000000",
+          "delta_power": 1,
+          "y_power": 0
+        },
+        {
+          "coefficient": "-68735307276781/118165500000000",
+          "delta_power": 1,
+          "y_power": 1
+        },
+        {
+          "coefficient": "-1187313753847/29541375000000",
+          "delta_power": 1,
+          "y_power": 2
+        },
+        {
+          "coefficient": "15506094446549/32823750000000",
+          "delta_power": 2,
+          "y_power": 0
+        },
+        {
+          "coefficient": "7465566524867/6154453125000",
+          "delta_power": 2,
+          "y_power": 1
+        },
+        {
+          "coefficient": "21434688196549/24617812500000",
+          "delta_power": 2,
+          "y_power": 2
+        },
+        {
+          "coefficient": "456406368617/1538613281250",
+          "delta_power": 2,
+          "y_power": 3
+        }
+      ],
+      "c": "11672/26259",
+      "discriminant_coefficient_lower_bounds": [
+        "1/100000000",
+        "1/25",
+        "19/100",
+        "13/50",
+        "3/40"
+      ],
+      "four_AC_minus_B_squared": [
+        {
+          "coefficient": "159643961258840022823/6205815729000000000000000000",
+          "delta_power": 0,
+          "y_power": 0
+        },
+        {
+          "coefficient": "1503346056697111837491947/37234894374000000000000000",
+          "delta_power": 0,
+          "y_power": 1
+        },
+        {
+          "coefficient": "21588962211653592489008983/111704683122000000000000000",
+          "delta_power": 0,
+          "y_power": 2
+        },
+        {
+          "coefficient": "459287304159710257275017051/1745385673781250000000000000",
+          "delta_power": 0,
+          "y_power": 3
+        },
+        {
+          "coefficient": "65809221890028392580371999/872692836890625000000000000",
+          "delta_power": 0,
+          "y_power": 4
+        }
+      ],
+      "input_boundary": "20425/23344",
+      "kappa": "8753/11672",
+      "margin": "1/1000000000",
+      "output_boundary": "2187392879/2500000000",
+      "p": "107121/625000000",
+      "prime_contour_reference": "20425/23344"
+    }
+  ],
+  "status": "PASS_EXACT_FINITE_ADAPTIVE_ENDPOINTS"
+}

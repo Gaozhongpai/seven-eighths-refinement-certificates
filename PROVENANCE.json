@@ -1,16 +1,52 @@
 {
+  "adaptive_certificate_derivation": {
+    "packaged_program": "adaptive_endpoint_certificate.py",
+    "scope": "Standalone exact Fraction derivation of both finite adaptive endpoint identities and the coefficient lower bounds printed in the main paper. Not an analytic proof or kernel replay.",
+    "source_path": "RH/tools/incremental_strip_row_gain_audit.py",
+    "source_sha256": "9216e6f06ac34bbd565071139d9e85fe140492462df03b91b52ba9d15954a6ad"
+  },
   "additional_references": [
     {
       "author": "Shiva Kintali",
       "date": "2026-10-07",
-      "downloaded_pdf_sha256": "a057d6bb5b8294b7c0c8f49ddc42bee662fc1e635b860d3fd512317395c6a8b0",
+      "downloaded_pdf_sha256": "f7ddc46632e37466e85951ea67acbd3c2abc19c8259fac51be569b1f6bbbe8e5",
+      "pdf_pages": 27,
       "title": "A Short Proof of the Quasi-Riemann Hypothesis",
       "url": "https://shivakintali.github.io/papers/QRH.pdf",
-      "used_interface": "Formula(12), principal Euler-factor identity. Selected interface reviewed; no full-proof validation or imported stronger boundary."
+      "used_interface": "Equation (8), see also principal Euler-factor identity; the manuscript derives the identity from OpenAI (7.11)-(7.12). This is an AI-assisted adaptation, not an independent proof input or a stronger imported boundary."
+    },
+    {
+      "author": "Baiying Liu",
+      "date": "2026-10-08",
+      "title": "Slightly improved zero-free half-planes for the quasi-Riemann hypothesis",
+      "url": "https://arxiv.org/abs/2610.12234v1",
+      "used_interface": "Contemporary comparison only; not a mathematical premise."
+    },
+    {
+      "author": "ProofCouncil",
+      "date": "2026-10-09",
+      "title": "A certified uniform descent for all Dirichlet characters",
+      "url": "https://github.com/GTimG/QuasiRiemannTracker/blob/40844a7614b67840801e65b836b3da2e1f7ff029/public/proofs/qrh-20261009/accepted-answer.tex",
+      "used_interface": "Comparison of overlapping kappa extension, dynamic witness count and joint geometry; not a mathematical premise."
+    },
+    {
+      "author": "Nielstron",
+      "date": "2026-10-09",
+      "url": "https://github.com/GTimG/QuasiRiemannTracker/blob/40844a7614b67840801e65b836b3da2e1f7ff029/public/proofs/nielstron-20261009-kernels/result.json",
+      "used_interface": "Reported later external verification status of its rounding-scale refinement; not replayed by this package."
     }
   ],
+  "archived_verified_boundary": "20999/24000",
+  "arithmetic_research_notes": {
+    "files": [
+      "methods/harmonic_mobius_ratio_recovery.md",
+      "methods/hybrid_character_moment.md"
+    ],
+    "scope": "Growing numerator-sector payment and full-smooth character moment, respectively. Neither establishes a complete inverse gain, mixed fourth-moment improvement or new strip. Parent finite audits are not bundled.",
+    "status": "Internally model-assisted cross-reviewed proofs; independent specialist and priority reviews pending."
+  },
   "author": "Zhongpai Gao",
-  "boundary": "20999/24000",
+  "boundary": "2187392879/2500000000",
   "certificate_derivation": {
     "adaptation": "Standalone exact Fraction checker; derives the polynomial from the literal high exponent and compares the independent expression. No RH paths or proof execution.",
     "packaged_program": "endpoint_certificate.py",
@@ -18,7 +54,7 @@
     "source_path": "RH/tools/geometry_endpoint_strengthening_audit.py",
     "source_sha256": "b97523f36ba7d5ac5ce146716ffaf50b6c84521d8d0a84e01ade9a07f2ac6e77"
   },
-  "gain_over_seven_eighths": "1/24000",
+  "gain_over_seven_eighths": "107121/2500000000",
   "historical_verification": {
     "Nanoda_run": false,
     "axioms": [
@@ -35,18 +71,36 @@
     "evidence_note": "Package checks hashes and record consistency; successful logs describe an earlier run, not a new kernel proof.",
     "proof_module_count": 117,
     "proof_sources_bundled": false,
+    "recorded_boundary": "20999/24000",
     "replayed_by_this_release": false,
     "separate_target_comparison_and_default_kernel_replay": "standard zeta only",
     "target": "OpenAINextStripAttempt.StrongerResult.zeta_nonzero"
+  },
+  "internal_review": {
+    "adaptive_extension": "Complete conventional proof internally reviewed relative to pinned inputs; now incorporated into the main theorem with a companion proof. No new formal replay.",
+    "date": "2026-10-09",
+    "paper_revision": "Full adaptive proof translated into main and supplementary TeX; model-assisted source review and PDF compilation completed. Human referee and priority reviews remain pending.",
+    "review_sources": [
+      "RH/framework/audits/GPT_FIXED_STRIP_REVIEW_2026-10-08.md",
+      "RH/framework/audits/ADAPTIVE_PLAIN_MOMENT_PROOF_REVIEW_2026-10-08.md"
+    ]
   },
   "license_scope": {
     "author_certificate_code_and_repository_documentation": "MIT",
     "historical_records": "Copied as provenance; no blanket relicensing of third-party material",
     "manuscript": "Copyright 2026 Zhongpai Gao; manuscript rights retained by the author"
   },
-  "mathematical_scope": "All Dirichlet L-functions and all finite-order Hecke L-functions over Q(sqrt(-3)), including imprimitive presentations; principal poles at s=1 allowed. The boundary is independent of conductor and height; intermediate constants may depend on the target.",
-  "paper_pages": 12,
-  "paper_status": "DRAFT; unsubmitted; independent mathematical and priority review pending",
+  "mathematical_scope": "Conditional on the correctness of the named inputs from the pinned OpenAI unrefereed preprint: all Dirichlet L-functions and all finite-order Hecke L-functions over Q(sqrt(-3)), including imprimitive presentations; principal poles at s=1 allowed. The boundary is independent of conductor and height; intermediate constants may depend on the fixed target.",
+  "method_comparison": {
+    "additional_stacked_gain_proved": false,
+    "external_checks_replayed": false,
+    "file": "METHOD_COMPARISON.md",
+    "our_boundary_is_best_listed": false,
+    "reference_snapshot": "evidence/external_tracker_comparison.json",
+    "tracker_commit": "40844a7614b67840801e65b836b3da2e1f7ff029"
+  },
+  "paper_pages": 19,
+  "paper_status": "DRAFT; unsubmitted and unranked; named OpenAI preprint statements are explicit inputs; author, independent human specialist and priority review pending",
   "paper_title": "A quantitative refinement of the seven-eighths zero-free half-plane",
   "reference_environment": {
     "certificate_dependencies": "Python standard library only; Python >=3.10",
@@ -54,9 +108,9 @@
     "python": "3.13.2"
   },
   "repository_url": "https://github.com/Gaozhongpai/seven-eighths-refinement-certificates",
-  "revision_note": "Principal residue proof simplified using the explicit Euler factor also displayed by Kintali(12). Residue correction nonvanishing holds on Re(s)>2/3 without an additional principal cutoff; theorem boundary and frozen formal evidence unchanged. Manuscript remains12pages.",
+  "revision_note": "Publish the adaptive main paper and companion, compare contemporary overlapping methods, and release two scoped arithmetic research notes. The boundary and historical verification scope are unchanged; no additional stacked gain or priority claim.",
   "schema_version": 1,
-  "snapshot_date": "2026-10-07",
+  "snapshot_date": "2026-10-09",
   "source_mappings": {
     "evidence/conditional_negative_control_comparator.log": {
       "packaged_sha256": "05d0e703d573c0a6e7a8687e737ba9e3e5ef2d964dfb9c853e589fd6fda0b8a4",
@@ -106,67 +160,122 @@
       "source_sha256": "bb7fb354d7ddbb98319aaf6b89377fc367ac8c2697dfc48917363a5f0592d375",
       "transformation": "byte-for-byte copy"
     },
+    "methods/harmonic_mobius_ratio_recovery.md": {
+      "packaged_sha256": "5a2ffb4713082170a6ebae7211233816e2d1633ad6702c5a9d42a22c5a51962f",
+      "source_path": "RH/framework/programs/fixed_strip/results/HARMONIC_MOBIUS_RATIO_RECOVERY.md",
+      "source_sha256": "28974adc73c50a3467f04d1fe5191a75e28aec6617637896c0729dcda9f4db63",
+      "transformation": "parent finite-audit relative links replaced by prose; mathematical text unchanged"
+    },
+    "methods/hybrid_character_moment.md": {
+      "packaged_sha256": "1099c679af4f6cfcd8830f40c4c643828bc3241e3c466055455569a123932d00",
+      "source_path": "RH/framework/programs/fixed_strip/results/HYBRID_SEXTIC_CUBIC_CHARACTER_MOMENT.md",
+      "source_sha256": "1099c679af4f6cfcd8830f40c4c643828bc3241e3c466055455569a123932d00",
+      "transformation": "byte-for-byte copy"
+    },
+    "paper/adaptive_sections/00_statement.tex": {
+      "packaged_sha256": "5e282868ff85f85a9cacfb25b23a65e1989196e8746864b0201f4b5917b7e559",
+      "source_path": "RH/tex/papers/seven_eighths_adaptive_moment/00_statement.tex",
+      "source_sha256": "5e282868ff85f85a9cacfb25b23a65e1989196e8746864b0201f4b5917b7e559",
+      "transformation": "byte-for-byte copy"
+    },
+    "paper/adaptive_sections/01_numerical_extension.tex": {
+      "packaged_sha256": "e6ff184634eb72d4c82b65069852e050fa1eb0da5595cc7faf068ffee44e016d",
+      "source_path": "RH/tex/papers/seven_eighths_adaptive_moment/01_numerical_extension.tex",
+      "source_sha256": "e6ff184634eb72d4c82b65069852e050fa1eb0da5595cc7faf068ffee44e016d",
+      "transformation": "byte-for-byte copy"
+    },
+    "paper/adaptive_sections/02_recursive_proof.tex": {
+      "packaged_sha256": "5e4d2e556d8c83480bdbdc277ada40b5f92f939af6ef8fd3738f1a288227a86f",
+      "source_path": "RH/tex/papers/seven_eighths_adaptive_moment/02_recursive_proof.tex",
+      "source_sha256": "5e4d2e556d8c83480bdbdc277ada40b5f92f939af6ef8fd3738f1a288227a86f",
+      "transformation": "byte-for-byte copy"
+    },
+    "paper/adaptive_sections/03_witness_count.tex": {
+      "packaged_sha256": "758a9efe77e36db5d82d4836a3b1db3ac25ee62fe152c3ff9fd4a91d3446679c",
+      "source_path": "RH/tex/papers/seven_eighths_adaptive_moment/03_witness_count.tex",
+      "source_sha256": "758a9efe77e36db5d82d4836a3b1db3ac25ee62fe152c3ff9fd4a91d3446679c",
+      "transformation": "byte-for-byte copy"
+    },
     "paper/report.tex": {
-      "packaged_sha256": "28152b4981e91e8fba28f1db1f5f9fc919c8d9195f417dd10274412d96f77396",
+      "packaged_sha256": "67eefadf15cdcc62382c6d9e29e21563b50bb424a572717db94ccc94ed697105",
       "source_path": "RH/papers/contributions/seven_eighths_zero_free_refinement.tex",
-      "source_sha256": "f24e20bef0648640b3acfa4c9d912f31fdd8ad6bb97d37fe106c5e0d3570d92a",
-      "transformation": "Only input paths changed from tex/papers/seven_eighths_zero_free_refinement/ to sections/."
+      "source_sha256": "058917b257e5cdf5241f14c519c638a2d338a8fa5de96e2e7f9ba1d2d09e0c71",
+      "transformation": "local TeX input paths rewritten for standalone compilation"
     },
     "paper/sections/00_frontmatter.tex": {
-      "packaged_sha256": "05e6c238eb56e5c610be90c8b5170e7c8a271dac3f86cb465d8436a2cacef68e",
+      "packaged_sha256": "808080d87fe4f0cb0c8a50efe00fa61f7ae28e5f228a7ad86f8151485c09330b",
       "source_path": "RH/tex/papers/seven_eighths_zero_free_refinement/00_frontmatter.tex",
-      "source_sha256": "05e6c238eb56e5c610be90c8b5170e7c8a271dac3f86cb465d8436a2cacef68e",
+      "source_sha256": "808080d87fe4f0cb0c8a50efe00fa61f7ae28e5f228a7ad86f8151485c09330b",
       "transformation": "byte-for-byte copy"
     },
     "paper/sections/01_source_and_geometry.tex": {
-      "packaged_sha256": "30ea55808dc716db0a24e236fe498aad0a823735b722bea638dff916d58edaca",
+      "packaged_sha256": "56e8b71581ef69ce3c49f7bc5538e0337f7aa595bfbf27d5c6c5de8f12efaff5",
       "source_path": "RH/tex/papers/seven_eighths_zero_free_refinement/01_source_and_geometry.tex",
-      "source_sha256": "30ea55808dc716db0a24e236fe498aad0a823735b722bea638dff916d58edaca",
+      "source_sha256": "56e8b71581ef69ce3c49f7bc5538e0337f7aa595bfbf27d5c6c5de8f12efaff5",
       "transformation": "byte-for-byte copy"
     },
     "paper/sections/02_low_energy.tex": {
-      "packaged_sha256": "22d5440ae41729c7b16770fc804136a9653caaa6828effbcf97ffdba917dd5f6",
+      "packaged_sha256": "d5c6c889bdc686bbb7399d6dd3dc497797f8da7c457617544e415153fced5a91",
       "source_path": "RH/tex/papers/seven_eighths_zero_free_refinement/02_low_energy.tex",
-      "source_sha256": "22d5440ae41729c7b16770fc804136a9653caaa6828effbcf97ffdba917dd5f6",
+      "source_sha256": "d5c6c889bdc686bbb7399d6dd3dc497797f8da7c457617544e415153fced5a91",
       "transformation": "byte-for-byte copy"
     },
     "paper/sections/03_physical_low.tex": {
-      "packaged_sha256": "da573f79e54de877056cfa7ea11136378f68755fb36a1233d71d6e5672b245c5",
+      "packaged_sha256": "6f8c091069ef28d68b00acd5df6c93d3a0293fc25c86c0c197ca19f9a1aad9ac",
       "source_path": "RH/tex/papers/seven_eighths_zero_free_refinement/03_physical_low.tex",
-      "source_sha256": "da573f79e54de877056cfa7ea11136378f68755fb36a1233d71d6e5672b245c5",
+      "source_sha256": "6f8c091069ef28d68b00acd5df6c93d3a0293fc25c86c0c197ca19f9a1aad9ac",
       "transformation": "byte-for-byte copy"
     },
     "paper/sections/04_high_endpoint.tex": {
-      "packaged_sha256": "fddf89a81d18c94f109c6eea719775206f948055e61d886f753a3b95cce7b5a6",
+      "packaged_sha256": "e3263cc3a1391530dd217a3df1a38f3d26411c60a012ba451457f150822bccdc",
       "source_path": "RH/tex/papers/seven_eighths_zero_free_refinement/04_high_endpoint.tex",
-      "source_sha256": "fddf89a81d18c94f109c6eea719775206f948055e61d886f753a3b95cce7b5a6",
+      "source_sha256": "e3263cc3a1391530dd217a3df1a38f3d26411c60a012ba451457f150822bccdc",
       "transformation": "byte-for-byte copy"
     },
     "paper/sections/05_recovery_continuation.tex": {
-      "packaged_sha256": "3a9577fecf8939229a6febcf6a07c3cd2aa4f51363a22b0bd213799aa35220db",
+      "packaged_sha256": "e9837fe42e0a76ceb2d79862b9e962464e4826b4488738ff3b155b255fe7e9a1",
       "source_path": "RH/tex/papers/seven_eighths_zero_free_refinement/05_recovery_continuation.tex",
-      "source_sha256": "3a9577fecf8939229a6febcf6a07c3cd2aa4f51363a22b0bd213799aa35220db",
+      "source_sha256": "e9837fe42e0a76ceb2d79862b9e962464e4826b4488738ff3b155b255fe7e9a1",
+      "transformation": "byte-for-byte copy"
+    },
+    "paper/sections/06_adaptive_refinement.tex": {
+      "packaged_sha256": "dd50fa505e949708a68ae47c3fc4fa43173370fbe5f34e02af862da2d87b8700",
+      "source_path": "RH/tex/papers/seven_eighths_zero_free_refinement/06_adaptive_refinement.tex",
+      "source_sha256": "dd50fa505e949708a68ae47c3fc4fa43173370fbe5f34e02af862da2d87b8700",
       "transformation": "byte-for-byte copy"
     },
     "paper/sections/06_scope_and_references.tex": {
-      "packaged_sha256": "2cde7e8c1d8a34789e0f8995572fc90cc7c7775609c88b7c75ab9689f8e988e5",
+      "packaged_sha256": "4d6bbe5b669d7731209b4cc1bba5c2597f2ab90c7065a60e109cc65ceb649be9",
       "source_path": "RH/tex/papers/seven_eighths_zero_free_refinement/06_scope_and_references.tex",
-      "source_sha256": "2cde7e8c1d8a34789e0f8995572fc90cc7c7775609c88b7c75ab9689f8e988e5",
+      "source_sha256": "4d6bbe5b669d7731209b4cc1bba5c2597f2ab90c7065a60e109cc65ceb649be9",
       "transformation": "byte-for-byte copy"
     },
+    "paper/seven_eighths_adaptive_moment.tex": {
+      "packaged_sha256": "ad7ad738dc1f536bf837b1e818b195152b6f580678508807f598a8812fd047aa",
+      "source_path": "RH/papers/supplements/seven_eighths_adaptive_moment.tex",
+      "source_sha256": "9e47734c8a32fa546f9761444d1f976dbd813c8cb1744a60d98d9be59e71921c",
+      "transformation": "local TeX input paths rewritten for standalone compilation"
+    },
     "report.pdf": {
-      "packaged_sha256": "9e80b86632818d019038aac2f8821686cea68be4ecb7e132450b1f6bfe254409",
+      "packaged_sha256": "7052ebf76e28c225f3d0c96940eb0d15621dc2d3deb1976d49dd7b9f9a121b98",
       "source_path": "RH/papers/contributions/seven_eighths_zero_free_refinement.pdf",
-      "source_sha256": "9e80b86632818d019038aac2f8821686cea68be4ecb7e132450b1f6bfe254409",
+      "source_sha256": "7052ebf76e28c225f3d0c96940eb0d15621dc2d3deb1976d49dd7b9f9a121b98",
+      "transformation": "byte-for-byte copy"
+    },
+    "seven_eighths_adaptive_moment.pdf": {
+      "packaged_sha256": "6c61a8dbf4412fb70c894c55e4d6eacda588ad0e5f7df52012b3e6c653576e15",
+      "source_path": "RH/papers/supplements/seven_eighths_adaptive_moment.pdf",
+      "source_sha256": "6c61a8dbf4412fb70c894c55e4d6eacda588ad0e5f7df52012b3e6c653576e15",
       "transformation": "byte-for-byte copy"
     }
   },
   "source_research_repository": {
-    "baseline_commit": "625bebc897848e27921ec2638d41aefee0632f2b",
+    "baseline_commit": "d48a3cee39ec52cca181958541462dc042f2bcad",
     "url": "https://github.com/Gaozhongpai/RH",
     "version_note": "The file hashes below identify the packaged worktree snapshot; the baseline commit alone does not identify uncommitted manuscript edits.",
     "worktree_dirty_at_packaging": true
   },
+  "supplementary_proof_pages": 10,
   "upstream": {
     "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
     "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",

@@ -6,6 +6,7 @@ establish the analytic estimates in the manuscript.
 """
 
 from pathlib import Path
+from fractions import Fraction
 import hashlib
 import json
 import re
@@ -47,6 +48,10 @@ def check_snapshot():
         "report.pdf", "paper/report.tex", "README.md", "REPORT.md",
         "PROVENANCE.json", "endpoint_certificate.py", "endpoint_certificate.json",
         "run_audits.py", "evidence/next_strip_verification_result.json",
+        "adaptive_endpoint_certificate.py", "adaptive_endpoint_certificate.json",
+        "seven_eighths_adaptive_moment.pdf", "paper/seven_eighths_adaptive_moment.tex",
+        "METHOD_COMPARISON.md", "evidence/external_tracker_comparison.json",
+        "methods/harmonic_mobius_ratio_recovery.md", "methods/hybrid_character_moment.md",
     }
     require(required <= seen, "Release manifest is incomplete")
     print(f"Snapshot integrity: PASS ({len(seen)} files)", flush=True)
@@ -59,12 +64,36 @@ def printed_axioms(text):
     return {name: {item.strip() for item in body.split(",")} for name, body in pairs}
 
 
+def check_method_comparison():
+    """Check reference arithmetic; reported external statuses are not replayed."""
+    data = read_json("evidence/external_tracker_comparison.json")
+    ours = Fraction(data["our_boundary"])
+    require(ours == Fraction(2187392879, 2500000000), "Comparison boundary differs")
+    refs = {row["id"]: row for row in data["records"]}
+    require(len(refs) == len(data["records"]) == 5, "Reference IDs changed")
+    for row in refs.values():
+        reference = Fraction(row["theta"])
+        require(ours-reference == Fraction(row["our_boundary_minus_reference"]),
+                f"Reference difference is incorrect: {row['id']}")
+    tighter = Fraction(refs["nielstron-20261009-tightening"]["theta"])
+    council = Fraction(refs["proofcouncil-20261009"]["theta"])
+    require(tighter < council < ours < Fraction(7, 8), "Reference ordering differs")
+    ell = Fraction(11, 3)-4*tighter
+    require(Fraction(1, 6) < ell < Fraction(1, 5)
+            and 657*ell**3-954*ell**2+21*ell+20 > 0,
+            "Reference rational does not have the stated strict cubic margin")
+    require(data["additional_stacked_gain_proved"] is False
+            and data["runs_Lean"] is False, "Reference scope was relabelled")
+    print("Method comparison: PASS (exact reference arithmetic; no external replay)",
+          flush=True)
+
+
 def check_historical_records():
     """Check agreement between archived records; do not replay their proofs."""
     result = read_json("evidence/next_strip_verification_result.json")
     require(result["status"] == "PASS_NEXT_STANDARD_ZETA", "Unexpected archive status")
     require(result["target"] == TARGET and result["theta"] == "20999/24000",
-            "Archived target differs from manuscript boundary")
+            "Archived target differs from the recorded first-stage boundary")
     require(result["source_pin"] == PIN, "Wrong upstream source pin")
     require(result["default_Lean_kernel_replay"] is True,
             "Archive does not record default-kernel acceptance")
@@ -122,7 +151,16 @@ def main():
     check_snapshot()
     subprocess.run([sys.executable, str(ROOT / "endpoint_certificate.py"), "--check"],
                    cwd=ROOT, check=True)
+    subprocess.run([sys.executable, str(ROOT / "adaptive_endpoint_certificate.py"), "--check"],
+                   cwd=ROOT, check=True)
+    provenance=read_json("PROVENANCE.json")
+    adaptive=read_json("adaptive_endpoint_certificate.json")
+    require(provenance["boundary"]==adaptive["manuscript_boundary"],
+            "Manuscript provenance and adaptive endpoint differ")
+    require(provenance["archived_verified_boundary"]=="20999/24000",
+            "Adaptive update must not relabel archived formal evidence")
     check_historical_records()
+    check_method_comparison()
     print("All release checks passed. No Lean or kernel replay was run.")
 
 

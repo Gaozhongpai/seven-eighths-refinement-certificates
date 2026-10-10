@@ -1,0 +1,308 @@
+\section{Recursive children and the finite induction}\label{adp:induction}
+
+We now check that the changed admissions suffice for the entire
+recursive argument. All the arithmetic steps in this section are
+the exact identities of \cite[Sections 18.3--18.7]{OAI26}.
+Their proofs are independent of the lower bound on $\kappa$.
+The following list specifies what is imported; the accompanying
+argument checks that it is applicable in the enlarged interval.
+
+\begin{center}
+\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{.26\linewidth}
+                  >{\raggedright\arraybackslash}p{.68\linewidth}@{}}
+\toprule
+Input from \cite{OAI26}&Data retained in the recursive argument\\
+\midrule
+Section 18.1, (18.4)--(18.10)&
+Exact deletion, inducing character, redundant natural zeros,
+reflection scales and conductor--support bound.\\
+Section 18.3, (18.17)--(18.19)&
+Equal products of scales, common mask, one whole-product norm
+power, and a support box fixed before the live prime labels.\\
+Section 18.4&
+Full first Poisson identity and complete common-support allocation;
+localization on the genuine sum before full M\"obius inversion.\\
+Section 18.5&
+One Gauss-row enlargement, all valuation-one, six and seven errors,
+and an auxiliary prime pool disjoint from live prime windows.\\
+Section 18.6, Lemma 18.2&
+Full second correlation, independent child products with their
+original prime coefficients and zeros, and exact normalizers.\\
+Section 18.7, Lemma 18.3&
+Exceptional-row count and masked equal-product lattice
+cancellation on the raw signed rectangles.\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{The preserved coefficient}
+
+When centering is needed, write $X_1X_2=Y_1Y_2$ and retain the
+entire difference of the two profile rectangles. After fixed plain
+powers $\mathfrak b_1,\mathfrak b_2$ have been extracted, it is
+\[
+ D_{\boldsymbol b}(l_1,l_2)=
+ \prod_{i=1}^2W_i(q_{\mathfrak b_i l_i}/X_i)
+ -\prod_{i=1}^2W_i(q_{\mathfrak b_i l_i}/Y_i).
+\]
+Within each separated side, the coefficient is the product of this
+difference, one common character, one common puncture, one power
+$q_{l_1l_2}^{it}$, and the original live prime coefficients.
+The first transform adds a Gauss coefficient on the whole product.
+The second transform removes it and restores the same prime
+coefficients. It does not leave a new coefficient in an individual
+prime factor \cite[Lemma 18.2]{OAI26}.
+
+At either transform, common support is extracted with its full
+multiplicities, not merely its gcd. A prime supplied by a live prime
+factor is frozen if it enters this support, and punctures every
+remaining factor on that side. The artificial residual noncoprime
+pairs are removed by the \emph{full} finite M\"obius indicator before
+forming independent products. Quotients may still contain the
+divisor primes; no unproved coprimality is imposed on them.
+Both inverse roots and the full Poisson kernel are retained until
+their joint Fourier separation.
+The coefficient measure is fixed on the whole-product support box
+before live labels are chosen, and is common to both rectangles.
+
+Let $N$ be the fixed number of prime factors. Choose $H_N$ to bound
+the sum of the absolute logarithms of their relative annular
+endpoints, enlarged for all plain windows, reflection multipliers,
+fixed arithmetic normalizations, relative dyadic boxes and support
+enlargements through the bounded depth.
+For every subset of factors, its aggregate support correction is
+at most
+\[
+ \theta_N=H_N/\log Z .
+\]
+There is one such correction, rather than $N$ separately chosen
+length errors. The raw frequency tails are first paid on the genuine
+source. Only afterwards is a common retained dyad extended by zero
+to its enclosing row ball.
+
+\subsection{Width decrease and child admission}
+
+Here are the relevant exact length identities. Let $c,d$ be the
+logarithmic norms of the two first extracted common-support moduli,
+and let $R$ be the logarithmic norm of their common primes whose
+net character exponents are nonzero modulo six.
+Let $E$ be the logarithmic norm of the divisor selected in the
+M\"obius expansion of the complementary common row mask. Put
+\[
+ \widetilde q=q+R+E,\qquad
+ K_0=2A-c-d+R+E-m .
+\]
+This is the displayed support union and nominal first frequency
+length of \cite[(18.22)]{OAI26}; let $K$ be its retained dyad length.
+In one Gauss norm, $w$ is the length removed from its column and
+$w_o\le w$ is the new moving support thereby created. Put
+\[
+ a_0=A-c-w,\qquad J=d-c+(K_0-K)-2w+w_o .
+\]
+The row-ball increment is denoted by $g$, and the prime-density
+normalizer by $Z^{-\ell}$. Without prime factors,
+$\ell=0$ and $g=J_++\sigma$.
+With prime factors, the enlarged main norm has
+$\ell=\sigma/3$, $g=J_++2\sigma$.
+Each extracted valuation error instead has
+$\ell=0$, $g=J_++\sigma$ and
+$0\le w_o\le w\le7\sigma/3$. Errors are not enlarged again.
+The auxiliary pool has exponent $\sigma/3$, whereas all live
+lengths are at most $\eta<\sigma/6$; disjointness follows after a
+threshold depending only on the fixed windows.
+
+In the second complete-support extraction write the two moduli as
+$D_2a,E_2b$, and set
+\[
+ c_2=\log_Zq_{D_2},\quad d_2=\log_Zq_{E_2},\quad
+ b_2=(c_2+d_2)/2,\quad G_c=(D_2,E_2),\quad g_2=\log_Zq_{G_c}.
+\]
+Let $p_2$ be the length of their common radical. Among equal
+non-six-divisible common valuations, let $t_2$ count the primes
+where the divided frequency is a unit. Let $V_{\rm id}$ be the
+product of the corresponding nonunit primes, and put
+$V=\log_Zq_{V_{\rm id}}$.
+The complete local correlation, including all zero cases, is
+partitioned on these unit and nonunit conditions before its scalar
+is bounded. With $\widetilde q$ the full moving support left by the
+first transform, the exact child widths are
+\begin{align}
+ m'&=2a_0-K-g-g_2-V,\qquad
+ q'=\widetilde q+w_o+t_2+V,\label{adp:child-widths}\\
+ M'&=m'+q'=M+J-g-g_2+t_2\le M-\sigma .
+ \label{adp:width-drop}
+\end{align}
+This is \cite[(18.32)]{OAI26}; $g_2\ge t_2$ and $g-J\ge\sigma$.
+The finite-correlation normalizers leave the child the allowance
+\begin{equation}\label{adp:child-allowance}
+ M'+\Delta_{\rm child},\qquad
+ \Delta_{\rm child}=b_2-p_2+w+\mathcal B_c+\ell\ge w+\ell ,
+\end{equation}
+as in \cite[(18.33)]{OAI26}. The nonnegative first-extraction bonus
+is $\mathcal B_c=(3c-5d-R)_+/6$.
+
+The two child characters have the forms
+\[
+ \tau_1(n)\rho(n)\chi_n(G_cV_{\rm id}h'),\qquad
+ \tau_1(n)\rho'(n)\chi_n(-G_cV_{\rm id}h'),\quad \rho,\rho'\in\Theta .
+\]
+Their inducing-character ratio belongs to $\Theta$; this statement
+takes no quotient at a zero. Every moving good prime belongs to the
+declared union in \eqref{adp:child-widths}. Six-divisible factors
+remain common punctures. The remaining choices at $\mathcal S$
+are finite ray choices, and the norm powers only translate Mellin
+height. Thus all nonexceptional children still lie in the global
+family to which \eqref{adp:prime} applies.
+
+For such children, first take the triangle inequality between
+the two rectangles, and then apply the support test to each plain
+scale. An empty annulus is discarded; every retained subunit
+annulus is rescaled to one. The exact clipped normalizers are those
+of \cite[(18.34)--(18.37)]{OAI26}. In particular the reductions
+may differ between rectangles. Let $A_{\rm act},z_{\rm act}$ be
+the actual lengths after all allocations, clipping and mask deletion,
+and $M'_{\rm act}$ their enclosing width. For the two transforms set
+\[
+ \delta_{{\rm fr},j}=\frac{\xi}{2}+
+       \frac{\log(C_dC_{{\rm sec},j})}{\log Z}<\xi
+       \qquad(j=1,2).
+\]
+Here $C_d$ bounds the relative width of a frequency dyad and
+$C_{{\rm sec},j}$ bounds the ratio of the nominal frequency scales
+within its fixed outer sector. The eventual threshold ensures the
+displayed inequalities. Retain
+$K_0-K\ge-\delta_{{\rm fr},1}$ and
+$0\le M'_{\rm act}-M'\le\delta_{{\rm fr},2}$.
+The entire admission defect is
+\[
+ F_{\rm act}=(A_{\rm act}-M'_{\rm act}+
+                    (6\kappa-1)z_{\rm act})_+ .
+\]
+The exact ledger \cite[(18.38)]{OAI26}, including the clipped
+normalizers, gives
+\[
+ F_{\rm act}\le6(w+\ell)+\delta_{{\rm fr},1}+2\theta_N .
+\]
+Remove one prefix of whole prime factors until admission holds,
+or until none remains. Since every length is at most $\eta$, its
+total removed length $d_z$ satisfies
+\[
+ \kappa d_z\le F_{\rm act}/6+\kappa\eta
+       \le\Delta_{\rm child}
+          +\delta_{{\rm fr},1}/6+\theta_N/3+\eta .
+\]
+This uses only $6\kappa-1\ge0$ and $0<\kappa\le1$.
+There is one mesh overshoot. If all prime factors disappear, the
+remaining plain lengths use the completed unrestricted zero-factor
+estimate. After pairing the two children and their exact coefficients,
+the extra edge cost is
+\begin{equation}\label{adp:edge-cost}
+ \delta_{{\rm fr},2}+\delta_{{\rm fr},1}/6+
+             \eta+7\theta_N/3 ,
+\end{equation}
+the bound of \cite[(18.40)]{OAI26}. The already allocated discrete
+and analytic costs remain separate.
+
+\subsection{Exceptional rows}
+
+If the inducing character belongs to $\Theta$, keep the raw signed
+rectangles. Neither clipping nor the nonprincipal prime bound is
+used on them. After fixing the live prime labels, Lemma 18.2 of
+\cite{OAI26} supplies one character, one common polynomial-size
+mask, and one norm power in both plains and both rectangles.
+The lattice estimate of \cite[Lemma 18.3]{OAI26} has main term
+\[
+ c_{\vartheta,\mathfrak R_*}X^{1+it}I_i(t),
+\]
+whose coefficient is independent of $X,t$.
+Its two product main terms therefore agree at equal products of
+scales and cancel before taking absolute values.
+
+The exceptional character count and the first and second support
+payments in \cite[(18.41)--(18.44)]{OAI26} are independent of
+$\kappa$. In the centered case their remaining deficit is at most
+\[
+ A-\frac56M-\frac23v-(L-v)_+\le(A-M)_+,
+ \qquad v=c+w+\min(c_2,d_2),\quad L=M/4 .
+\]
+Indeed its maximum as a function of $v\ge0$ is attained at $v=L$
+and equals $A-M$. For positive factors, admission implies $A\le M$.
+For the padded zero-factor core, $A-M$ is at most its padding.
+This also covers exceptional rows admitted when a partition scalar
+or enclosing-ball weight is bounded by one after positivity.
+No exceptional row is silently supplied to \eqref{adp:prime}.
+
+\subsection{Choice of mesh, height orders and induction losses}
+
+Prove the zero-factor width bands first and then the positive-factor
+bands, each in increasing width. Within a band prove the uncentered
+range $A\le5M/6$ before its comparison. Reflection gives arbitrary
+zero-factor lengths from the padded core; a comparison calls only
+the uncentered assertion already proved at that width.
+
+Before specifying $N$, choose a width floor $\rho$, width step
+$\sigma$ and padding $\delta_{\rm pad}$, with the latter small
+relative to the first two, such that
+\[
+ T_{\rm term}:=\rho+\delta_{\rm pad}+\rho/6+
+                         3\sigma+5\sigma/3<\varepsilon/4 .
+\]
+These terms pay, respectively, the small-width estimate, its padding,
+the terminal prime cost, and the exceptional and diagonal losses.
+If the prescribed initial width is at most $M_{\max}$, put
+$D=2+\lceil2M_{\max}/\sigma\rceil$.
+Let $C_*\ge1$ bound the fixed number of aggregate affine
+perturbations in one stage, enlarged to include
+\eqref{adp:clipping}. Choose
+\[
+ \xi<\min\left\{\frac{\delta_{\rm pad}}2,
+       \frac{\rho}{100C_*},\frac{\sigma}{4C_*},
+       \frac{\varepsilon}{16C_*D}\right\},\qquad
+ \eta<\min\left\{\frac{\sigma}{6},
+       \frac{\varepsilon}{16C_*D}\right\},\qquad
+ \varepsilon_0<\frac{\varepsilon}{16C_*D}.
+\]
+The affine admission changes by at most
+$|\Delta M|+|\Delta A|+5|\Delta z|$, since
+$0\le6\kappa-1\le5$. Apply this to aggregate subset errors.
+For the fixed slot system, the threshold on $\theta_N$ and endpoint
+logarithms, together with the aggregate tolerance, ensures
+$e_c\le\rho/100$ and the comparison margins after \eqref{adp:clipping}.
+Every strict child then drops width by at least $\sigma/2$;
+there is no same-band cycle.
+
+At the width floor the zero-factor core is estimated by absolute
+counting, and \eqref{adp:terminal} with \eqref{adp:prime} pays its
+positive factors. Above the floor the second-transform diagonal
+costs at most $5\sigma/3$ plus the aggregate errors
+\cite[(18.31)]{OAI26}. Together with the uncentered exceptional
+count, it first completes $A\le5M/6$ in the current band. Only then
+are the comparisons in Section~\ref{adp:numerical} invoked.
+Exceptional raw scales are never supplied to a clipped moment
+assertion. These are precisely the terminal and same-band calls
+used in the induction.
+
+For at most $d$ remaining strict calls use the error envelope
+\[
+ \mathcal E_d=T_{\rm term}+
+                   (d+1)C_*(\eta+\xi+\varepsilon_0).
+\]
+The preceding bounds close backward induction with total error
+less than $\varepsilon$. All surviving subsets use the same mesh.
+Small divisor losses are subdivided after $N$ is fixed; they are
+not charged as a fixed exponent once per prime or once per slot.
+Each discrete label mass is extracted once and its subsequent
+measure normalized before taking the smooth norm.
+
+Finally fix the internal derivative and height orders backwards
+through this finite induction. Lemmas 4.5 and 4.7 of \cite{OAI26}
+bound the full weighted Fourier measures and all Euler derivatives
+of the radial kernels uniformly in their scale ratio. Increasing
+a derivative order increases a fixed seminorm and height degree,
+not a power $Z^{J\xi}$. The polynomial factor in \eqref{adp:prime}
+is integrated with these weighted measures. Only after these
+internal orders are fixed is the external Fourier-tail order
+chosen. Reflection, masks and all finite ray choices preserve
+the same bounds. This proves Theorem~\ref{adp:plain}, including
+its original uniformity and mesh-before-factor-count assertion.

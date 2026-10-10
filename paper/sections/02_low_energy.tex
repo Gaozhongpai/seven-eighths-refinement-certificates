@@ -2,9 +2,12 @@
 \label{gex:row-energy}
 
 The direct estimate uses the energy of the completed rows after
-reflection. We recompute its exponent from \cite[Lemma~14.3]{OAI26};
-the assembled estimate of \cite[Lemma~15.1]{OAI26} uses
-\(\ell=1/6\).
+reflection. Lemma~\ref{gex:completed-low} extends
+\cite[Lemma~15.1]{OAI26}, which is stated for \(\ell=1/6\), to
+\(0\le\ell\le1/5\). Its proof follows the proof of
+\cite[Lemma~15.1]{OAI26}, recomputing the exponent from
+\cite[Lemma~14.3]{OAI26}; at \(\ell=1/6\) the bound
+\eqref{gex:completed-low-bound} is \cite[(15.2)]{OAI26}.
 
 Fix the target datum and slot system before \(Z\).  For a rescaled
 subset \(J\) and tuple \((p_i)_{i\in J}\), write
@@ -33,7 +36,7 @@ fixed reflection modulus.  We retain the original zero extensions and
 dual support, including shared primes.  The row ball includes every
 nonzero element, with its unit and bad-prime sectors.
 
-\begin{lemma}
+\begin{lemma}[cf.\ {\cite[Lemma~15.1]{OAI26}}]
 \label{gex:completed-low}
 For a fixed disjoint slot system with \(0\le\ell\le1/5\), and every
 \(\varepsilon>0\),

@@ -3,87 +3,106 @@
 A draft paper and reproducible certificates accompanying Zhongpai Gao's
 *A quantitative refinement of the seven-eighths zero-free half-plane*.
 
-The draft refines the boundary in OpenAI's cubic-theta argument from
-$7/8$ to
+Conditional on the named inputs from OpenAI's unrefereed preprint, the
+current main theorem gives
 
 $$
-\theta=\frac{20999}{24000}=\frac78-\frac1{24000}.
+\Re s>\theta_*=\frac{2187392879}{2500000000}=0.8749571516.
 $$
 
-Its theorem covers all Dirichlet $L$-functions and all finite-order Hecke
+It covers all Dirichlet $L$-functions and all finite-order Hecke
 $L$-functions over $\mathbb Q(\sqrt{-3})$, including imprimitive
-presentations. Principal poles at $s=1$ are allowed. The boundary is
-independent of conductor and height; constants and thresholds in intermediate
-estimates may depend on the fixed target.
+presentations, with principal poles at one allowed. The boundary is
+independent of conductor and height; intermediate constants and thresholds
+may depend on the fixed target.
 
-Read the [12-page paper](report.pdf) or the shorter [technical report](REPORT.md).
-This is an unsubmitted draft; independent mathematical and priority review
-remain pending. It does not prove RH.
+Read the [19-page main paper](report.pdf), its
+[10-page recursive moment proof](seven_eighths_adaptive_moment.pdf), or the
+[short technical report](REPORT.md). The 9 October revision incorporates
+the complete adaptive argument into the main theorem. This remains an
+unsubmitted, unranked draft; independent human specialist and priority
+reviews are pending. It does not prove RH.
+
+The bound is superseded numerically by refinements listed on
+[QRH Bounds](https://gtimg.github.io/QuasiRiemannTracker/).
+Our adaptive plain-moment extension overlaps ProofCouncil's argument;
+the improvements cannot be added. See the
+[method comparison](METHOD_COMPARISON.md) for the matching formulas,
+different arithmetic inputs and remaining recovery requirements.
+
+The archived standard-zeta target/kernel evidence remains at
+$20999/24000$. The stronger adaptive theorem has a conventional proof,
+conditional on the stated inputs, with no new formal replay.
 
 ## Check the package
 
-The audits require Python 3.10 or later and use only the standard library.
+Python 3.10 or later is sufficient; all audits use the standard library.
 From the repository root, run:
 
 ```sh
 python3 run_audits.py
 ```
 
-This checks the release hashes, recomputes the exact endpoint certificate and
-checks consistency of the archived verification records. It does not run Lean
-or independently establish the analytic estimates in the paper.
+This checks release hashes, both exact endpoint certificates and agreement
+between the historical records. It runs no Lean and does not independently
+verify the analytic moment or continuation proofs.
 
 | File | Purpose |
 | --- | --- |
-| [report.pdf](report.pdf) | The current manuscript. |
-| [paper/report.tex](paper/report.tex), `paper/sections/` | Editable, standalone TeX sources. |
-| [endpoint_certificate.py](endpoint_certificate.py) | Exact rational endpoint identities and the retained-bound limitation. |
-| [endpoint_certificate.json](endpoint_certificate.json) | The certificate checked against those identities. |
+| [report.pdf](report.pdf) | Current main manuscript. |
+| [seven_eighths_adaptive_moment.pdf](seven_eighths_adaptive_moment.pdf) | Full recursive plain-moment proof and witness count; part of the same paper. |
+| `paper/report.tex`, `paper/sections/` | Main TeX sources. |
+| `paper/seven_eighths_adaptive_moment.tex`, `paper/adaptive_sections/` | Supplementary TeX sources. |
+| [endpoint_certificate.py](endpoint_certificate.py), [JSON](endpoint_certificate.json) | Original first-stage endpoint and retained-bound limitation. |
+| [adaptive_endpoint_certificate.py](adaptive_endpoint_certificate.py), [JSON](adaptive_endpoint_certificate.json) | Two finite adaptive stages and the rational coefficient bounds printed in the paper. |
 | [run_audits.py](run_audits.py) | One-command arithmetic and archive checks. |
-| `evidence/` | Historical build, axiom, zeta target-comparison, negative-control and source-manifest records. |
-| [PROVENANCE.json](PROVENANCE.json), [SHA256SUMS](SHA256SUMS) | Source attribution and release integrity. |
+| [METHOD_COMPARISON.md](METHOD_COMPARISON.md) | Overlap with contemporary refinements, exact reference boundaries and limits on combining the methods. |
+| [Harmonic recovery](methods/harmonic_mobius_ratio_recovery.md) | A growing reduced-numerator sector; its complement remains open. |
+| [Hybrid character moment](methods/hybrid_character_moment.md) | Full smooth squarefree columns, including finite-order characters with the principal contribution retained. |
+| `evidence/` | Historical first-stage build, axioms, zeta comparison, negative control and source manifests. |
+| [PROVENANCE.json](PROVENANCE.json), [SHA256SUMS](SHA256SUMS) | Source attribution and snapshot integrity. |
 
-For the arithmetic check alone, run `python3 endpoint_certificate.py --check`;
-`--check` is also the default. Use `--write` to regenerate its JSON output.
+Each certificate supports `--check` (also the default) and explicit
+regeneration with `--write`.
 
-## What the archived evidence establishes
+## External inputs and archived evidence
 
-The Hecke-supremum, Hecke, Dirichlet and standard-zeta declarations compiled in
-the recorded proof build. Separate target comparison and default-kernel replay
-were performed for standard zeta only. This package preserves those completed
-records; its audits perform no new formal proof execution. OpenAI's proof
-sources are identified by provenance rather than vendored here.
-
-The external input is OpenAI's
+The input is OpenAI's
 [30 September 2026 preprint](https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/paper.pdf),
 pinned at `adc7f1241b42e322a6451854ab7e4b4c146bf78a`.
+Its Theorem 1.1 and the named reused statements are explicit hypotheses,
+not independently certified by this package.
 
-## Build the paper
+The recorded first-stage proof build compiled the Hecke-supremum, Hecke,
+Dirichlet and standard-zeta declarations. Separate target comparison and
+default-kernel replay covered standard zeta only. These records concern
+$20999/24000$, not the adaptive boundary. The upstream proof sources are
+identified by provenance rather than vendored here.
 
-With [Tectonic](https://tectonic-typesetting.github.io/) installed:
+The two arithmetic research notes are outside the main manuscript. They
+have internal model-assisted review, with independent specialist and
+priority reviews pending. Their parent-repository finite audits are not
+bundled here. The release checks do not certify their analytic proofs or
+establish an additional fixed-strip gain.
+
+## Build the PDFs
+
+With Tectonic installed:
 
 ```sh
 mkdir -p build
 cd paper
 tectonic --outdir ../build report.tex
+tectonic --outdir ../build seven_eighths_adaptive_moment.tex
 ```
 
-The output is `build/report.pdf`. The checked-in `report.pdf` records the
-manuscript version accompanying these certificates.
-
-## Repository
-
-Repository: [seven-eighths-refinement-certificates](https://github.com/Gaozhongpai/seven-eighths-refinement-certificates).
-
-For later updates to this checkout:
-
-```sh
-git push origin main
-```
+The outputs are `build/report.pdf` and
+`build/seven_eighths_adaptive_moment.pdf`. The checked-in copies identify
+the manuscript version accompanying the certificates.
 
 ## Citation and license
 
-Citation metadata are in [CITATION.cff](CITATION.cff). Identify the manuscript
+[Citation metadata](CITATION.cff) identify the draft. Include the manuscript
 version and repository commit when citing this work.
 
 The author's certificate code and repository documentation use the

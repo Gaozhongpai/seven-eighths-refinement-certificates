@@ -1,0 +1,258 @@
+\section{Two finite adaptive steps}\label{gex:adaptive-section}
+
+The first-stage boundary can itself be used in the plain moment.
+We now make two such uses, each with a strict endpoint margin.
+The arithmetic construction and the recovery source remain those of
+\cite{OAI26}; the extension of the plain moment is proved in
+\cite[Theorem 1.1]{GaoAdaptive26}.
+
+\subsection{The extended moment and its physical consumer}
+
+\begin{lemma}[Extended plain moment]\label{gex:adaptive-plain}
+Retain all hypotheses and notation of \cite[Lemma 18.1]{OAI26}.
+For \(13/18\le\kappa\le3/4\), assume the global family bound
+\(\beta_*\le(1+\kappa)/2\). Let the element rows satisfy
+\(0<q_k\ll Z^m\), with \(\psi_k(n)=\tau(n)\chi_n(k)\), and put
+\(M=m+q\), where \(q\) bounds the displayed moving conductor union
+before cancellation. For positive total prime length \(z\), assume
+\(n_1+n_2+6\kappa z\le M\) and restrict to inducing characters
+outside the prescribed finite group \(\Theta\). Then
+\[
+ \sum_{k\in\mathcal R_z}
+ \left|S_{\psi_k}(n_1;W_1)S_{\psi_k}(n_2;W_2)
+                  \prod_i Q_{\psi_k,i}\right|^2
+ \ll Z^{M+\varepsilon}.
+\]
+At \(z=0\), bounded plain lengths are unrestricted and the rows remain
+nonprincipal. The slot mesh precedes the fixed slot count, uniformly
+on bounded length ranges. Both plains and every slot use the same
+puncture, fixed within the row sum. All defining-modulus zeros,
+including canceled and six-divisible factors, remain. Prime supports
+are disjoint before masking, and their coefficients are fixed finite
+combinations from \(\Theta\), independent of the varying row.
+The original label ranges, finite seminorms and polynomial separated-height
+costs are retained.
+\end{lemma}
+
+The proof in \cite{GaoAdaptive26} follows every recursive child of
+\cite[Section 18]{OAI26}. The global input licenses the prime contour
+\((1+\kappa)/2+e_{\rm an}\) for each nonprincipal child; it is not a
+bound inferred from its parent's detector bin. The changed terminal
+length is \(z\le3M/13\). The comparison has admission reserve
+\(M/15\); its clipping errors are \(8e_{\rm cl}/5\) and
+\(13e_{\rm cl}/5\), so choosing
+\(\xi+13e_{\rm cl}/5<M/15\) preserves that reserve. Natural zeros,
+the common Fourier measure, exceptional equal-product cancellations
+and the backward seminorm allocation are unchanged.
+
+For the physical rows the twist is fixed-ray, so there is no additional
+moving radical in \(M\). Write \(\delta=2a-1\), \(q=\delta x\),
+\(0\le x\le1/2\), and \(\alpha=5/6\). The actual detector witnesses obey
+\[
+ r+m\ge t-O(\varepsilon),\qquad r\le t+O(1/\log U),
+ \qquad 1\le t\le3/2.
+\]
+For \(r<1,m<1/2\), the inverse and doubled-plain capacities are
+\((1-r)/2\) and \((1-2m)/(6\kappa)\). Put
+\[
+ c=\frac1{3\kappa},\quad B=2-2cx,\quad
+ D=B+1-x,\quad P=B(1-x),\quad
+ \mathcal J=(\alpha-\delta)D+\delta P.
+\]
+Their count exponents are
+\(1-\delta\{x+(1-x)r\}\) and
+\(1-\delta\{cx+B(t-r)\}\). Balancing them and the long-inverse
+branch gives
+\begin{equation}\label{gex:adaptive-count}
+\begin{gathered}
+ R_{\rm short}(t)=1-\delta+\delta P(3/2-t)/D,\qquad
+ L(t)=1-\delta+(\alpha-\delta)(t-1),\\
+ t_*=1+\frac{\delta P}{2\mathcal J},\qquad
+ R_*=1-\delta+\frac{(\alpha-\delta)\delta P}{2\mathcal J}.
+\end{gathered}
+\end{equation}
+These formulas use both witness inequalities, not an equality for their
+lengths. Uniformly \(D\ge2\), \(\mathcal J\ge25/39\), and the inverse
+crossing has \(r_*\ge23/37\). Thus the existing inverse prime supply
+\(7/37\) suffices; the plain supply is at most \(c/6\le1/13\).
+Zero-capacity neighborhoods use the unweighted estimates.
+Whole-product conjugation preserves the physical coefficients and zeros.
+Rowwise selected real parts and heights are recovered by the same common
+parameter-Sobolev measure, not by row-dependent prime coefficients
+\cite[Proposition 4.1]{GaoAdaptive26}.
+
+\subsection{Two exact endpoint certificates}
+
+Set \(\theta_0=20999/24000\), supplied by
+Proposition~\ref{gex:first-stage}. For each of the following stages use
+\(\kappa=2\theta_{i-1}-1\), and the geometry
+\[
+ \ell_i=1/6+p_i,\quad h_i=13/16+3p_i/2,\quad
+ l_{x,i}=17/48-p_i/2,\quad l_{y,i}=23/48-p_i/2.
+\]
+Here \(\ell_i\) is the total prime length for stage \(i\), not an
+individual slot length. The latter are fixed after the moment mesh.
+\begin{center}
+\small
+\begin{tabular}{@{}cccccc@{}}
+\toprule
+Stage & \(\kappa\) & \(c\) & \(p_i\) & \(m_i\) & \(\theta_i=7/8-p_i/4\)\\
+\midrule
+1 & \(8999/12000\) & \(4000/8999\) & \(1/5836\)
+  & \(10^{-8}\) & \(20425/23344\)\\
+2 & \(8753/11672\) & \(11672/26259\) & \(107121/625000000\)
+  & \(10^{-9}\) & \(2187392879/2500000000\)\\
+\bottomrule
+\end{tabular}
+\end{center}
+Both \(\kappa\)'s lie in \([13/18,3/4]\). At stage 2 the prime contour
+is \(\theta_1+e_{\rm an}\), licensed by the already established stage 1,
+not by the output \(\theta_2\).
+
+The principal exponent remains \(C(s)=s-11/16\). The literal central
+endpoint, with the count \eqref{gex:adaptive-count}, is
+\[
+ E_i=-1/48+(2/3)\delta+\delta x/6-(13/16)(1-R_*)
+       +p_i\{-1/4+\delta(1+x)+(3/2)R_*\}.
+\]
+We give a compact rational certificate on the full rectangle
+\(0\le\delta\le5/6,\ 0\le x\le1/2\). Set \(y=1/2-x\) and
+\[
+\begin{gathered}
+ D=5/2-c+(1+2c)y,\qquad P=1-c/2+2y+2cy^2,\\
+ k_i=1/48-5p_i/4-m_i,\qquad v_i=1/16+y/6+p_i y.
+\end{gathered}
+\]
+Then exact multiplication gives
+\begin{equation}\label{gex:adaptive-certificate}
+\begin{aligned}
+ 2\mathcal J(-E_i-m_i)&=A_i\delta^2+B_i\delta+C_i,\\
+ A_i&=2(P-D)v_i+h_iP,\\
+ B_i&=2\alpha Dv_i+2(P-D)k_i-h_i\alpha P,\qquad
+ C_i=2\alpha Dk_i.
+\end{aligned}
+\end{equation}
+For both rows of the table, rational expansion of these displayed
+formulas gives \([y^j]A_i\ge1/4\) for \(0\le j\le3\), and
+\[
+ [y^j](4A_iC_i-B_i^2)>d_j\quad(0\le j\le4),\qquad
+ (d_0,\ldots,d_4)=
+ (10^{-8},1/25,19/100,13/50,3/40).
+\]
+All bounds are rational coefficient inequalities. In particular
+\(A_i>0\) and \(4A_iC_i-B_i^2>0\) for \(y\ge0\). The identity
+\(4A_i(A_i\delta^2+B_i\delta+C_i)
+ =(2A_i\delta+B_i)^2+4A_iC_i-B_i^2\)
+proves \(E_i<-m_i\). Stage 2 therefore retains the full
+\(10^{-9}\) margin; no sampling or decimal comparison is used.
+
+\subsection{Activation at the new scales}
+
+For each stage repeat the same compensated probe
+\eqref{gex:compensated-source}, including every marked subset, the
+original disjoint windows and the full quotient-free correction.
+The rescaled minima are
+\(M'\ge1/2-3p_i>0\), \(l_{x,i}-d\ge3/16-3p_i/2>0\), and
+\(l_{y,i}-d-11b/6\ge1/12-3p_i/2>0\).
+Lemma~\ref{gex:completed-low}
+and the physical Gram recovery apply since \(\ell_i<1/5\);
+the tuple payment remains
+\[
+ -d+(5\ell_i-1+d)_+/8\le-7d/8.
+\]
+Thus the complete low bound is
+\(Z^{3/16-p_i/4+\varepsilon}=Z^{C(\theta_i)+\varepsilon}\),
+with the same finite profile, cusp, mask and height costs.
+
+For moderate rows use the unchanged \(D_1(10e)\) contours and
+\eqref{gex:adaptive-count}. The floor, terminal and intermediate
+branches retain the bounds
+\[
+ -7/1200+15p_i/8,\qquad
+ -1/48-\delta/16+15p_i/8,\qquad
+ -49/14400+139p_i/150,
+\]
+respectively; each has a margin larger than \(m_i\).
+The frequency slope is between \(4/25\) and \(2\).
+Choose \(0<\zeta<5\ell_i-h_i=1/48+7p_i/2\); then
+\(\ell_i/d>1/5>7/37\) for \(1/2\le d\le h_i+\zeta\).
+Thus the fixed disjoint physical slots provide the required capacities.
+Allocate the aggregate losses in \eqref{gex:central-loss-budget}
+below \(m_i/8\): choose the mesh before the even fixed slot count,
+then the allowances involving that count. The strict denominator and
+selection margins make this allocation uniform in the targets.
+
+The second Euler box is now
+\((\Rea s,\Rea w,\Rea z)\ge(\theta_i,19/20,33/200)\).
+With \(a_0=p_i/4\), the good- and row-prime defects in
+\eqref{gex:local-euler-defect} are
+\(q_p^{-363/200+a_0}\) and \(q_p^{-33/40+a_0}\);
+the denominator decay is \(56/25-3p_i/2>2\).
+These give normal convergence and divisor-product control as before.
+The selected-factor error exponents
+\(-\theta_i,-99/100,-273/200+5p_i/4,-47/50\)
+are all at most \(-4/5\). Hence the same principal correction,
+nonvanishing \(H_\eta\), and logarithmic normalizer are retained.
+Its residue reserves are
+\(l_{y,i}/20,h_i/600,(2/5)\min_j\ell_{i,j}>0\).
+Normalization losses are reserved after the slots are fixed.
+
+Small rows use \((\Rea s,\Rea w,\Rea z)=(7/8+8e,1/2,17/50)\),
+which lies in \(D_1(3/8)\) and is right of every target zero by the
+input theorem. Under \(\beta_*>\theta_i\), its shift from
+\(\beta_*+e\) costs less than \(p_i/4+7e\). Together with the scale
+cost \(51p_i/100\), the saving is
+\(63/800-19p_i/25>1/16\), including bad-place and nontrivial-unit
+rows. No use of \(\beta_*+e\) in \(D_1(3/8)\) below \(7/8\) is made.
+For large rows, \(B_{0,i}=53/32-3p_i/4\). After fixing \(\zeta>0\),
+choose a fixed absolute contour order \(v\) so that
+\(B_{0,i}+(h_i+\zeta)(1+\varepsilon)-\zeta v+\varepsilon\)
+is below the required exponent. These estimates retain all axes,
+joins and rescaled profiles. For each target the internal finite
+orders precede its height exponent \(\tau_\eta\), which precedes
+the later external tail order. Constants and thresholds may depend
+on the target; the remaining power reserve is common.
+
+\subsection{Finite feedback and the full family}
+
+We finish the proof of Theorem~\ref{gex:main}. At stage \(i\), assume
+\(\theta_i<\beta_*\le\theta_{i-1}\), put
+\(\Gamma_i=\beta_*-\theta_i\), and choose the low allowance
+\(\omega=\Gamma_i/2\). All slots and power reserves precede the
+individual target. The recovery of Section~\ref{gex:recovery-section},
+with the foregoing parameters, produces the same signal
+\eqref{gex:common-signal} and a common \(\sigma_i>0\) such that
+\[
+ |J_\eta(Z)|\ll_\eta Z^{C(\theta_i)+\omega},\qquad
+ |J_\eta(Z)-f_\eta(Z)|\ll_\eta Z^{C(\beta_*)-\sigma_i}.
+\]
+The uniform logarithmic control used in this recovery comes from the
+input's all-height zero location and retains its conductor and height
+logarithms. It does not require uniform target-dependent thresholds.
+Let \(\epsilon_i=\min(\Gamma_i/2,\sigma_i)>0\).
+The Mellin transform of \(f_\eta\) continues
+\(e^{(s-5/6)^2}H_\eta(s)/L_F^S(s,\eta)\) holomorphically to
+\(\Rea s>\beta_*-\epsilon_i\), exactly as in the previous section.
+The numerator is nonzero there. A primitive target zero sufficiently
+near the supremum contradicts this continuation; attainment of the
+supremum is unnecessary. This proves \(\beta_*\le\theta_i\).
+Starting with Proposition~\ref{gex:first-stage} proves stage 1 and
+then stage 2, without a contour at an unproved output boundary.
+
+Finite induced Euler factors are nonzero for \(\Rea s>0\), so the
+same result holds for every finite-order Hecke presentation.
+For a Dirichlet character \(\chi\), its norm lift
+\(\eta_\chi(\mathfrak a)=\chi(N\mathfrak a)\) satisfies, after deleting
+the modulus support and \(3\),
+\[
+ L_F^{S_F}(s,\eta_\chi)
+ =L^{S_{\Q}}(s,\chi)L^{S_{\Q}}(s,\chi\chi_{-3}).
+\]
+Both factors are holomorphic on \(\theta_2<\Rea s<1\); their nonzero
+product and finite restoration give the Dirichlet assertion there.
+The coarse input covers \(\Rea s\ge1\), with principal poles excepted.
+There is no height restriction. Functional equations and closure under
+conjugation reflect critical-strip zeros, yielding the lower boundary
+\(1-\theta_2=312607121/2500000000\). This proves the full theorem.
+The two strict gains are \(41/35016000\) and
+\(39539/3647500000000\); only these two finite steps are used.

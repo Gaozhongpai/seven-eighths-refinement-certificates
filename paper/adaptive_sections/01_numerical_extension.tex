@@ -1,0 +1,95 @@
+\section{Prime bounds and comparison lengths}\label{adp:numerical}
+
+For a row inducing outside $\Theta$, every character obtained by
+multiplying it by a component of $\nu_i$ is nonprincipal. Otherwise
+the inducing row character would belong to $\Theta$. This remains
+true for each recursive child. The global hypothesis and
+\cite[Lemma 4.9]{OAI26} therefore permit the prime contour to move to
+$\Rea s=s_\kappa+e$, for fixed $e>0$, uniformly in the conductor
+and height. The von Mangoldt formulation, removal of higher prime
+powers and central normalization give
+\begin{equation}\label{adp:prime}
+ |Q_\psi|^2\ll Z^{\kappa z+\varepsilon_1}
+       p_J(\boldsymbol W)^b(1+|\boldsymbol\omega|)^h .
+\end{equation}
+Here $p_J$ is a finite smooth seminorm, and $\boldsymbol\omega$
+records the independent normalized twists of the profiles.
+The contour displacement costs $2ez$, so it is controlled by the
+bounded \emph{total} length, not by the number of factors.
+The orders $J,b,h$ are fixed after the profiles and requested
+derivatives. They do not add a power of $Z$.
+
+Extra masks are removed by the exact identities
+\begin{align*}
+ S_{k,\mathfrak R}(X)
+ &=\sum_{d\mid\mathfrak R}\mu(d)\psi_k^0(d)q_d^{-1/2}
+                    T_k(X/q_d),\\
+ Q_{k,i,\mathfrak R}
+ &=Q_{k,i}^{\,0}-P_i^{-1/2}
+       \sum_{p\mid\mathfrak R}\psi_k^0(p)\nu_i(p)W_i(q_p/P_i),
+       \qquad P_i=Z^{z_i}.
+\end{align*}
+Here $\psi_k^0$ retains the natural zeros but omits the additional
+mask, and $T_k$ is its centrally normalized plain sum.
+Their absolute coefficient masses are $Z^{\varepsilon_1}$ by
+\cite[Lemma 4.10 and Section 18.1]{OAI26}.
+The inducing character is unchanged; each deletion decreases the
+left side of \eqref{adp:admission}. If no prime factor survives,
+one uses the unrestricted zero-factor assertion.
+
+Set $A=n_1+n_2+z$. At the small-width endpoint, admission gives
+\begin{equation}\label{adp:terminal}
+ z\le\frac{M}{6\kappa}\le\frac{3M}{13},\qquad \kappa z\le M/6.
+\end{equation}
+The second inequality is the required terminal exponent payment.
+The slightly larger length range in the first inequality has no
+analytic consequence.
+
+For the comparison step take $L=M/4$. If $A>5M/6$, then
+\[
+ (6\kappa-1)z\le M-A,\qquad 6\kappa-1\ge10/3,
+ \quad\text{hence}\quad z<M/20 .
+\]
+If one original plain factor has length below $L$, reflect the other.
+Otherwise compare the original product with a product having lengths
+$L,A-z-L$, the same profiles, and the same product of scales; reflect
+its longer factor when estimating the comparison.
+
+The primitive functional equation, with the redundant deleted Euler
+factors restored, gives a reflected length at most $M-n+\xi$ for
+a factor of length $n$. This is exactly the reflection of
+\cite[Section 18.1]{OAI26}: its conductor times its redundant radical
+is bounded by $Z^M$; retained subunit annuli are rescaled only after
+the support test, and both the annular tail and scale supremum are
+paid by finite seminorms and polynomial heights.
+Consequently the comparison has
+\begin{align}
+ A_{\rm comp}&\le3M/2-A+2z+\xi\le23M/30+\xi,\label{adp:comparison-a}\\
+ A_{\rm comp}+(6\kappa-1)z
+ &\le5M/2-2A+2z+\xi\le14M/15+\xi.\label{adp:comparison-admit}
+\end{align}
+Both required boundaries have a margin of $M/15$ before $\xi$.
+Thus the comparison uses only the uncentered range already proved
+at that width.
+
+For completeness, suppose an aggregate clipping error $e_c$ changes
+the inequality to $A\ge5M/6-e_c$. Then
+$z\le M/20+3e_c/10$, and the two bounds become
+\begin{equation}\label{adp:clipping}
+ A_{\rm ref}\le23M/30+\xi+\frac85e_c,\qquad
+ A_{\rm ref}+(6\kappa-1)z
+       \le14M/15+\xi+\frac{13}{5}e_c .
+\end{equation}
+The coefficients $8/5$ and $13/5$ include the perturbation of $A$
+itself, not only that of $z$. The zero branch of the reflected
+positive part has affine bound at most
+$7M/15+\xi+13e_c/10$. The long comparison factor has length at least
+$8M/15-13e_c/10$. If $M\ge\rho$ and $\xi,e_c\le\rho/100$, the
+margins in the uncentered boundary, admission boundary, and the
+long-factor boundary $M/2$ are respectively
+\[
+ \frac{61\rho}{1500},\qquad
+ \frac{23\rho}{750},\qquad
+ \frac{61\rho}{3000}.
+\]
+These are positive uniformly throughout the new interval.

@@ -1,7 +1,7 @@
 \documentclass[11pt]{article}
 \usepackage[margin=1in]{geometry}
 \usepackage{amsmath,amssymb,amsthm,mathtools,mathrsfs}
-\usepackage{booktabs,array,enumitem}
+\usepackage{booktabs,array,enumitem,longtable}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern,microtype}
 \usepackage{xcolor}
@@ -30,24 +30,27 @@
 
 \title{A quantitative refinement of the seven-eighths\\zero-free half-plane}
 \author{Zhongpai Gao\\\small gaozhongpai@gmail.com}
-\date{7 October 2026}
+\date{9 October 2026}
 \begin{document}
 \maketitle
 
 \begin{abstract}
 We refine OpenAI's zero-free half-plane for all Dirichlet $L$-functions
 and all finite-order Hecke $L$-functions over $\Q(\sqrt{-3})$.
-The new boundary is $20999/24000=7/8-1/24000$, with principal poles
-allowed. We change the averaging scales in its cubic-theta probe,
-prove the corresponding low-energy estimate, and use an exact
-two-variable endpoint calculation to bound the remaining rows.
-An explicit quadratic certificate gives the required margin. The moment
-estimates remain unchanged; the proof includes the residue, tail and
-normalization costs at the new scales.
+The boundary is $2187392879/2500000000=0.8749571516$, with principal poles
+allowed. The proof is conditional on OpenAI's unrefereed preprint: it
+uses its seven-eighths theorem as an input and reuses its construction
+and estimates under modified parameters, with a hypothesis audit for
+each reused statement. We first change the averaging scales in its
+cubic-theta probe and obtain $20999/24000$. We then extend the range
+of its plain-moment estimate and let the prime-slot capacity use this
+improved boundary. Two finite applications give the stated result.
+The proof retains the residue, tail, height and normalization costs;
+the recursive moment argument is supplied in a companion proof note.
 \end{abstract}
 
 \noindent\textbf{2020 Mathematics Subject Classification.}
-11M26 (primary); 11M06, 11L05 (secondary).
+11M26 (primary); 11M06, 11R42, 11L05 (secondary).
 
 \noindent\textbf{Keywords.}
 Dirichlet $L$-function, Hecke $L$-function, zero-free half-plane,
@@ -55,63 +58,132 @@ cubic theta function, marked prime factors.
 
 \section{Introduction}\label{gex:introduction}
 
-Throughout, $F=\Q(\sqrt{-3})$. OpenAI \cite{OAI26} proves that every
-Dirichlet $L$-function and every finite-order Hecke $L$-function over
-$F$ is zero-free in $\Rea s>7/8$. Its proof compares a cubic-theta
+Throughout, $F=\Q(\sqrt{-3})$. OpenAI \cite{OAI26} gives a proof, in an
+unrefereed preprint, that every Dirichlet $L$-function and every
+finite-order Hecke $L$-function over $F$ is zero-free in $\Rea s>7/8$.
+Its proof compares a cubic-theta
 character sum with a Mellin signal containing $1/L$. We retain this
-construction and its moment estimates, and improve the comparison
-after changing the averaging scales.
+construction, change the averaging scales, and verify that its plain
+moment can use a slightly wider parameter range. The latter allows
+the comparison to use the boundary already obtained in the preceding
+step.
 
 \begin{theorem}\label{gex:main}
-Put $\theta=20999/24000$. Every finite-order Hecke $L$-function over
+Put $\theta_*=2187392879/2500000000=0.8749571516$.
+Every finite-order Hecke $L$-function over
 $F$ and every Dirichlet $L$-function, including imprimitive
-presentations, is zero-free in $\Rea s>\theta$, with principal poles
+presentations, is zero-free in $\Rea s>\theta_*$, with principal poles
 at $s=1$ excepted. In particular this holds for the Riemann zeta
 function. Every zero $\rho$ with $0<\Rea\rho<1$ of one of these
 $L$-functions satisfies
 \[
- \frac{3001}{24000}\le\Rea\rho\le\frac{20999}{24000}.
+ \frac{312607121}{2500000000}\le\Rea\rho
+       \le\frac{2187392879}{2500000000}.
 \]
 \end{theorem}
 
 The boundary is independent of the conductor and height. Constants
 and thresholds in the character-sum estimates may depend on the
-fixed target.
+fixed target. The proof uses \cite[Theorem~1.1]{OAI26}, namely
+$\beta_*\le7/8$ in the notation of Section~\ref{gex:high-section},
+as a hypothesis, together with the statements of \cite{OAI26} listed
+in Table~\ref{gex:input-table}. Theorem~\ref{gex:main} is therefore
+conditional on the correctness of those statements.
 
-The extra prime length lowers the direct estimate by $1/24000$
+The proof begins with the following intermediate boundary.
+\begin{proposition}\label{gex:first-stage}
+Under the same external inputs, every member of the stated families
+is zero-free in $\Rea s>\theta_0=20999/24000$, with principal poles
+at one excepted.
+\end{proposition}
+For Sections~\ref{gex:source-section}--\ref{gex:recovery-section},
+write $\theta=\theta_0$. The extra prime length lowers the direct
+estimate by $1/24000$
 while leaving the principal exponent $s-11/16$ unchanged. It also
-changes the estimate for the remaining rows. Retaining the two
-parameters in that estimate gives a quadratic that is positive
+changes the estimate for the remaining rows. Retaining the
+perturbation in OpenAI's two-parameter endpoint certificate
+\cite[Lemma~20.2]{OAI26} gives a quadratic that is positive
 throughout the parameter rectangle. The
 resulting margin pays the change of scales and the recovery errors.
+Section~\ref{gex:adaptive-section} then proves Theorem~\ref{gex:main}
+by extending the plain-moment range and using each established
+all-height boundary as input to the next step. The construction never
+uses the output boundary in its own moment estimate.
 
 Sections~\ref{gex:source-section}--\ref{gex:low-recovery}
 establish the low estimate. Section~\ref{gex:high-section} proves
 the endpoint bound, and Section~\ref{gex:recovery-section} completes
-the recovery and continuation. The last section explains the limit
-of this parameter refinement.
+the first-stage recovery and continuation.
+Section~\ref{gex:adaptive-section} gives the two adaptive steps;
+the full recursive moment proof is in \cite{GaoAdaptive26}.
+Section~\ref{gex:limit-section} records the limits of the parameter
+refinement and the scope of the verification archive. Appendix~\ref{gex:audit}
+audits the hypotheses of every reused statement.
 
-The unchanged inputs are listed below. The new arguments are the
-modified-scale low estimate, the endpoint certificate and the
-admission of the principal Euler correction below $7/8$.
+The reused inputs are listed in Table~\ref{gex:input-table}. The new
+arguments are the modified-scale low estimate, the re-run endpoint
+certificate at the perturbed geometry, the admission of the
+principal Euler correction below $7/8$, and the extended plain-moment
+range with its finite feedback. No improved long inverse moment is
+assumed or proved here.
 
-\begin{center}
+\begin{table}[htbp]
+\centering
 \small
-\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}ll@{}}
+\caption{Statements of \cite{OAI26} used in this paper. Each is
+audited in Appendix~\ref{gex:audit}.}
+\label{gex:input-table}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.42\linewidth}
+                >{\raggedright\arraybackslash}p{0.40\linewidth}l@{}}
 \toprule
-Input in \cite{OAI26} & Use here\\
+Statement in \cite{OAI26} & Use here & Section\\
 \midrule
-Probe and Poisson; \S\S\,4--7, 16
- & Character sum and principal signal\\
+Theorem 1.1 ($\beta_*\le7/8$), as a hypothesis
+ & Bin ceiling $\delta\le3/4$; Lemma 18.1 at $\kappa=3/4$;
+   small-row line $\Rea s=7/8+8e$ right of $\beta_*$
+ & \ref{gex:high-section}, \ref{gex:recovery-section}\\
 \addlinespace[2pt]
-Reflection and Gram; Lemma 14.3, Prop.\ 15.2
- & Low estimate at new scales\\
+\S\S\,4--7 and 16: probe (6.1), separation (6.2), local identity
+(7.11)--(7.12), Poisson identity and tuple correction (16.3), (16.8),
+Lemma 16.2
+ & Character sum, high identity, local factors
+ & \ref{gex:source-section}, \ref{gex:recovery-section}\\
 \addlinespace[2pt]
-Inverse and plain moments; \S\S\,17--19
- & Witness counts at $\kappa=3/4$\\
+Lemmas 4.5, 4.6, 4.9, 4.10
+ & Annular tails; logarithmic control; deleted Euler factors
+ & \ref{gex:row-energy}--\ref{gex:recovery-section}\\
 \addlinespace[2pt]
-Contours and continuation; \S\S\,2, 10, 20
- & Recovery and zero exclusion\\
+Lemma 14.3; proof of Lemma 15.1
+ & Reflected energy; Lemma~\ref{gex:completed-low}
+ & \ref{gex:row-energy}\\
+\addlinespace[2pt]
+Proposition 15.2; proof of Proposition 15.3
+ & Gram bound; Proposition~\ref{gex:physical-low}
+ & \ref{gex:low-recovery}\\
+\addlinespace[2pt]
+Proposition 8.3; Lemmas 17.1, 17.6, 18.1; proof of Proposition 19.2
+ & Witness counts at $\widehat\kappa=3/4$
+ & \ref{gex:high-section}\\
+\addlinespace[2pt]
+Lemmas 10.3, 10.4, 20.1; (20.4), (20.8); certificate of Lemma 20.2;
+(20.5), (20.7), (20.11)
+ & Central contours, endpoint exponent, Lemma~\ref{gex:endpoint},
+   remaining branches
+ & \ref{gex:high-section}\\
+\addlinespace[2pt]
+Lemma 13.1; Lemma 10.5 with (20.1)--(20.3); Lemma 10.6 with \S20.3;
+Lemma 11.1 with \S20.6
+ & Normalizer, principal recovery, outer rows, height allocation
+ & \ref{gex:recovery-section}\\
+\addlinespace[2pt]
+Proposition 2.1 (proof repeated); Proposition 11.3
+ & Continuation and transfer to the full family
+ & \ref{gex:recovery-section}\\
+\addlinespace[2pt]
+Proof of Lemma 18.1, extended in \cite{GaoAdaptive26}
+ & Plain capacity at $\kappa_0$ and $\kappa_1$; each uses the previous
+   all-height boundary
+ & \ref{gex:adaptive-section}\\
 \bottomrule
-\end{tabular*}
-\end{center}
+\end{tabular}
+\end{table}

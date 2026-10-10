@@ -2,8 +2,11 @@
 
 \subsection{The principal correction below seven eighths}
 
-Set \(a_0=1/24000\). We extend the local estimates of
-\cite[Sections 7 and 16]{OAI26} to
+Set \(a_0=1/24000\). The second Euler region \(D_2\) of
+\cite[Section 10.2 and (7.15)]{OAI26} is defined by
+\(\Rea s\ge7/8\), \(\Rea w\ge19/20\), \(\Rea z\ge33/200\). Since
+\(\beta_*+e\) may now lie below \(7/8\), we extend the local estimates
+of \cite[Sections 7 and 16]{OAI26} to
 \begin{equation}\label{gex:second-euler-box}
  \Rea s\ge\theta,\qquad \Rea w\ge19/20,\qquad \Rea z\ge33/200.
 \end{equation}
@@ -29,14 +32,21 @@ For row primes the six-valuation table has least decay
 The constants are uniform in phases and heights. The first product
 converges normally, and the second costs \(q_u^\varepsilon\)
 by the divisor-product bound. Write \(\mathcal H_{\eta,u}=\prod_{p\notin S}H_p\)
-for the unselected Euler product. At the principal residue, this table
-has the simpler form (see also \cite[(12)]{KIN26})
+for the unselected Euler product. At the principal residue
+\(u=1\) (so \(j=0\) and \(\rho=1\)), \(w=1\), \(z=1/6\), the local
+identity \cite[(7.11)--(7.12)]{OAI26} has
+\(V=W=W_{\rm loc}=q^{-1}\). Its completed part becomes
+\(P_p^*=(1+q^{-1})(R-D)/(1-R)\), and
+\(P_p=(1+q^{-1})/(1-q^{-1})+P_p^*\). Hence \cite[(7.12)]{OAI26}
+simplifies to
 \[
  H_p(s)=\frac{1-q^{-2}}{1-R}
        \left(1+\frac{q^{-1}(D-R)}{1-D}\right),\qquad
  D=\eta(p)q^{-s},\quad
  R=\overline{\alpha(p)}^{\,6}\eta(p)^6q^{3-6s},\quad q=q_p.
 \]
+The same formula appears as \cite[(8)]{KIN26}, an AI-assisted
+adaptation of OpenAI's argument.
 For $\Rea s>2/3$, the denominators are nonzero. So is the numerator,
 since $q\ge7$ and
 \[
@@ -64,6 +74,7 @@ General contours still use the quotient-free tuple correction.
 
 \subsection{Recovering the same signal}
 
+This subsection follows \cite[Section 20.1]{OAI26} at the new scales.
 Put
 \[
  S_i(Z)=\sum_{p\in\mathcal P_i(Z)}
@@ -103,7 +114,7 @@ For \(u=1\), keep \(\Rea s=\beta_*+e\), cross \(w=1\) to
 \(19/20\), then \(z=1/6\) to \(33/200\).
 Repeating the residue proof of \cite[Lemma 10.5]{OAI26} in
 \eqref{gex:second-euler-box} crosses only the two scalar zeta poles.
-Its geometric savings are
+Its geometric savings, the analogues of \cite[(20.3)]{OAI26}, are
 \[
  m_w=l_y/20=5749/240000,\qquad
  m_z=h/600=3251/2400000.
@@ -125,13 +136,22 @@ The principal recovery error is
 
 \subsection{Outer rows and height closure}
 
+This subsection repeats \cite[Lemma 10.6 and Section 20.3]{OAI26}.
 For \(d<1/100\), use \(\Rea s=7/8+8e\), to the right of
-\(\beta_*\), and \((\Rea w,\Rea z)=(1/2,17/50)\).
+\(\beta_*\) by \cite[Theorem~1.1]{OAI26}, and
+\((\Rea w,\Rea z)=(1/2,17/50)\). OpenAI uses the line
+\(\Rea s=\beta_*+e\), which lies in the first Euler region
+\(D_1(3/8)\) of \cite[Section 10.2]{OAI26} only when
+\(\beta_*+e\ge7/8\). Our line has \(\Rea(s+w)=11/8+8e\), so it lies in
+\(D_1(3/8)\). The proof of \cite[Lemma 16.2]{OAI26} on its first set
+of lines uses only this region and \(\Rea s\ge7/8+e\), so its local
+bounds apply unchanged; the shift to the right of \(\beta_*+e\) costs
+\(7/8-\beta_*+7e\).
 The full absolute tuple bound, including selected primes dividing
 \(u\), is \(q_u^\varepsilon Z^{17\ell/50}\); the row exponent
-is \(63/50<2\). Paying \(7/8-\beta_*<p/4\) leaves saving
+is \(63/50<2\). Paying \(7/8-\beta_*<\varpi/4\) leaves saving
 \[
- m_{\rm small}=63/800-51p/100-p/4>1/16.
+ m_{\rm small}=63/800-51\varpi/100-\varpi/4>1/16.
 \]
 This includes bounded nontrivial units and principal denominators.
 In the absolute estimate, \(G_p=O(1)\) off \(u\) and
@@ -180,6 +200,14 @@ Thus some common \(\sigma>0\) satisfies
 
 \subsection{Continuation}
 
+The continuation repeats the proof of \cite[Proposition 2.1]{OAI26}
+with \(\sigma_0=\theta\) and \(\omega=\varepsilon_{\rm low}\). Its
+hypothesis \cite[(2.2)]{OAI26}, \(\sup|H_\eta-1|\le1/2\), is replaced
+by \eqref{gex:principal-nonvanishing} and the two-sided bounds after it,
+which are all that proof uses of \(H_\eta\).
+The passage to the full family is \cite[Proposition 11.3]{OAI26} with
+\(\sigma_0=\theta\); we repeat its short proof.
+
 Set \(\epsilon_*=\min\{\Gamma-\varepsilon_{\rm low},\sigma\}>0\).
 Then \(f_\eta(Z)=O_\eta(Z^{C(\beta_*)-\epsilon_*})\) at infinity.
 At zero it decays faster than every fixed power, by shifting its
@@ -221,7 +249,8 @@ above it. The split and inert Euler factors give
 On \(\theta<\Rea s<1\), both factors on the right are
 holomorphic and their product is nonzero. Restoring the finite
 Euler factors proves Dirichlet nonvanishing there.
-For \(\Rea s\ge1\), use the existing theorem of \cite{OAI26},
+For \(\Rea s\ge1\), use the classical nonvanishing of Dirichlet
+\(L\)-functions on \(\Rea s\ge1\) \cite[Chapters 13--14]{DAV00},
 with principal poles excepted. This also covers imprimitive
 Dirichlet characters and, in particular, the zeta function.
 
@@ -230,4 +259,4 @@ of a primitive character to a zero of its conjugate character
 with real part \(1-\Rea\rho\). The family is closed under
 conjugation. The deleted factors have no zeros in the critical
 strip, so every member has the lower boundary
-\(1-\theta=3001/24000\). This proves Theorem~\ref{gex:main}.
+\(1-\theta=3001/24000\). This proves Proposition~\ref{gex:first-stage}.

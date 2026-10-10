@@ -1,54 +1,294 @@
-\section{The limit of the parameter refinement}
+\section{The limit of the parameter refinement at
+\texorpdfstring{$\kappa=3/4$}{kappa=3/4}}\label{gex:limit-section}
 
-The perturbation is close to the limit of this particular balanced
+With the asymmetry fixed at $b=1/8$ and the plain-moment exponent
+fixed at $\widehat\kappa=3/4$, the
+perturbation is close to the limit of this particular balanced
 witness estimate. At $y=0$ the zero-margin quadratic is
 \[
- Q_p(\delta)=(2448+6048p)\delta^2+
-              (-1896+11520p)\delta+370-22200p.
+ Q_\varpi(\delta)=(2448+6048\varpi)\delta^2+
+              (-1896+11520\varpi)\delta+370-22200\varpi.
 \]
 Its discriminant test gives
 \[
- 4AC-B^2=-576(1162800p^2+286020p-49).
+ 4AC-B^2=-576(1162800\varpi^2+286020\varpi-49).
 \]
 The vertex remains inside $0\le\delta\le5/6$ near the present
-perturbation. Therefore this estimate cannot support a larger
-perturbation past
+perturbation. Therefore, at $\widehat\kappa=3/4$, this estimate cannot
+support a larger perturbation past
 \[
- p_*=-\frac{1589}{12920}+\frac{7\sqrt{465053}}{38760}
+ \varpi_*=-\frac{1589}{12920}+\frac{7\sqrt{465053}}{38760}
        =0.0001711975385\ldots,
 \]
-whose loss-free crossing is approximately $0.8749572006$.
-This is a limitation of the retained endpoint inequality, not a
-lower bound for the true physical source or other arithmetic methods.
+whose loss-free crossing $7/8-\varpi_*/4$ is approximately
+$0.8749572006$. This is the limit of the retained endpoint inequality
+at $\widehat\kappa=3/4$ only. It is not a lower bound for the true
+physical source, for the same method with other plain-moment
+exponents, or for other arithmetic methods.
+
+The adaptive argument in Section~\ref{gex:adaptive-section} passes this
+fixed-$(b,\kappa)$ ceiling by using the previously established boundary
+in the prime-slot capacity. Of its gain of about $1.18\cdot10^{-6}$
+over $\theta_0$, about $1.13\cdot10^{-6}$ is already available at the
+parameter limit above. The finite feedback approaches the loss-free
+value $0.87495715035054$; that limit is not asserted in
+Theorem~\ref{gex:main}. Further decimal tuning within this estimate
+would give little additional improvement. A substantial advance needs
+a stronger arithmetic estimate.
 
 \subsection*{Supplementary verification}
 
-The \href{https://github.com/Gaozhongpai/RH/tree/main/framework/programs/fixed_strip/verification/geometry_endpoint_verification_2026-10-07}{supplementary archive}
-contains exact arithmetic checks and a formal proof using the pinned
-OpenAI inputs. The Hecke, Dirichlet and standard-zeta declarations
-compiled; separate target comparison and kernel replay were recorded
-for standard zeta. These existing records accompany the conventional
-proof above.
+The supplementary archive (repository commit to be pinned on release)
+builds on OpenAI's Lean formalization of \cite{OAI26}, at the commit
+pinned in the bibliography; its definitions and mathematical input
+modules are unchanged. Its final theorem is the standard Mathlib
+statement \mbox{\texttt{riemannZeta s $\ne$ 0}} for
+$20999/24000<\Rea s$. This statement passed exact comparison against
+the target and replay in the Lean kernel, with axioms exactly
+\texttt{propext}, \texttt{Classical.choice} and \texttt{Quot.sound}.
+The corresponding Hecke and Dirichlet declarations compiled but were
+not comparator-checked. The archive also contains exact rational checks
+of the first-stage endpoint certificate. It verifies $\theta_0$, not
+the adaptive boundary $\theta_*$. The latter has the conventional
+proof above and the recursive proof in \cite{GaoAdaptive26}, without
+a new Lean, Comparator or kernel replay. The archive accompanies
+and does not replace these proofs.
 
 \subsection*{Attribution and preparation}
 
-The cubic-theta construction and unchanged arithmetic inputs are due
-to OpenAI \cite{OAI26}. The contribution here is the modified-scale
-low estimate, endpoint certificate and recovery at the new boundary.
-AI tools assisted with the derivations, algebraic checks and drafting.
+The cubic-theta construction, the unchanged arithmetic inputs and the
+quadratic endpoint-certificate technique \cite[Lemma 20.2]{OAI26} are
+due to OpenAI \cite{OAI26}, as is the Lean formalization on which the
+supplementary archive builds. The contribution here is the
+modified-scale low estimate, which extends \cite[Lemma 15.1 and
+Proposition 15.3]{OAI26} to the perturbed geometry; the re-run of the
+endpoint certificate with the perturbation retained; the extension of
+the principal Euler region below $7/8$; and the recovery at the new
+boundary; the extended plain-moment range and its finite adaptive
+reuse, proved in \cite{GaoAdaptive26} and
+Section~\ref{gex:adaptive-section}. AI tools assisted with the derivations, algebraic checks and
+drafting.
+
+\paragraph{Contemporaneous refinements.}
+Liu~\cite{LIU26} and ProofCouncil~\cite{PC26} report smaller boundaries.
+ProofCouncil also extends the plain moment to $\kappa\ge13/18$ and
+jointly optimizes the asymmetry $b$, which is fixed at $1/8$ here.
+The adaptive extension and witness balancing therefore overlap;
+their gains cannot be added to those of this paper. This paper records
+a conditional derivation and its exact certificates. It claims neither
+the smallest known boundary nor priority for the shared extension.
+
+\appendix
+\section{Hypothesis audit}\label{gex:audit}
+
+For each statement of \cite{OAI26} used here, the table records its
+printed hypotheses, the values used in this paper, and why its proof
+transfers. Part~II of \cite{OAI26} works under the supposition
+\cite[(12.1)]{OAI26}, $\Delta=\beta_*-7/8\in(0,1/24]$ and
+$\kappa=2\beta_*-1$, with the geometry \cite[(12.4)]{OAI26},
+$\ell=1/6$. For the first stage, by contrast, $\theta_0<\beta_*\le7/8$, with
+$\sigma_0=\theta$, $\widehat\kappa=3/4$ and the geometry
+\eqref{gex:geometry}, $\ell=1/6+\varpi$. The second Euler region
+$D_2$ of \cite[Section 10.2]{OAI26} requires $\Rea s\ge7/8$; it is
+replaced by the box \eqref{gex:second-euler-box}.
+The table concerns that first stage. The adaptive stage additionally
+uses Lemma~\ref{gex:adaptive-plain} and its complete proof in
+\cite{GaoAdaptive26}; Section~\ref{gex:adaptive-section} records the
+changed capacity, endpoint and recovery payments.
+
+{\footnotesize
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.17\linewidth}
+                   >{\raggedright\arraybackslash}p{0.25\linewidth}
+                   >{\raggedright\arraybackslash}p{0.21\linewidth}
+                   >{\raggedright\arraybackslash}p{0.29\linewidth}@{}}
+\toprule
+Statement & Printed hypotheses & Used here & Why the proof transfers\\
+\midrule
+\endfirsthead
+\toprule
+Statement & Printed hypotheses & Used here & Why the proof transfers\\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+Thm.\ 1.1
+ & None (unconditional)
+ & $\beta_*\le7/8$, as a hypothesis
+ & Used as stated; this is the main reason the theorem is conditional.\\
+\addlinespace[3pt]
+Prop.\ 2.1
+ & $\sigma_0\in(1/2,1)$, $\Delta_0=\beta_*-\sigma_0>0$;
+   common $0<\omega<\Delta_0$, $\sigma>0$;
+   $\sup_{\Rea s>\sigma_0}|H_\eta-1|\le1/2$ (2.2); (2.4), (2.5)
+ & $\sigma_0=\theta$, $\omega=\varepsilon_{\rm low}=\Gamma/2$;
+   $H_\eta$ of \eqref{gex:principal-nonvanishing}
+ & The proof uses (2.2) only for boundedness and nonvanishing of
+   $H_\eta$; Section~\ref{gex:recovery-section} supplies both on every
+   closed sub-half-plane of $\Rea s>2/3$.\\
+\addlinespace[3pt]
+Prop.\ 11.3
+ & $\sigma_0\in[1/2,1)$; primitive Hecke $L$ zero-free on
+   $\Rea s>\sigma_0$
+ & $\sigma_0=\theta$
+ & Applied as stated.\\
+\addlinespace[3pt]
+Lemmas 4.5, 4.6, 4.10
+ & Smooth profiles; fixed $\sigma_0>0$ in Lemma 4.10
+ & As stated
+ & No zero-free or geometry hypothesis.\\
+\addlinespace[3pt]
+Lemma 4.9
+ & $a\in[1/2,1]$, $0<e<10^{-3}$, zero-free disk; global form for
+   $b\ge\beta_*$, $v>0$
+ & $a\ge51/100$; $b=\beta_*$ or $b=7/8+8e$
+ & Applied as stated; the global form needs only $b\ge\beta_*$.\\
+\addlinespace[3pt]
+Lemma 7.1, (7.11)--(7.12); (16.3), (16.8)
+ & Regions (7.14) and (7.15), the latter with $\Rea s\ge7/8$
+ & Box \eqref{gex:second-euler-box}, $\Rea s\ge\theta$
+ & The local defects remain summable there
+   by \eqref{gex:local-euler-defect} and
+   \eqref{gex:principal-selected-factor}.\\
+\addlinespace[3pt]
+Lemmas 10.3, 10.4
+ & Def.\ 10.1 with $D_1(\epsilon_0)$, $D_2$; $\sigma_0\in[7/8,1)$,
+   $\beta_*>\sigma_0$; $z_0=17/50$
+ & $\sigma_0=\theta$, $\theta<\beta_*\le7/8$;
+   geometry \eqref{gex:geometry}
+ & Central contours lie in $D_1(10e)$, which does not involve $7/8$;
+   $\sigma_0$ enters only as the reference $C(\sigma_0)$ in (10.15);
+   the bin ceiling $a\le\beta_*$ is unchanged.\\
+\addlinespace[3pt]
+Lemma 10.5
+ & $\sigma_0\in[7/8,1)$, $\beta_*>\sigma_0$; (10.17) on a box in $D_2$;
+   (10.18)
+ & $\sigma_0=\theta$; the same box, now inside
+   \eqref{gex:second-euler-box}
+ & $D_2$ enters only through holomorphy and (10.17), proved on the
+   enlarged box; (10.18) holds with $\mu=\kappa_P$ by
+   \eqref{gex:principal-selected-factor}.\\
+\addlinespace[3pt]
+Lemma 10.6
+ & $\sigma_0\in[7/8,1)$, $\beta_*>\sigma_0$; (10.20) on
+   $(\beta_*+e,1/2,17/50)$
+ & Small rows on $(7/8+8e,1/2,17/50)$; large rows on $(2,2,z_\infty)$
+ & The line is right of $\beta_*$ by Thm.\ 1.1 and lies in $D_1(3/8)$;
+   its extra cost $7/8-\beta_*+7e$ is paid from $m_{\rm small}$.\\
+\addlinespace[3pt]
+Lemma 11.1
+ & $\sigma_0\in(1/2,1)$, $\Delta_0>0$; common $m>0$, $\omega<\Delta_0$
+ & $\sigma_0=\theta$
+ & Applied as stated.\\
+\addlinespace[3pt]
+Lemma 14.3; Prop.\ 15.2
+ & Bounded log-lengths; $Q,Y'\ge1$, $P_a=Y'^2/Q\ge1$
+ & Perturbed scales
+ & Hypotheses verified by \eqref{gex:uniform-low-scale-margins}.\\
+\addlinespace[3pt]
+Lemma 15.1
+ & Geometry (12.4), $\ell=1/6$
+ & $0\le\ell\le1/5$
+ & Proof repeated in Lemma~\ref{gex:completed-low}; $\ell$ enters only
+   through $N_*=1+\ell'$ and $z_a\le\ell'$.\\
+\addlinespace[3pt]
+Prop.\ 15.3
+ & Geometry (12.4), $\ell=1/6$; exponent $3/16$
+ & Geometry \eqref{gex:geometry}
+ & Proof repeated in Proposition~\ref{gex:physical-low}; the extra
+   term $(5\ell-1+d)_+/8$ is paid by the tuple count, since
+   $\ell<1/5$.\\
+\addlinespace[3pt]
+Lemma 16.2
+ & First lines $(\beta_*+e,1/2,17/50)$ with $\beta_*>7/8$
+ & $(7/8+8e,1/2,17/50)$
+ & The proof uses only $\Rea s\ge7/8+e$ and $D_1(3/8)$.\\
+\addlinespace[3pt]
+Prop.\ 8.3; Lemmas 17.1, 17.6
+ & Detector bins; bounded ranges; strict moment inequalities
+ & As stated, with slots from $\ell=1/6+\varpi$
+ & No zero-free hypothesis; slot lengths enter only through bounded
+   ranges and the mesh.\\
+\addlinespace[3pt]
+Lemma 18.1
+ & $3/4\le\kappa\le1$; if $z>0$ and $\kappa<1$, then
+   $\beta_*\le(1+\kappa)/2$
+ & $\kappa=3/4$; $\beta_*\le7/8$ by Thm.\ 1.1
+ & Applied as stated.\\
+\addlinespace[3pt]
+Prop.\ 19.2
+ & Under (12.1): $\Delta>0$, $\kappa=2\beta_*-1$; $\alpha=5/6$;
+   prime supply above $7/37$; loss $+\Delta/4$
+ & $\widehat\kappa=3/4$; supply $\ell/d>1/5$
+ & The proof uses $\kappa$ only through $\delta\le\kappa$ and
+   Lemma 18.1, both supplied by Thm.\ 1.1; the loss came from
+   $6\kappa=9/2+12\Delta$ and vanishes.\\
+\addlinespace[3pt]
+Lemma 20.1
+ & Lemma 10.4 with $\sigma_0=7/8$; (12.2); geometry (12.4)
+ & $\sigma_0=\theta$; exponent \eqref{gex:high-central-exponent}
+ & Only the affine exponent (20.4) changes; the contour and
+   conductor-allocation steps use the slot system, not $\ell$.\\
+\addlinespace[3pt]
+Lemma 20.2
+ & Geometry (12.4), $\varpi=0$; $0\le\delta\le5/6$, $0\le x\le1/2$
+ & $\varpi=1/6000$
+ & Same algebra with $\varpi$ retained; Lemma~\ref{gex:endpoint}
+   gives margin $1/200000$.\\
+\end{longtable}
+}
+
+\paragraph{Adaptive-stage hypotheses.}
+At the first adaptive step, the input boundary is $\theta_0$ and
+$\kappa_0=2\theta_0-1$; at the second it is the established $\theta_1$
+and $\kappa_1=2\theta_1-1$. Both lie in $[13/18,3/4]$.
+The global bound $\beta_*\le(1+\kappa_j)/2$ comes from the previous
+stage, including its all-height and full-family continuation.
+The common masks, character zeros, finite slot coefficients and
+moving-radical width remain those of the extended moment.
+The small-row contour stays at $7/8+8e$, and its additional shift
+cost is paid explicitly. Thus no use of the output boundary is hidden
+in a prime estimate, recursive child or contour choice.
 
 \begin{thebibliography}{9}
+\bibitem{GaoAdaptive26}
+Z.~Gao,
+\emph{The adaptive plain-moment estimate: supplementary proof},
+supplementary material to this paper, 9 October 2026.
+File: \nolinkurl{seven_eighths_adaptive_moment.pdf}.
 \bibitem{OAI26}
 \raggedright
 OpenAI,
 \emph{The Quasi-Riemann Hypothesis: A Zero-Free Half-Plane
-$\Rea s>7/8$}, released preprint, 30 September 2026.
+$\Rea s>7/8$}, unrefereed preprint, 30 September 2026.
 Version used: \texttt{adc7f1241b42e322a6451854ab7e4b4c146bf78a}.
 \url{https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/paper.pdf}.
+\bibitem{DAV00}
+H.~Davenport,
+\emph{Multiplicative Number Theory}, 3rd ed., revised by
+H.~L.~Montgomery, Graduate Texts in Mathematics~74, Springer,
+New York, 2000.
 \bibitem{KIN26}
+\raggedright
 Shiva Kintali,
 \emph{A Short Proof of the Quasi-Riemann Hypothesis},
-preprint, 7 October 2026.
+preprint, revised 27-page version served at the URL below on
+8 October 2026, SHA-256
+\texttt{f7ddc46632e37466e85951ea67acbd3c}\allowbreak
+\texttt{2abc19c8259fac51be569b1f6bbbe8e5};
+equation numbers refer to this version.
 \url{https://shivakintali.github.io/papers/QRH.pdf}.
+\bibitem{LIU26}
+\raggedright
+B.~Liu,
+\emph{Slightly improved zero-free half-planes for the quasi-Riemann
+hypothesis}, preprint, arXiv:2610.12234v1, 8 October 2026.
+\url{https://arxiv.org/abs/2610.12234v1}.
+\bibitem{PC26}
+\raggedright
+ProofCouncil,
+\emph{A certified uniform descent for all Dirichlet characters},
+public manuscript and proof development, 9 October 2026.
+Version used: \texttt{40844a7614b67840801e65b836b3da2e1f7ff029}.
+\url{https://github.com/GTimG/QuasiRiemannTracker/blob/40844a7614b67840801e65b836b3da2e1f7ff029/public/proofs/qrh-20261009/accepted-answer.tex}.
 \end{thebibliography}
 \end{document}
